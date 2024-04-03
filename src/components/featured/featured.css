@@ -1,0 +1,41 @@
+.featured {
+    margin-top: 90px;
+    padding: 0 25px;
+}
+
+.featured__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.featured__swiper {
+    margin: 25px 0 75px;
+}
+
+.swiper-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.featured__swiper-slide {
+    margin: 10px;
+}
+
+.slide-card {
+    max-width: 425px;
+    max-height: 350px;
+    overflow: hidden;
+}
+
+.card__img {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    object-fit: fill;
+    margin-bottom: 15px;
+}
