@@ -81,7 +81,7 @@ const Header = () => {
                 width="50px"
               ></path>
             </svg>
-            <span className="cart__pic">(0)</span>
+            <span className="cart__count">(0)</span>
           </div>
         </div>
       </div>
