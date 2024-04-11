@@ -23,45 +23,12 @@
   --header-height: 86px;
 }
 
-
 .container {
-  max-width: 1200px;
-  padding-left: var(--containerPadding);
-  padding-right: var(--containerPadding);
+  max-width: 1440px;
+  margin: auto;
 }
 
 .hidden {
   display: none;
 }
 
-header {
-  top: 0;
-}
-
-div {
-  display: block;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-p,
-a {
-  font-family: var(--font-p);
-  color: var(--font-color);
-  font-size: 1rem;
-  font-weight: normal;
-  text-decoration: none;
-}
-
-li {
-  list-style-type: none;
-}
-
-h2 {
-  font-family: var(--font-h);
-  font-size: var(--font-h-size);
-  font-weight: normal;
-}

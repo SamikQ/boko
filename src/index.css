@@ -1,5 +1,1 @@
-@import url(App.css);
-@import url(../src/components/header/header.css);
-@import url(../src/components/title/title.css);
-@import url(../src/components/featured/featured.css);
-@import url(../src/components/footer/footer.css);
+@import url(./global.css);
