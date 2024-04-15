@@ -1,34 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: "trajan-regular";
+    src: url("./resources/fonts/Trajan-regular.ttf");
+}
+
+@font-face {
+  font-family: "forest-glade-cyrillic";
+  src: url("./resources/fonts/Forest-glade-Cyrillic.ttf");
+}
 
 * {
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-  user-select: none;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "trajan-regular";
+    background-color: var(--background-color);
 }
 
 :root {
-  --font-p: "Montserrat", sans-serif;
-  --font-h: "Montserrat", sans-serif;
-  --font-h-size: 20px;
-  --font-color: black;
-  --section-divider-light-color: lightgray;
-  --celebration-background-color: rgba(38, 30, 28, 0.95);
-  --border-animation-color: #630a1d;
-  --basicTransition: 0.4s;
-  scroll-behavior: smooth;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  --containerPadding: 45px;
-  --header-height: 86px;
+    --font-p: "trajan-regular", sans-serif;
+    --font-h: "trajan-regular", sans-serif;
+    --font-decoration: "forest-glade-cyrillic";
+    --font-p-size: 16px;
+    --font-h-size: 20px;
+    --font-color: #0d0d0d;
+    --font-header-color: #1a1a1a;
+    --font-sale-color: #DC9716;
+    --card-border-color: #01337a;
+    --card-ttile-color: rgba(1, 51, 122, 0.4);
+    --card-title-text: rgba(255, 255, 255, 1);
+    --celebration-background-color: rgba(38, 30, 28, 0.95);
+    --border-animation-color: #630a1d;
+    --basicTransition: 0.4s;
+    scroll-behavior: smooth;
+    --background-color: #ffffff;
+    --background-color-alt: #ccd6e4;
 }
 
 .container {
-  max-width: 1440px;
-  margin: auto;
+    min-width: 320px;
+    max-width: 1440px;
+    margin: auto;
 }
 
-.hidden {
-  display: none;
+.sale {
+    color: var(--font-sale-color);
 }
 
+a {
+    text-decoration: none;
+    color: var(--font-header-color);
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
