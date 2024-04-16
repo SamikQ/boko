@@ -3,9 +3,6 @@
 }
 
 @media (min-width: 1440px) {
-    .wrapper {
-        padding: 70px 80px;
-    }
     .creators__wrapper {
         display: flex;
         gap: 30px;

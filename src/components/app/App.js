@@ -9,8 +9,8 @@ function App() {
         <div className="App container">
             <Header />
             {/* <Error404Component /> */}
-            {/* <ShopLocations /> */}
-            <AboutCreators />
+            <ShopLocations />
+            {/* <AboutCreators /> */}
             <Footer />
         </div>
     );

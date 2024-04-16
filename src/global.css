@@ -1,9 +1,4 @@
 @font-face {
-    font-family: "trajan-regular";
-    src: url("./resources/fonts/Trajan-regular.ttf");
-}
-
-@font-face {
     font-family: "forest-glade-cyrillic";
     src: url("./resources/fonts/Forest-glade-Cyrillic.ttf");
 }
@@ -13,7 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     user-select: none;
-    font-family: "trajan-regular";
+    font-family: "Atyp Variable";
 }
 
 /* div,
@@ -23,8 +18,8 @@ nav {
 } */
 
 :root {
-    --font-p: "trajan-regular", sans-serif;
-    --font-h: "trajan-regular", sans-serif;
+    --font-p: "Atyp Variable", sans-serif;
+    --font-h: "Atyp Variable", sans-serif;
     --font-decoration: "forest-glade-cyrillic";
     --font-p-size: 16px;
     --font-h-size: 20px;
@@ -47,6 +42,10 @@ nav {
     min-width: 320px;
     max-width: 1440px;
     margin: auto;
+}
+
+.wrapper {
+    padding: 70px 80px;
 }
 
 .sale {

@@ -2,10 +2,11 @@
     display: flex;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1440px) {
     .header__wrapper {
-        padding: 25px 45px;
+        padding: 25px 80px;
         align-self: stretch;
+        justify-content: space-between;
     }
 
     .header__content-menu {
