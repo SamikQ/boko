@@ -9,20 +9,12 @@
 }
 
 * {
-<<<<<<< HEAD
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-  user-select: none;
-  font-family: trajan-pro-3, serif;
-=======
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     user-select: none;
     font-family: "trajan-regular";
     background-color: var(--background-color);
->>>>>>> c2fef6aaf536544dadb28a1966e1f3af891564a8
 }
 
 :root {
