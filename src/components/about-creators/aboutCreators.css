@@ -13,14 +13,19 @@
     .creators__img {
         width: 331px;
     }
+    
+    .creators__description {
+        gap: 30px;
+    }
 
     .creators__description-title {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     .title__description {
-        margin: 0;
+        
     }
 
     .title__decoration {

@@ -1,12 +1,14 @@
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import AboutCreators from "../about-creators/AboutCreators";
+import ShopLocations from "../shop-locations/ShopLocations";
 
 function App() {
     return (
         <div className="App container">
             <Header />
-            <AboutCreators />
+            <ShopLocations />
+            {/* <AboutCreators /> */}
             <Footer />
         </div>
     );

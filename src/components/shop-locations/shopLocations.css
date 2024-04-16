@@ -1,0 +1,36 @@
+.wrapper {
+    padding: 70px 80px;
+}
+
+.shop__locations-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.shop__locations-addresses {
+    display: flex; 
+    align-items: center;
+}
+
+.shop__locations-list-item {
+    display: flex;
+}
+
+.shop__locations-list-logo {
+    width: 62px;
+}
+
+.shop__locations-details {
+    display: flex;
+    align-self: center;
+}
+
+.shop__locations-map {
+    max-width: 683px;
+}
+
+.shop__locations-map-pic {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
