@@ -1,67 +1,38 @@
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: aliceblue;
-    text-decoration: none;
 }
 
-.footer__nav {
-    width: 30%;
-}
+@media (min-width: 992px) {
+    .footer__wrapper {
+        display: flex;
+        padding: 70px 80px;
+    }
 
-.footer__nav-list {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
+    .footer__logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
-.footer__description {
-    margin-top: 20px;
-    max-width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-}
+    .footer__nav-list {
+        padding: 10px 0;
+    }
 
-.footer__description-logo {
-    width: 100px;
-    min-height: 100px;
-}
+    .footer__nav-list-item {
+        padding-bottom: 10px;
+    }
 
-.footer__description-logo-img {
-    display: block;
-    padding-bottom: 5px;
-}
+    .footer__payment-methods {
+        display: flex;
+    }
 
-.footer__description-text {
-    color: aliceblue;
-    display: flex;
-    text-align: center;
-    font-size: 14px;
-}
-
-.footer__social {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer__social-title {
-    margin-bottom: 10px;
-}
-
-
-.footer__social-list {
-    display: flex;
-    text-align: center;
-}
-
-.footer__social-list-item {
-    display: flex;
-    margin: 10px 10px;
+    .footer__payment-methods_list {
+        display: flex;
+        align-items: center;
+    }
+    .copyright {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-self: center;
+    }
 }

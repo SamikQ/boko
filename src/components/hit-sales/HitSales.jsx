@@ -2,13 +2,13 @@ import spring1 from "../../resources/img/spring-collection/spring-collection1.pn
 import spring2 from "../../resources/img/spring-collection/spring-collection2.png";
 import spring3 from "../../resources/img/spring-collection/spring-collection3.png";
 
-const Featured = () => {
+const HitSales = () => {
   return (
     <section className="featured">
       <div className="container">
         <div className="featured__title">
-          <h2>нові надходження</h2>
-          <button href="localhost:3000">переглянути всі</button>
+          <h2>хіти продажів</h2>
+          <button href="localhost:3000">дивитися усі</button>
         </div>
         <div className="featured__swiper">
           <div className="swiper-wrapper">
@@ -109,4 +109,4 @@ const Featured = () => {
   );
 };
 
-export default Featured;
+export default HitSales;
