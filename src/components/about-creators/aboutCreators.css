@@ -1,0 +1,31 @@
+.about__creators {
+    background-color: rgba(204, 214, 228, 1);
+}
+
+@media (min-width: 992px) {
+    .creators__wrapper {
+        display: flex;
+        gap: 60px;
+        padding: 70px 80px;
+        align-items: center;
+    }
+
+    .creators__img {
+        width: 331px;
+    }
+
+    .creators__description-title {
+        display: flex;
+        align-items: center;
+    }
+
+    .title__description {
+        margin: 0;
+    }
+
+    .title__decoration {
+        font-size: 78px;
+        line-height: 48px;
+        font-family: var(--font-decoration);
+    }
+}

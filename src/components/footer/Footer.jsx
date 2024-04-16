@@ -30,25 +30,25 @@ const Footer = () => {
                         </div>
                         <ul className="footer__nav-list">
                             <li className="footer__nav-list-item">
-                                <a>spring’ 24</a>
+                                <a href="/#">spring’ 24</a>
                             </li>
                             <li className="footer__nav-list-item">
-                                <a>sale</a>
+                                <a href="/#">sale</a>
                             </li>
                             <li className="footer__nav-list-item">
-                                <a>boko’ people</a>
+                                <a href="/#">boko’ people</a>
                             </li>
                             <li className="footer__nav-list-item">
-                                <a>sheakers & shoes</a>
+                                <a href="/#">sheakers & shoes</a>
                             </li>
                             <li className="footer__nav-list-item">
-                                <a>eternal elegance</a>
+                                <a href="/#">eternal elegance</a>
                             </li>
                             <li className="footer__nav-list-item">
-                                <a>bags</a>
+                                <a href="/#">bags</a>
                             </li>
                             <li className="footer__nav-list-item">
-                                <a>xmas collection</a>
+                                <a href="/#">xmas collection</a>
                             </li>
                         </ul>
                     </nav>
@@ -56,19 +56,19 @@ const Footer = () => {
                         <h5 className="footer__nav-title">інформація</h5>
                         <ul className="footer__nav-list">
                             <li className="footer__nav-list-item">
-                                <a>про нас</a>
+                                <a href="/#">про нас</a>
                             </li>
                             <li className="footer__nav-list-item">
-                                <a>поширені запитання</a>
+                                <a href="/#">поширені запитання</a>
                             </li>
                             <li className="footer__nav-list-item">
-                                <a>оплата і доставка</a>
+                                <a href="/#">оплата і доставка</a>
                             </li>
                             <li className="footer__nav-list-item">
-                                <a>повернення та обмін</a>
+                                <a href="/#">повернення та обмін</a>
                             </li>
                             <li className="footer__nav-list-item">
-                                <a>наші вакансії</a>
+                                <a href="/#">наші вакансії</a>
                             </li>
                         </ul>
                     </nav>
@@ -76,20 +76,20 @@ const Footer = () => {
                         <ul className="footer__contacts-details">
                             <h5 className="footer__contacts-title">контакти</h5>
                             <li className="footer__contacts-item">
-                                <a>
-                                    <img src={phone} />
+                                <a href="/#">
+                                    <img src={phone} alt="phone" />
                                     <span>+38 063 290 6365</span>
                                 </a>
                             </li>
                             <li className="footer__contacts-item">
-                                <a>
-                                    <img src={phone} />
+                                <a href="/#">
+                                    <img src={phone} alt="phone" />
                                     <span>+38 063 290 6365</span>
                                 </a>
                             </li>
                             <li className="footer__contacts-item">
-                                <a>
-                                    <img src={mail} />
+                                <a href="/#">
+                                    <img src={mail} alt="mailbox" />
                                     <span>boko.kyiv@boko.com</span>
                                 </a>
                             </li>
@@ -97,8 +97,8 @@ const Footer = () => {
                         <ul className="footer__contacts-address">
                             <h5 className="footer__contacts-title">магазини</h5>
                             <li className="footer__contacts-item">
-                                <a>
-                                    <img src={mapPoint} />
+                                <a href="/#">
+                                    <img src={mapPoint} alt="map point" />
                                     <span>
                                         <p>київ</p>
                                         <p>ТРЦ «respublika Park»</p>
@@ -106,17 +106,17 @@ const Footer = () => {
                                 </a>
                             </li>
                             <li className="footer__contacts-item">
-                                <a>
-                                    <img src={mapPoint} />
-                                    <span>
-                                        <p>київ</p>
-                                        <p>трц «dream yellow»</p>
+                                <a href="/#">
+                                    <img src={mapPoint} alt="map point" />
+                                    <span className="footer__contracts-description">
+                                        <p className="footer__contracts-text">київ</p>
+                                        <p className="footer__contracts-text">трц «dream yellow»</p>
                                     </span>
                                 </a>
                             </li>
                             <li className="footer__contacts-item">
-                                <a>
-                                    <img src={mapPoint} />
+                                <a href="/#">
+                                    <img src={mapPoint} alt="map point" />
                                     <span>
                                         <p>житомир</p>
                                         <p>вул. велика васильківська, 12</p>
@@ -129,23 +129,23 @@ const Footer = () => {
                 <div className="footer__payment-methods">
                     <ul className="footer__payment-methods_list">
                         <li>
-                            <a>
-                                <img src={applePay} />
+                            <a href="/#">
+                                <img src={applePay} alt="pay via apple Pay" />
                             </a>
                         </li>
                         <li>
-                            <a>
-                                <img src={paypal} />
+                            <a href="/#">
+                                <img src={paypal} alt="pay via paypal" />
                             </a>
                         </li>
                         <li>
-                            <a>
-                                <img src={visa} />
+                            <a href="/#">
+                                <img src={visa} alt="pay via visa" />
                             </a>
                         </li>
                         <li>
-                            <a>
-                                <img src={mastercard} />
+                            <a href="/#">
+                                <img src={mastercard} alt="pay via mastercard" />
                             </a>
                         </li>
                     </ul>

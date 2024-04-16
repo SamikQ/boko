@@ -1,5 +1,4 @@
-footer {
-}
+
 
 @media (min-width: 992px) {
     .footer__wrapper {
@@ -29,6 +28,7 @@ footer {
         display: flex;
         align-items: center;
     }
+
     .copyright {
         display: flex;
         align-items: center;

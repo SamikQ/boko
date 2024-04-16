@@ -46,19 +46,19 @@ const Header = () => {
             </li>
           </nav>
           <div className="header__content-acc acc">
-            <a className="acc__item" aria-label="search">
+            <a href="/#" className="acc__item" aria-label="search">
               <img src={search} alt="search button" />
             </a>
-            <a href="localhost:3000" className="acc__item">
+            <a href="/#" className="acc__item">
               <img src={phone} alt="phone button" />
             </a>
-            <a className="acc__item" aria-label="like">
+            <a href="/#" className="acc__item" aria-label="like">
               <img src={heart} alt="like button" />
             </a>
-            <a className="acc__item">
+            <a href="/#" className="acc__item">
               <img src={user} alt="account button" />
             </a>
-            <a className="acc__item" aria-label="shopping cart">
+            <a href="/#" className="acc__item" aria-label="shopping cart">
               <div className="header__content-cart">
                 <img src={cart} alt="shopping cart button" />
                 <div className="cart__count">(0)</div>

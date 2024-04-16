@@ -14,7 +14,6 @@
     box-sizing: border-box;
     user-select: none;
     font-family: "trajan-regular";
-    background-color: var(--background-color);
 }
 
 :root {
