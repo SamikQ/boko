@@ -2,19 +2,20 @@
     background-color: rgba(204, 214, 228, 1);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1440px) {
+    .wrapper {
+        padding: 70px 80px;
+    }
     .creators__wrapper {
         display: flex;
-        gap: 60px;
-        padding: 70px 80px;
-        align-items: center;
+        gap: 30px;
+        /* grid-template-columns: 50% 50%; */
     }
 
-    .creators__img {
-        width: 331px;
-    }
-    
     .creators__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         gap: 30px;
     }
 
@@ -22,15 +23,74 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin: 0 45px;
+        gap: 10px;
+        /* width: 100%; */
     }
 
     .title__description {
-        
+        font-size: var(--font-h-size);
+        color: var(--font-creators-color);
+        font-family: 400px;
+        line-height: 28px;
+        height: 14px;
     }
 
     .title__decoration {
-        font-size: 78px;
-        line-height: 48px;
+        text-align: justify;
+        padding: 15px;
+        color: var(--font-creators-color);
         font-family: var(--font-decoration);
+        font-weight: 400;
+        font-size: 40px;
+        text-transform: uppercase;
     }
+
+    .creators__description-post {
+        margin: 0 45px;
+        gap: 20px;
+    }
+
+    .creators__description-text {
+        text-align: justify;
+        justify-content: center;
+    }
+
+    .creators__description-links {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 45px;
+    }
+
+    .creators__description-links-social {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .creators__description-link {
+        display: flex;
+        line-height: 27px;
+        align-items: start;
+        gap: 5px;
+    }
+
+    .link__button {
+        border: 1px solid;
+        border-color: var(--font-creators-color);
+        color: var(--font-creators-color);
+        font-size: var(--font-p-size);
+        font-weight: 400;
+        border-radius: 4px;
+        padding: 20px 36px;
+        background-color: inherit;
+        line-height: 23px;
+    }
+}
+
+.link__button:hover {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
 }

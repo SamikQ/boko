@@ -4,17 +4,23 @@
 }
 
 @font-face {
-  font-family: "forest-glade-cyrillic";
-  src: url("./resources/fonts/Forest-glade-Cyrillic.ttf");
+    font-family: "forest-glade-cyrillic";
+    src: url("./resources/fonts/Forest-glade-Cyrillic.ttf");
 }
 
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     user-select: none;
     font-family: "trajan-regular";
 }
+
+/* div,
+li,
+nav {
+    border: 1px solid red;
+} */
 
 :root {
     --font-p: "trajan-regular", sans-serif;
@@ -24,7 +30,8 @@
     --font-h-size: 20px;
     --font-color: #0d0d0d;
     --font-header-color: #1a1a1a;
-    --font-sale-color: #DC9716;
+    --font-sale-color: #dc9716;
+    --font-creators-color: #1a1c3b;
     --card-border-color: #01337a;
     --card-ttile-color: rgba(1, 51, 122, 0.4);
     --card-title-text: rgba(255, 255, 255, 1);
@@ -51,6 +58,8 @@ a {
     color: var(--font-header-color);
 }
 
-ul, ol, li {
-  list-style-type: none;
+ul,
+ol,
+li {
+    list-style-type: none;
 }

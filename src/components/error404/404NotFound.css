@@ -1,0 +1,49 @@
+.num-404-content {
+    padding: 0 0 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .frame-350 {
+    margin-bottom: 100px;
+    padding: 28px 0 0;
+    align-self: stretch;
+    position: relative;
+  }
+  .wood-board-v1 {
+    position: relative;
+  }
+  .num-404 {
+    font-family: "Forest Glade Cyrillic";
+    font-size: 500px;
+    font-weight: 400;
+    line-height: 100px;
+    color: var(--black-1);
+    position: absolute;
+    left: 559.5px;
+    top: 50px;
+  }
+  .frame-348 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .oj-lele-ti-libon-zablukala-takoi-st {
+    max-width: 558px;
+    font-family: "Atyp Variable";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--black-1);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .frame-347 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+  }
+  .button:not(:last-of-type) {
+    margin-right: 51px;
+  }
