@@ -31,6 +31,7 @@
         font-family: 400px;
         line-height: 28px;
         height: 14px;
+        text-transform: uppercase;
     }
 
     .title__decoration {

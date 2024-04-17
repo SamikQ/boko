@@ -1,0 +1,104 @@
+.categories {
+    gap: 50px;
+}
+
+.categories__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.categories__header-title {
+    padding: 20px 0px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: var(--font-h-size);
+    color: var(--font-color);
+}
+
+.categories__header-text {
+    text-transform: uppercase;
+    font-family: var(--font-decoration);
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--font-creators-color);
+}
+
+.categories__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.catogiries__list-top-row {
+    display: grid;
+    height: 470px;
+}
+
+.catogiries__list-middle-row {
+    display: grid;
+    grid-template-columns: 75% 1fr;
+    height: 470px;
+    gap: 20px;
+}
+
+.catogiries__list-bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 75%;
+    height: 470px;
+    gap: 20px;
+}
+
+.catogiries__list-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    
+}
+
+.categories__list-item__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 400;
+    color: var(--font-welcome-color);
+    width: inherit;
+    height: inherit;
+    background-color: var(--background-welcome-color);
+}
+
+.elegance {
+    background-image: url(../../resources/img/backgrounds/categories/bg-elegance.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.basic {
+    background-image: url(../../resources/img/backgrounds/categories/bg-basic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.shoes {
+    background-image: url(../../resources/img/backgrounds/categories/bg-shoes.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.bags {
+    background-image: url(../../resources/img/backgrounds/categories/bg-bags.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sport {
+    background-image: url(../../resources/img/backgrounds/categories/bg-sport.png);
+    background-size: cover;
+    background-position: center;
+}

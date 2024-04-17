@@ -1,7 +1,32 @@
+.shop__locations-header {
+    margin: 25px 0;
+    gap: 10px;
+}
+
+.shop__locations-title {
+    text-transform: uppercase;
+    font-size: var(--font-h-size);
+    font-weight: 400;
+}
+
+.address__text {
+    font-weight: 700;
+}
+
+.selected {
+    background-color: var(--background-selected-color);
+}
+
 @media (min-width: 1440px) {
     .shop__locations-details {
         display: flex;
+        justify-content: space-between;
         gap: 40px;
+    }
+
+    .shop__locations-addresses {
+        display: flex;
+        align-items: center;
     }
 
     .shop__locations-list {
@@ -10,7 +35,7 @@
         gap: 10px;
     }
 
-    .shop__locations-list-item {
+    .shop__locations-li {
         display: flex;
         padding: 20px;
         border-radius: 4px;
@@ -29,6 +54,11 @@
     }
 
     .shop__locations-map {
-        max-width: 683px;
+        max-width: 640px;
+    }
+
+    .shop__map {
+        max-width: 100%;
+        object-fit: contain;
     }
 }

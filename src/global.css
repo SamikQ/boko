@@ -27,15 +27,16 @@ nav {
     --font-header-color: #1a1a1a;
     --font-sale-color: #dc9716;
     --font-creators-color: #1a1c3b;
+    --font-welcome-color: rgba(255, 255, 255, 1);
     --card-border-color: #01337a;
     --card-ttile-color: rgba(1, 51, 122, 0.4);
     --card-title-text: rgba(255, 255, 255, 1);
-    --celebration-background-color: rgba(38, 30, 28, 0.95);
-    --border-animation-color: #630a1d;
     --basicTransition: 0.4s;
-    scroll-behavior: smooth;
     --background-color: #ffffff;
     --background-color-alt: #ccd6e4;
+    --background-selected-color: rgba(220, 225, 232, 1);
+    --background-welcome-color: rgba(0, 0, 0, 0.2);
+
 }
 
 .container {
