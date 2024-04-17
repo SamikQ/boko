@@ -5,9 +5,9 @@ import fbLogo from "../../resources/img/social-icons/facebook-icon.svg";
 const AboutCreators = () => {
     return (
         <section className="about__creators">
-            <div className="contaier">
+            <div className="container">
                 <div className="wrapper">
-                    <div className="creators__wrapper">
+                    <div className="creators__inner">
                         <div className="creators__photo">
                             <img
                                 className="creators__img"
@@ -17,9 +17,9 @@ const AboutCreators = () => {
                         </div>
                         <div className="creators__description">
                             <div className="creators__description-title title">
-                                <p4 className="title__description">
+                                <h4 className="title__description">
                                     ірина полонець
-                                </p4>
+                                </h4>
                                 <span className="title__decoration">
                                     be unique. right now.
                                 </span>
@@ -51,19 +51,20 @@ const AboutCreators = () => {
                             <div className="creators__description-links">
                                 <div className="creators__description-links-social">
                                     <a href="/#" className="creators__description-link">
-                                        <img src={fbLogo} alt="facebook logo" />
+                                        <img src={fbLogo} alt="facebook logo" aria-label="facebook logo" />
                                         Irina polonetz
                                     </a>
                                     <a href="/#" className="creators__description-link">
                                         <img
                                             src={instLogo}
                                             alt="facebook logo"
+                                            aria-label="instagram logo"
                                         />
                                         irina__polonets_fun
                                     </a>
                                 </div>
                                 <div className="creators__description-links-btn">
-                                    <button className="link__button">читати про boko'</button>
+                                    <button className="link__button" title="read about BOKO'">читати про boko'</button>
                                 </div>
                             </div>
                         </div>

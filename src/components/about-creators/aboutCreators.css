@@ -3,7 +3,7 @@
 }
 
 @media (min-width: 1440px) {
-    .creators__wrapper {
+    .creators__inner {
         display: flex;
         gap: 30px;
         /* grid-template-columns: 50% 50%; */
