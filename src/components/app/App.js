@@ -6,15 +6,19 @@ import Error404Component from "../error404/404NotFound";
 import WelcomeBanner from "../welcome-banner/WelcomeBanner";
 import NewArrivals from "../new-arrivals/NewArrivals";
 import Categories from "../categories/Categories";
+import Slider from "../slider/Slider";
 
 function App() {
     return (
         <div className="App container">
             <Header />
-            <WelcomeBanner />
-            <Categories />
-            <ShopLocations />
-            <AboutCreators />
+            <Slider />
+            {/* <NewArrivals /> */}
+            {/* <Error404Component /> */}
+            {/* <WelcomeBanner /> */}
+            {/* <Categories /> */}
+            {/* <ShopLocations /> */}
+            {/* <AboutCreators /> */}
             <Footer />
         </div>
     );

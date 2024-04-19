@@ -1,5 +1,6 @@
 @import url(./resources/fonts/Atyp/stylesheet.css);
-@import url(./global.css);
+@import url(./resources/styles/global.css);
+@import url(./resources/styles/buttons.css);
 @import url(./components/header/header.css);
 @import url(./components/welcome-banner/welcomeBanner.css);
 @import url(./components/categories/categories.css);

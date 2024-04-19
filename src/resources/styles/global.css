@@ -1,6 +1,6 @@
 @font-face {
     font-family: "forest-glade-cyrillic";
-    src: url("./resources/fonts/Forest-glade-Cyrillic.ttf");
+    src: url("../fonts/Forest-glade-Cyrillic.ttf");
 }
 
 * {
@@ -24,19 +24,24 @@ nav {
     --font-p-size: 16px;
     --font-h-size: 20px;
     --font-color: #0d0d0d;
+    --font-color-reverse: #ffffff;
     --font-header-color: #1a1a1a;
     --font-sale-color: #dc9716;
     --font-creators-color: #1a1c3b;
     --font-welcome-color: rgba(255, 255, 255, 1);
     --card-border-color: #01337a;
-    --card-ttile-color: rgba(1, 51, 122, 0.4);
+    --card-title-color: rgba(1, 51, 122, 0.4);
     --card-title-text: rgba(255, 255, 255, 1);
     --basicTransition: 0.4s;
     --background-color: #ffffff;
     --background-color-alt: #ccd6e4;
+    --background-color-reverse: #1a1c3b;
     --background-selected-color: rgba(220, 225, 232, 1);
     --background-welcome-color: rgba(0, 0, 0, 0.2);
-
+    --background-error-color: rgba(229, 225, 222, 1);
+    --background-footer-color: rgba(172, 166, 166, 0.25);
+    --button-color-active: #dc9716;
+    --button-color-reverse: #0d0d0d;
 }
 
 .container {

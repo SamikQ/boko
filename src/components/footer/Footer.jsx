@@ -18,7 +18,10 @@ const Footer = () => {
                         <div className="footer__social">
                             <div>
                                 <a href="https://www.instagram.com/boko_kyiv/">
-                                    <img src={instagramIcon} alt="instagram logo" />
+                                    <img
+                                        src={instagramIcon}
+                                        alt="instagram logo"
+                                    />
                                     <span>@boko_kyiv</span>
                                 </a>
                             </div>
@@ -76,19 +79,19 @@ const Footer = () => {
                         <ul className="footer__contacts-details">
                             <h5 className="footer__contacts-title">контакти</h5>
                             <li className="footer__contacts-item">
-                                <a href="/#">
+                                <a className="footer__contacts-link" href="/#">
                                     <img src={phone} alt="phone" />
                                     <span>+38 063 290 6365</span>
                                 </a>
                             </li>
                             <li className="footer__contacts-item">
-                                <a href="/#">
+                                <a className="footer__contacts-link" href="/#">
                                     <img src={phone} alt="phone" />
                                     <span>+38 063 290 6365</span>
                                 </a>
                             </li>
                             <li className="footer__contacts-item">
-                                <a href="/#">
+                                <a className="footer__contacts-link" href="/#">
                                     <img src={mail} alt="mailbox" />
                                     <span>boko.kyiv@boko.com</span>
                                 </a>
@@ -97,7 +100,7 @@ const Footer = () => {
                         <ul className="footer__contacts-address">
                             <h5 className="footer__contacts-title">магазини</h5>
                             <li className="footer__contacts-item">
-                                <a href="/#">
+                                <a className="footer__contacts-link" href="/#">
                                     <img src={mapPoint} alt="map point" />
                                     <span>
                                         <p>київ</p>
@@ -106,16 +109,20 @@ const Footer = () => {
                                 </a>
                             </li>
                             <li className="footer__contacts-item">
-                                <a href="/#">
+                                <a className="footer__contacts-link" href="/#">
                                     <img src={mapPoint} alt="map point" />
                                     <span className="footer__contracts-description">
-                                        <p className="footer__contracts-text">київ</p>
-                                        <p className="footer__contracts-text">трц «dream yellow»</p>
+                                        <p className="footer__contracts-text">
+                                            київ
+                                        </p>
+                                        <p className="footer__contracts-text">
+                                            трц «dream yellow»
+                                        </p>
                                     </span>
                                 </a>
                             </li>
                             <li className="footer__contacts-item">
-                                <a href="/#">
+                                <a className="footer__contacts-link" href="/#">
                                     <img src={mapPoint} alt="map point" />
                                     <span>
                                         <p>житомир</p>
@@ -145,7 +152,10 @@ const Footer = () => {
                         </li>
                         <li>
                             <a href="/#">
-                                <img src={mastercard} alt="pay via mastercard" />
+                                <img
+                                    src={mastercard}
+                                    alt="pay via mastercard"
+                                />
                             </a>
                         </li>
                     </ul>

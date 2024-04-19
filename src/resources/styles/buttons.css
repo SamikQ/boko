@@ -1,0 +1,33 @@
+.btn {
+    border: 1px solid;
+    border-color: var(--font-creators-color);
+    color: var(--font-creators-color);
+    font-size: var(--font-p-size);
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 20px 36px;
+    background-color: inherit;
+    line-height: 23px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: var(--button-color-active);
+    border-color: var(--button-color-active);
+}
+
+.btn-black {
+    background-color: var(--background-color-reverse);
+    color: var(--font-color-reverse);
+}
+
+.btn-black:hover {
+    background-color: inherit;
+    color: var(--font-color);
+    border-color: var(--button-color-reverse);
+}
+
+.home__button,
+.all-products__button {
+    width: 220px;
+}

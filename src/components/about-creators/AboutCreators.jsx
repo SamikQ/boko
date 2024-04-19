@@ -64,7 +64,7 @@ const AboutCreators = () => {
                                     </a>
                                 </div>
                                 <div className="creators__description-links-btn">
-                                    <button className="link__button" title="read about BOKO'">читати про boko'</button>
+                                    <button className="btn" title="read about BOKO'">читати про boko'</button>
                                 </div>
                             </div>
                         </div>

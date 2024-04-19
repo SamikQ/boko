@@ -1,49 +1,41 @@
-.num-404-content {
-    padding: 0 0 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .frame-350 {
-    margin-bottom: 100px;
-    padding: 28px 0 0;
-    align-self: stretch;
-    position: relative;
-  }
-  .wood-board-v1 {
-    position: relative;
-  }
-  .num-404 {
-    font-family: "Forest Glade Cyrillic";
-    font-size: 500px;
-    font-weight: 400;
-    line-height: 100px;
-    color: var(--black-1);
-    position: absolute;
-    left: 559.5px;
-    top: 50px;
-  }
-  .frame-348 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .oj-lele-ti-libon-zablukala-takoi-st {
-    max-width: 558px;
-    font-family: "Atyp Variable";
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 28px;
-    color: var(--black-1);
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  .frame-347 {
+.error__component {
+    padding-bottom: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    align-self: stretch;
-  }
-  .button:not(:last-of-type) {
-    margin-right: 51px;
-  }
+    background-image: url(../../resources/img/backgrounds/bg-404.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--background-error-color);
+    background-attachment: unset;
+}
+
+@media (min-width: 1200px) {
+    .not-found__menu {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        gap: 50px;
+        opacity: none;
+    }
+
+    .not-found__title-text {
+        text-align: center;
+        font-size: 500px;
+        font-weight: 400;
+        font-family: var(--font-decoration);
+        color: var(--font-color);
+        line-height: 400px;
+    }
+
+    .not-found__menu-text {
+        font-size: var(--font-p-size);
+        color: var(--font-color);
+        text-align: center;
+    }
+
+    .not-found__menu-btns {
+        display: flex;
+        justify-content: space-around;
+    }
+}
