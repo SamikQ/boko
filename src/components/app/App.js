@@ -6,13 +6,13 @@ import Error404Component from "../error404/404NotFound";
 import WelcomeBanner from "../welcome-banner/WelcomeBanner";
 import NewArrivals from "../new-arrivals/NewArrivals";
 import Categories from "../categories/Categories";
-import Slider from "../slider/Slider";
+import Swiper from "../slider/Slider";
 
 function App() {
     return (
         <div className="App container">
             <Header />
-            <Slider />
+            <Swiper />
             {/* <NewArrivals /> */}
             {/* <Error404Component /> */}
             {/* <WelcomeBanner /> */}

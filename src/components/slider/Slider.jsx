@@ -1,17 +1,24 @@
 import { useState, useEffect, useCallback } from "react";
 import leftArrow from "../../resources/img/control-icons/left-arrow.svg";
 import rightArrow from "../../resources/img/control-icons/right-arrow.svg";
-import { motion, AnimatePresence } from "framer-motion";
 import "./slider.css";
 
 import spring1 from "../../resources/img/spring-collection/spring-collection1.png";
 import spring2 from "../../resources/img/spring-collection/spring-collection2.png";
 import spring3 from "../../resources/img/spring-collection/spring-collection3.png";
 
-const dataSlider = [{ img: spring1 }, { img: spring2 }, { img: spring1 }, { img: spring2 }, { img: spring1 }, { img: spring2 }, { img: spring3 }];
+const dataSlider = [
+    { img: spring1 },
+    { img: spring2 },
+    { img: spring1 },
+    { img: spring2 },
+    { img: spring1 },
+    { img: spring2 },
+    { img: spring3 },
+];
 
 const Slider = () => {
-    const [slider, setSlider] = useState(0);
+    const [slider, setSlider] = useState(3);
 
     const onHandleSlider = useCallback(
         (side) => {
@@ -30,12 +37,9 @@ const Slider = () => {
         const elements = arr.map((item) => {
             const { img } = item;
             return (
-                <AnimatePresence>
-                    <motion.img
-                        className="slider__img"
-                        src={img}
-                        key={img}></motion.img>
-                </AnimatePresence>
+                <div>
+                    <img src={img} alt="card" />
+                </div>
             );
         });
         return elements;
