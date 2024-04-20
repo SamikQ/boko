@@ -1,6 +1,8 @@
 import { useState, useEffect, useCallback } from "react";
 import leftArrow from "../../resources/img/control-icons/left-arrow.svg";
 import rightArrow from "../../resources/img/control-icons/right-arrow.svg";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import "./slider.css";
 
 import spring1 from "../../resources/img/spring-collection/spring-collection1.png";
@@ -37,9 +39,7 @@ const Slider = () => {
         const elements = arr.map((item) => {
             const { img } = item;
             return (
-                <div>
-                    <img src={img} alt="card" />
-                </div>
+              <SwiperSlide><img src={img} alt="card item" key={img}/></SwiperSlide>
             );
         });
         return elements;
@@ -55,30 +55,16 @@ const Slider = () => {
     const items = onRenderList(dataSlider);
 
     return (
-        <div className="wrapper slider__container">
-            <div className="slider">
-                <div
-                    className="slider__left"
-                    onClick={() => onHandleSlider("left")}>
-                    <img
-                        className="slider__left-pic"
-                        src={leftArrow}
-                        alt="left arrow"
-                    />
-                </div>
-                <div className="slider__cards">{items}</div>
-                <div
-                    className="slider__right"
-                    onClick={() => onHandleSlider("right")}>
-                    <img
-                        className="slider__right-pic"
-                        src={rightArrow}
-                        alt="right arrow"
-                    />
-                </div>
-            </div>
-        </div>
-    );
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={3}
+          onSlideChange={() => console.log('slide change')}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+        {items}
+          ...
+        </Swiper>
+    )
 };
 
 export default Slider;

@@ -1,0 +1,23 @@
+
+
+.about-us__information {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us__information-left,
+.about-us__information-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us__information-img {
+    height: 600px;
+}
+
+.information__picture {
+    height: 400px;
+    width: 300px;
+}

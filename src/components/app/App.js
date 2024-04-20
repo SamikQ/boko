@@ -7,12 +7,14 @@ import WelcomeBanner from "../welcome-banner/WelcomeBanner";
 import NewArrivals from "../new-arrivals/NewArrivals";
 import Categories from "../categories/Categories";
 import Swiper from "../slider/Slider";
+import AboutUs from "../about-us/AboutUs";
 
 function App() {
     return (
         <div className="App container">
             <Header />
-            <Swiper />
+            <AboutUs/>
+            {/* <Swiper /> */}
             {/* <NewArrivals /> */}
             {/* <Error404Component /> */}
             {/* <WelcomeBanner /> */}
