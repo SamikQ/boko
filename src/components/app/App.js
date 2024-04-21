@@ -14,16 +14,15 @@ function App() {
     return (
         <div className="App container">
             <Header />
-            {/* <AboutUs/> */}
-            {/* <Swiper /> */}
-            {/* <NewArrivals /> */}
+            <WelcomeBanner />
+            <NewArrivals />
+            <Categories />
             <Featured />
-            {/* <Error404Component /> */}
-            {/* <WelcomeBanner /> */}
-            {/* <Categories /> */}
-            {/* <ShopLocations /> */}
-            {/* <AboutCreators /> */}
+            <AboutCreators />
+            <ShopLocations />
             <Footer />
+            <AboutUs />
+            <Error404Component />
         </div>
     );
 }
