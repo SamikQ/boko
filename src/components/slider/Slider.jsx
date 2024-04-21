@@ -1,70 +1,287 @@
 import { useState, useEffect, useCallback } from "react";
-import leftArrow from "../../resources/img/control-icons/left-arrow.svg";
-import rightArrow from "../../resources/img/control-icons/right-arrow.svg";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {
+    Navigation,
+    Pagination,
+    Scrollbar,
+    A11y,
+    Autoplay,
+} from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css";
 
 import "./slider.css";
+import frame from "../../resources/img/new-arrivals/frame.svg";
 
-import spring1 from "../../resources/img/spring-collection/spring-collection1.png";
-import spring2 from "../../resources/img/spring-collection/spring-collection2.png";
-import spring3 from "../../resources/img/spring-collection/spring-collection3.png";
-
-const dataSlider = [
-    { img: spring1 },
-    { img: spring2 },
-    { img: spring1 },
-    { img: spring2 },
-    { img: spring1 },
-    { img: spring2 },
-    { img: spring3 },
-];
+import arrival1 from "../../resources/img/new-arrivals/picture1.png";
+import arrival2 from "../../resources/img/new-arrivals/picture2.png";
+import arrival3 from "../../resources/img/new-arrivals/picture3.png";
+import arrival4 from "../../resources/img/new-arrivals/picture4.png";
 
 const Slider = () => {
-    const [slider, setSlider] = useState(3);
-
-    const onHandleSlider = useCallback(
-        (side) => {
-            const sliders = dataSlider.length - 1;
-            if (side === "left") {
-                slider - 1 >= 0 ? setSlider(slider - 1) : setSlider(slider);
-            } else {
-                const numberSlide = slider + 1;
-                numberSlide > sliders ? setSlider(0) : setSlider(numberSlide);
-            }
-        },
-        [slider]
-    );
-
-    const onRenderList = (arr) => {
-        const elements = arr.map((item) => {
-            const { img } = item;
-            return (
-              <SwiperSlide><img src={img} alt="card item" key={img}/></SwiperSlide>
-            );
-        });
-        return elements;
-    };
-
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         onHandleSlider("right");
-    //     }, 4000);
-    //     return () => clearInterval(interval);
-    // }, [slider, onHandleSlider]);
-
-    const items = onRenderList(dataSlider);
-
     return (
         <Swiper
-          spaceBetween={50}
-          slidesPerView={3}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
-        >
-        {items}
-          ...
+            className="image-slider swiper-container"
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            slidesPerView={3}
+            navigation
+            pagination={{ clickable: true, dynamicBullets: true }}
+            breakpoints={{
+                320: { slidesPerView: 2, spaceBetween: 6 },
+                768: { slidesPerView: 3, spaceBetween: 0 },
+                1024: { slidesPerView: 3 },
+                1440: { slidesPerView: 4 },
+            }}
+            a11y={{ enabled: true }}
+            // loop={true}
+            // autoplay={{ delay: 1000 }}
+            // scrollbar={{ draggable: true }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}>
+            <div className="image-slider__wrapper swiper-wrapper">
+                <SwiperSlide className="image-slider-slide swiper-slide">
+                    <div className="swiper-slide__border"></div>
+                    <div className="image-slider__image">
+                        <img src={arrival1} alt="card item" key={arrival1} />
+                    </div>
+                    <div className="slider__details">
+                        <div className="slider__title">
+                            <h5>Базова майка BoKo’ з закритим коміром</h5>
+                        </div>
+                        <div className="slider__description">
+                            <div className="slider__description-price">
+                                <p>4498 ₴</p>
+                            </div>
+                            <div class="color-container">
+                                <div class="colors">
+                                    <span
+                                        class="color active"
+                                        primary="#FAE7CD"
+                                        color="beige"
+                                        data-price="300"></span>
+
+                                    <span
+                                        class="color"
+                                        primary="#848282"
+                                        color="grey"
+                                        data-price="570"></span>
+                                    <span
+                                        class="color"
+                                        primary="#01337A"
+                                        color="blueBright"
+                                        data-price="470"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className="image-slider-slide swiper-slide">
+                    <div className="swiper-slide__border">
+                        <div className="image-slider__image">
+                            <img
+                                src={arrival2}
+                                alt="card item"
+                                key={arrival2}
+                            />
+                        </div>
+                        <div className="slider__details">
+                            <div className="slider__title">
+                                <h5>Базова майка BoKo’ з закритим коміром</h5>
+                            </div>
+                            <div className="slider__description">
+                                <div className="slider__description-price">
+                                    <p>4498 ₴</p>
+                                </div>
+                                <div class="color-container">
+                                    <div class="colors">
+                                        <span
+                                            class="color active"
+                                            primary="#FAE7CD"
+                                            color="beige"
+                                            data-price="300"></span>
+
+                                        <span
+                                            class="color"
+                                            primary="#848282"
+                                            color="grey"
+                                            data-price="570"></span>
+                                        <span
+                                            class="color"
+                                            primary="#01337A"
+                                            color="blueBright"
+                                            data-price="470"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className="image-slider-slide swiper-slide">
+                    <div className="swiper-slide__border">
+                        <div className="image-slider__image">
+                            <img
+                                src={arrival3}
+                                alt="card item"
+                                key={arrival3}
+                            />
+                        </div>
+                        <div className="slider__details">
+                            <div className="slider__title">
+                                <h5>Базова майка BoKo’ з закритим коміром</h5>
+                            </div>
+                            <div className="slider__description">
+                                <div className="slider__description-price">
+                                    <p>4498 ₴</p>
+                                </div>
+                                <div class="color-container">
+                                    <div class="colors">
+                                        <span
+                                            class="color active"
+                                            primary="#FAE7CD"
+                                            color="beige"
+                                            data-price="300"></span>
+
+                                        <span
+                                            class="color"
+                                            primary="#848282"
+                                            color="grey"
+                                            data-price="570"></span>
+                                        <span
+                                            class="color"
+                                            primary="#01337A"
+                                            color="blueBright"
+                                            data-price="470"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className="image-slider-slide swiper-slide">
+                    <div className="swiper-slide__border">
+                        <div className="image-slider__image">
+                            <img
+                                src={arrival4}
+                                alt="card item"
+                                key={arrival4}
+                            />
+                        </div>
+                        <div className="slider__details">
+                            <div className="slider__title">
+                                <h5>Базова майка BoKo’ з закритим коміром</h5>
+                            </div>
+                            <div className="slider__description">
+                                <div className="slider__description-price">
+                                    <p>4498 ₴</p>
+                                </div>
+                                <div class="color-container">
+                                    <div class="colors">
+                                        <span
+                                            class="color active"
+                                            primary="#FAE7CD"
+                                            color="beige"
+                                            data-price="300"></span>
+
+                                        <span
+                                            class="color"
+                                            primary="#848282"
+                                            color="grey"
+                                            data-price="570"></span>
+                                        <span
+                                            class="color"
+                                            primary="#01337A"
+                                            color="blueBright"
+                                            data-price="470"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className="image-slider-slide swiper-slide">
+                    <div className="swiper-slide__border">
+                        <div className="image-slider__image">
+                            <img
+                                src={arrival2}
+                                alt="card item"
+                                key={arrival2}
+                            />
+                        </div>
+                        <div className="slider__details">
+                            <div className="slider__title">
+                                <h5>Базова майка BoKo’ з закритим коміром</h5>
+                            </div>
+                            <div className="slider__description">
+                                <div className="slider__description-price">
+                                    <p>4498 ₴</p>
+                                </div>
+                                <div class="color-container">
+                                    <div class="colors">
+                                        <span
+                                            class="color active"
+                                            primary="#FAE7CD"
+                                            color="beige"
+                                            data-price="300"></span>
+
+                                        <span
+                                            class="color"
+                                            primary="#848282"
+                                            color="grey"
+                                            data-price="570"></span>
+                                        <span
+                                            class="color"
+                                            primary="#01337A"
+                                            color="blueBright"
+                                            data-price="470"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className="image-slider-slide swiper-slide">
+                    <div className="swiper-slide__border">
+                        <div className="image-slider__image">
+                            <img
+                                src={arrival3}
+                                alt="card item"
+                                key={arrival3}
+                            />
+                        </div>
+                        <div className="slider__details">
+                            <div className="slider__title">
+                                <h5>Базова майка BoKo’ з закритим коміром</h5>
+                            </div>
+                            <div className="slider__description">
+                                <div className="slider__description-price">
+                                    <p>4498 ₴</p>
+                                </div>
+                                <div class="color-container">
+                                    <div class="colors">
+                                        <span
+                                            class="color active"
+                                            primary="#FAE7CD"
+                                            color="beige"
+                                            data-price="300"></span>
+
+                                        <span
+                                            class="color"
+                                            primary="#848282"
+                                            color="grey"
+                                            data-price="570"></span>
+                                        <span
+                                            class="color"
+                                            primary="#01337A"
+                                            color="blueBright"
+                                            data-price="470"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </SwiperSlide>
+            </div>
         </Swiper>
-    )
+    );
 };
 
 export default Slider;

@@ -1,3 +1,5 @@
+import Slider from "../slider/Slider";
+
 const NewArrivals = () => {
     return (
         <section className="newArrivals">
@@ -7,14 +9,14 @@ const NewArrivals = () => {
                         нові надходження
                     </h3>
                     <div className="newArrivals__header-btn">
-                        <button
-                            className="link__button"
-                            title="read about BOKO'">
-                            переглянути всі
+                        <button className="btn" title="read about BOKO'">
+                            Дивитися всі
                         </button>
                     </div>
                 </div>
-                <div className="newArrivals__swiper"></div>
+                <div className="newArrivals__swiper">
+                    <Slider />
+                </div>
             </div>
         </section>
     );

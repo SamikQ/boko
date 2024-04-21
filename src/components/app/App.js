@@ -8,14 +8,16 @@ import NewArrivals from "../new-arrivals/NewArrivals";
 import Categories from "../categories/Categories";
 import Swiper from "../slider/Slider";
 import AboutUs from "../about-us/AboutUs";
+import Featured from "../featured/Featured";
 
 function App() {
     return (
         <div className="App container">
             <Header />
-            <AboutUs/>
+            {/* <AboutUs/> */}
             {/* <Swiper /> */}
             {/* <NewArrivals /> */}
+            <Featured />
             {/* <Error404Component /> */}
             {/* <WelcomeBanner /> */}
             {/* <Categories /> */}
