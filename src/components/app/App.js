@@ -9,17 +9,22 @@ import Categories from "../categories/Categories";
 import Swiper from "../slider/Slider";
 import AboutUs from "../about-us/AboutUs";
 import Featured from "../featured/Featured";
+import Filter from "../filter/Filter";
 
 function App() {
     return (
         <div className="App container">
             <Header />
-            <WelcomeBanner />
-            <NewArrivals />
-            <Categories />
-            <Featured />
-            <AboutCreators />
-            <ShopLocations />
+            {/* <Filter /> */}
+            {/* <AboutUs/> */}
+            {/* <Swiper /> */}
+            {/* <NewArrivals /> */}
+            {/* <Featured /> */}
+            {/* <Error404Component /> */}
+            {/* <WelcomeBanner /> */}
+            {/* <Categories /> */}
+            {/* <ShopLocations /> */}
+            {/* <AboutCreators /> */}
             <Footer />
             <AboutUs />
             <Error404Component />
