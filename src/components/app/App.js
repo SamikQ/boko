@@ -9,15 +9,17 @@ import Categories from "../categories/Categories";
 import Swiper from "../slider/Slider";
 import AboutUs from "../about-us/AboutUs";
 import Featured from "../featured/Featured";
+import Filter from "../filter/Filter";
 
 function App() {
     return (
         <div className="App container">
             <Header />
+            {/* <Filter /> */}
             {/* <AboutUs/> */}
             {/* <Swiper /> */}
             {/* <NewArrivals /> */}
-            <Featured />
+            {/* <Featured /> */}
             {/* <Error404Component /> */}
             {/* <WelcomeBanner /> */}
             {/* <Categories /> */}
