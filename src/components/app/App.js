@@ -13,12 +13,14 @@ import Filter from "../filter/Filter";
 import MegaMenu from "../mega-menu/MegaMenu";
 import ProductInfo from "../product-info/ProductInfo";
 import Cart from "../cart/Cart";
+import ContactUs from "../contact-us/ContactUs";
 
 const App = () => {
     return (
         <div className="App container">
             <Header />
-            <Cart />
+            <ContactUs />
+            {/* <Cart /> */}
             {/* <ProductInfo /> */}
             {/* <MegaMenu /> */}
             {/* <Filter /> */}
