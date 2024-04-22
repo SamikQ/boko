@@ -10,11 +10,17 @@ import Swiper from "../slider/Slider";
 import AboutUs from "../about-us/AboutUs";
 import Featured from "../featured/Featured";
 import Filter from "../filter/Filter";
+import MegaMenu from "../mega-menu/MegaMenu";
+import ProductInfo from "../product-info/ProductInfo";
+import Cart from "../cart/Cart";
 
-function App() {
+const App = () => {
     return (
         <div className="App container">
             <Header />
+            <Cart />
+            {/* <ProductInfo /> */}
+            {/* <MegaMenu /> */}
             {/* <Filter /> */}
             {/* <AboutUs/> */}
             {/* <Swiper /> */}
@@ -26,10 +32,10 @@ function App() {
             {/* <ShopLocations /> */}
             {/* <AboutCreators /> */}
             <Footer />
-            <AboutUs />
-            <Error404Component />
+            {/* <AboutUs />
+            <Error404Component /> */}
         </div>
     );
-}
+};
 
 export default App;

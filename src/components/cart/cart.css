@@ -1,0 +1,6 @@
+.discount__total {
+    color: var(--font-discount-color);
+    font-size: 11px;
+    text-decoration-line: line-through;
+    line-height: 18px;
+}

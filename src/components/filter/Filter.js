@@ -2,11 +2,11 @@ import cancel from "../../resources/img/control-icons/cancel-icon.svg";
 
 const Filter = () => {
     return (
-        <section className="filter-page">
+        <section className="filter-page" title="page with filter settings">
             <div className="filter">
-                <button alt="значок скасування" aria-label="Закрити фільтр">
+                <picture alt="значок скасування">
                     <img src={cancel} alt="cancel icon" />
-                </button>
+                </picture>
                 <div className="filter__options">
                     <details className="filter__options-item">
                         <summary className="filter__options-title">
