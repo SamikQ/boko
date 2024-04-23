@@ -2,29 +2,6 @@
     gap: 50px;
 }
 
-.categories__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.categories__header-title {
-    padding: 20px 0px;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: var(--font-h-size);
-    color: var(--font-color);
-}
-
-.categories__header-text {
-    text-transform: uppercase;
-    font-family: var(--font-decoration);
-    font-size: 40px;
-    font-weight: 400;
-    color: var(--font-creators-color);
-}
-
 .categories__list {
     display: flex;
     flex-direction: column;

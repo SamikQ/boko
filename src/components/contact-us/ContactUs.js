@@ -4,11 +4,11 @@ const ContactUs = () => {
             <div className="container">
                 <div className="wrapper">
                     <div className="contact-us">
-                        <div className="categories__header">
-                            <h3 className="categories__header-title">
+                        <div className="component__header">
+                            <h3 className="component__header-title">
                                 поділіться з нами
                             </h3>
-                            <p className="categories__header-text">
+                            <p className="component__header-text">
                                 you are our inspiration
                             </p>
                         </div>

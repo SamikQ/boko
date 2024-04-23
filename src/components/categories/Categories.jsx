@@ -5,9 +5,9 @@ const Categories = () => {
     <section className="categories">
       <div className="container">
         <div className="wrapper">
-          <div className="categories__header">
-            <h3 className="categories__header-title">обрати за категорією</h3>
-            <p className="categories__header-text">BoKo Your Style</p>
+          <div className="component__header">
+            <h3 className="component__header-title">обрати за категорією</h3>
+            <p className="component__header-text">BoKo Your Style</p>
           </div>
           <div className="categories__list">
             <div className="catogiries__list-top-row">
