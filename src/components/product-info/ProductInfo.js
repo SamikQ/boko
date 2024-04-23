@@ -154,11 +154,11 @@ const ProductInfo = () => {
                 </div>
             </div>
             <div className="interested">
-                <div className="interested__header">
-                    <h3 className="interested__header-title">
+                <div className="section__header">
+                    <h3 className="section__header-title">
                         разом з цим товаром купують
                     </h3>
-                    <div className="interested__header-btn">
+                    <div className="section__header-btn">
                         <button className="btn" title="read about BOKO'">
                             Готові Boko look на кожен день
                         </button>

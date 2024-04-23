@@ -81,6 +81,14 @@ const AboutUs = () => {
                         </div>
                     </div>
                     <div className="accordion__items">
+                        <div className="section__header">
+                            <h3 className="section__header-title">
+                                поширені запитання
+                            </h3>
+                            <p className="section__header-text">
+                                you are our inspiration
+                            </p>
+                        </div>
                         <details className="accordion__item">
                             <summary class="accordion__title">
                                 Де можна приміряти товар?
@@ -111,7 +119,7 @@ const AboutUs = () => {
                         </details>
                         <details class="accordion__item">
                             <summary class="accordion__title">
-                                Чи можу я забронювати одяг?{" "}
+                                Чи можу я забронювати одяг?
                             </summary>
                             <p class="accordion__body">
                                 Yes. Our winery experts will tell you more about
