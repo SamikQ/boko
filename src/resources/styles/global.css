@@ -22,7 +22,9 @@ nav {
     --font-h: "Atyp Variable", sans-serif;
     --font-decoration: "forest-glade-cyrillic";
     --font-p-size: 16px;
-    --font-h-size: 20px;
+    --font-h-size: 22px;
+    --font-mobile-p-size: 16px;
+    --font-mobile-h-size: 20px;
     --font-color: #0d0d0d;
     --font-color-reverse: #ffffff;
     --font-header-color: #1a1a1a;
@@ -42,6 +44,7 @@ nav {
     --background-welcome-color: rgba(0, 0, 0, 0.2);
     --background-error-color: rgba(229, 225, 222, 1);
     --background-footer-color: rgba(172, 166, 166, 0.25);
+    --background-creators-color: rgba(204, 214, 228, 1);
     --button-color-active: #dc9716;
     --button-color-reverse: #0d0d0d;
 }
@@ -51,12 +54,26 @@ nav {
     max-width: 1440px;
 }
 
-/* .wrapper {
-    padding: 70px 80px 0 80px;
-} */
+.wrapper {
+    padding: 15px 10px;
+    margin: 20px 0;
+}
 
 .sale {
     color: var(--font-sale-color);
+}
+
+.sale__price {
+    text-decoration: line-through;
+}
+
+.sale__price-active {
+    font-size: var(--font-mobile-h-size);
+    line-height: 20px;
+    border-radius: 5px;
+    color: var(--font-color-reverse);
+    text-transform: var(--background-color-reverse);
+    background-color: var(--card-title-color);
 }
 
 .section__header {
@@ -64,18 +81,22 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    padding-bottom: 10px;
 }
 
 .section__header-title {
+    line-height: 26px;
+    text-align: left;
     padding: 20px 0px;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: var(--font-h-size);
-    color: var(--font-color);
+    font-weight: 600;
+    font-size: var(--font-mobile-h-size);
+    color: var(--font-header-color);
 }
 
+.section__header-btn,
 .section__header-text {
-    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
     font-family: var(--font-decoration);
     font-size: 40px;
     font-weight: 400;
@@ -85,7 +106,7 @@ nav {
 img {
     max-width: 100%;
     display: block;
-  }
+}
 
 a {
     text-decoration: none;
@@ -96,4 +117,14 @@ ul,
 ol,
 li {
     list-style-type: none;
+}
+
+@media (min-width: 768px) {
+    .section__header-title {
+        font-size: var(--font-h-size);
+        color: var(--font-color);
+        text-transform: uppercase;
+        padding: 20px 0px;
+        font-weight: 400;
+    }
 }

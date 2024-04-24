@@ -21,6 +21,9 @@ const App = () => {
             <Header />
             <WelcomeBanner />
             <NewArrivals />
+            <Categories />
+            <Featured />
+            <AboutCreators />
             {/* <ContactUs /> */}
             {/* <Cart /> */}
             {/* <ProductInfo /> */}
@@ -28,11 +31,8 @@ const App = () => {
             {/* <Filter /> */}
             {/* <AboutUs/> */}
             {/* <Swiper /> */}
-            {/* <Featured /> */}
             {/* <Error404Component /> */}
-            {/* <Categories /> */}
             {/* <ShopLocations /> */}
-            {/* <AboutCreators /> */}
             {/* <Footer /> */}
             {/* <AboutUs />
             <Error404Component /> */}

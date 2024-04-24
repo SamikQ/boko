@@ -5,26 +5,24 @@
 .categories__list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 4px;
 }
 
 .catogiries__list-top-row {
-    display: grid;
-    height: 470px;
+    display: flex;
+    height: 320px;
 }
 
 .catogiries__list-middle-row {
-    display: grid;
-    grid-template-columns: 75% 1fr;
-    height: 470px;
-    gap: 20px;
+    display: flex;
+    height: 300px;
+    gap: 4px;
 }
 
 .catogiries__list-bottom-row {
-    display: grid;
-    grid-template-columns: 1fr 75%;
-    height: 470px;
-    gap: 20px;
+    display: flex;
+    height: 300px;
+    gap: 4px;
 }
 
 .catogiries__list-item {
@@ -34,15 +32,15 @@
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    
 }
 
 .categories__list-item__title {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-start;
     text-transform: uppercase;
-    font-size: 60px;
+    padding: 0 0 10px 10px;
+    font-size: var(--font-mobile-p-size);
     font-weight: 400;
     color: var(--font-welcome-color);
     width: inherit;
@@ -51,31 +49,86 @@
 }
 
 .elegance {
-    background-image: url(../../resources/img/backgrounds/categories/bg-elegance.jpg);
+    background-image: url(../../resources/img/backgrounds/categories/bg-elegance.webp);
     background-size: cover;
     background-position: center;
 }
 
 .basic {
-    background-image: url(../../resources/img/backgrounds/categories/bg-basic.jpg);
+    background-image: url(../../resources/img/backgrounds/categories/bg-basic.webp);
     background-size: cover;
     background-position: center;
 }
 
 .shoes {
-    background-image: url(../../resources/img/backgrounds/categories/bg-shoes.png);
+    background-image: url(../../resources/img/backgrounds/categories/bg-shoes.webp);
     background-size: cover;
     background-position: center;
 }
 
 .bags {
-    background-image: url(../../resources/img/backgrounds/categories/bg-bags.jpg);
+    background-image: url(../../resources/img/backgrounds/categories/bg-bags.webp);
     background-size: cover;
     background-position: center;
 }
 
 .sport {
-    background-image: url(../../resources/img/backgrounds/categories/bg-sport.png);
+    background-image: url(../../resources/img/backgrounds/categories/bg-sport.webp);
     background-size: cover;
     background-position: center;
+}
+
+/* Frame 237 */
+
+@media (min-width: 1200px) {
+    .categories {
+        gap: 50px;
+    }
+
+    .categories__list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .catogiries__list-top-row {
+        display: flex;
+        height: 470px;
+    }
+
+    .catogiries__list-middle-row {
+        display: grid;
+        grid-template-columns: 75% 1fr;
+        height: 470px;
+        gap: 20px;
+    }
+
+    .catogiries__list-bottom-row {
+        display: grid;
+        grid-template-columns: 1fr 75%;
+        height: 470px;
+        gap: 20px;
+    }
+
+    .catogiries__list-item {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+    }
+
+    .categories__list-item__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 60px;
+        font-weight: 400;
+        color: var(--font-welcome-color);
+        width: inherit;
+        height: inherit;
+        background-color: var(--background-welcome-color);
+    }
 }

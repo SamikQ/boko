@@ -1,24 +1,35 @@
-import spring1 from "../../resources/img/spring-collection/spring-collection1.png";
-import spring2 from "../../resources/img/spring-collection/spring-collection2.png";
-import spring3 from "../../resources/img/spring-collection/spring-collection3.png";
+import React, { useState, useEffect } from "react";
 import Slider from "../slider/Slider";
 
 const Featured = () => {
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => setScreenWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    const mobileHidden =
+        screenWidth < 768
+            ? "section__header-btn hidden"
+            : "section__header-btn";
+
     return (
         <section className="featured">
             <div className="container">
-                <div className="section__header">
-                    <h3 className="section__header-title">
-                        хіти продажів
-                    </h3>
-                    <div className="section__header-btn">
-                        <button className="btn" title="read about BOKO'">
-                            Дивитися всі
-                        </button>
+                <div className="wrapper">
+                    <div className="section__header">
+                        <h3 className="section__header-title">Хіти продажів</h3>
+                        <div className={mobileHidden}>
+                            <button className="btn" title="read about BOKO'">
+                                Дивитися всі
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div className="newArrivals__swiper">
-                    <Slider />
+                    <div className="newArrivals__swiper">
+                        <Slider />
+                    </div>
                 </div>
             </div>
         </section>

@@ -1,25 +1,60 @@
 import Slider from "../slider/Slider";
+import React, { useState, useEffect } from "react";
 
 const NewArrivals = () => {
-    return (
-        <section className="newArrivals">
-            <div className="container">
-                <div className="section__header">
-                    <h3 className="section__header-title">
-                        нові надходження
-                    </h3>
-                    <div className="section__header-btn">
-                        <button className="btn" title="read about BOKO'">
-                            Дивитися всі
-                        </button>
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => setScreenWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    if (screenWidth < 768) {
+        return (
+            <section className="newArrivals">
+                <div className="container">
+                    <div className="wrapper">
+                        <h3 className="section__header-title">
+                            Нові надходження
+                        </h3>
+                        <div className="newArrivals__swiper">
+                            <Slider />
+                        </div>
+                        <div className="section__header-btn">
+                            <button className="btn" title="read about BOKO'">
+                                Дивитися всі
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div className="newArrivals__swiper">
-                    <Slider />
+            </section>
+        );
+    } else {
+        return (
+            <section className="newArrivals">
+                <div className="container">
+                    <div className="wrapper">
+                        <div className="section__header">
+                            <h3 className="section__header-title">
+                                Нові надходження
+                            </h3>
+                            <div className="section__header-btn">
+                                <button
+                                    className="btn"
+                                    title="read about BOKO'">
+                                    Дивитися всі
+                                </button>
+                            </div>
+                        </div>
+                        <div className="newArrivals__swiper">
+                            <Slider />
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-    );
+            </section>
+        );
+    }
 };
 
 export default NewArrivals;

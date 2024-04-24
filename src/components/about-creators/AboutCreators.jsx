@@ -16,7 +16,7 @@ const AboutCreators = () => {
                             />
                         </div>
                         <div className="creators__description">
-                            <div className="creators__description-title title">
+                            <div className="creators__description-title">
                                 <h4 className="title__description">
                                     ірина полонець
                                 </h4>
@@ -63,8 +63,8 @@ const AboutCreators = () => {
                                         irina__polonets_fun
                                     </a>
                                 </div>
-                                <div className="creators__description-links-btn">
-                                    <button className="btn" title="read about BOKO'">читати про boko'</button>
+                                <div className="creators__link-btn">
+                                    <button className="btn" title="read about BOKO'">Читати про boko'</button>
                                 </div>
                             </div>
                         </div>
