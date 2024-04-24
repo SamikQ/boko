@@ -20,6 +20,7 @@ const App = () => {
         <div className="App container">
             <Header />
             <WelcomeBanner />
+            <NewArrivals />
             {/* <ContactUs /> */}
             {/* <Cart /> */}
             {/* <ProductInfo /> */}
@@ -27,7 +28,6 @@ const App = () => {
             {/* <Filter /> */}
             {/* <AboutUs/> */}
             {/* <Swiper /> */}
-            {/* <NewArrivals /> */}
             {/* <Featured /> */}
             {/* <Error404Component /> */}
             {/* <Categories /> */}

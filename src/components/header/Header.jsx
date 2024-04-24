@@ -28,8 +28,8 @@ const Header = () => {
     return (
       props.map((item, index) => {
         return (
-          <li className="header__nav-item" >
-            <a href=" " className={item === 'sale' ? "header__nav-link sale" : "header__nav-link"} key={index}>
+          <li className="header__nav-item" key={index}>
+            <a href=" " className={item === 'sale' ? "header__nav-link sale" : "header__nav-link"}>
               {item}
             </a>
           </li >
@@ -57,7 +57,7 @@ const Header = () => {
           </div>
         </nav>
         <div className="header__content-acc acc">
-          <a href="/#" className="acc__item" aria-label="search">
+          <a href="/#"  aria-label="search">
             <img src={search} alt="search button" />
           </a>
           <a href="/#" className="acc__item hidden">
@@ -66,10 +66,10 @@ const Header = () => {
           <a href="/#" className="acc__item hidden" aria-label="like">
             <img src={heart} alt="like button" />
           </a>
-          <a href="/#" className="acc__item">
+          <a href="/#" >
             <img src={user} alt="account button" />
           </a>
-          <a href="/#" className="acc__item header__content-cart" aria-label="shopping cart">
+          <a href="/#" className="header__content-cart" aria-label="shopping cart">
             <img src={cart} alt="shopping cart button" className="content-cart-img" />
             <span className="cart__count">(0)</span>
           </a>

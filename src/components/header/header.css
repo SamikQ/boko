@@ -4,8 +4,11 @@
 
 .header__wrapper {
     display: grid;
-    grid-template-columns: 20% 1fr 1fr;
+    grid-template-columns: 15% 1fr 1fr;
     grid-template-areas: 'nav logo account';
+    width: 100%;
+    min-width: 310px;
+    justify-content: space-between;
     align-items: center;
     justify-items: center;
 }
@@ -18,8 +21,8 @@
 
 .header__logo {
     grid-area: logo;
-    display: flex;
-    width: 100px;
+    width: 100%;
+    padding: 0 5px;
 }
 
 .header__logo-img {
@@ -29,7 +32,7 @@
 .header__content-acc {
     grid-area: account;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: stretch;
     width: 100%;
 }

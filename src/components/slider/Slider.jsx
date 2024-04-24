@@ -17,17 +17,17 @@ import arrival2 from "../../resources/img/new-arrivals/picture2.png";
 import arrival3 from "../../resources/img/new-arrivals/picture3.png";
 import arrival4 from "../../resources/img/new-arrivals/picture4.png";
 
+
 const Slider = () => {
     return (
         <Swiper
             className="image-slider swiper-container"
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-            slidesPerView={3}
             navigation
             pagination={{ clickable: true, dynamicBullets: true }}
             breakpoints={{
-                320: { slidesPerView: 2, spaceBetween: 6 },
-                768: { slidesPerView: 3, spaceBetween: 0 },
+                320: { slidesPerView: 2, spaceBetween: 4 },
+                768: { slidesPerView: 3, spaceBetween: 4 },
                 1024: { slidesPerView: 3 },
                 1440: { slidesPerView: 4 },
             }}
@@ -51,21 +51,21 @@ const Slider = () => {
                             <div className="slider__description-price">
                                 <p>4498 ₴</p>
                             </div>
-                            <div class="color-container">
-                                <div class="colors">
+                            <div className="color-container">
+                                <div className="colors">
                                     <span
-                                        class="color active"
+                                        className="color active"
                                         primary="#FAE7CD"
                                         color="beige"
                                         data-price="300"></span>
 
                                     <span
-                                        class="color"
+                                        className="color"
                                         primary="#848282"
                                         color="grey"
                                         data-price="570"></span>
                                     <span
-                                        class="color"
+                                        className="color"
                                         primary="#01337A"
                                         color="blueBright"
                                         data-price="470"></span>
@@ -91,21 +91,21 @@ const Slider = () => {
                                 <div className="slider__description-price">
                                     <p>4498 ₴</p>
                                 </div>
-                                <div class="color-container">
-                                    <div class="colors">
+                                <div className="color-container">
+                                    <div className="colors">
                                         <span
-                                            class="color active"
+                                            className="color active"
                                             primary="#FAE7CD"
                                             color="beige"
                                             data-price="300"></span>
 
                                         <span
-                                            class="color"
+                                            className="color"
                                             primary="#848282"
                                             color="grey"
                                             data-price="570"></span>
                                         <span
-                                            class="color"
+                                            className="color"
                                             primary="#01337A"
                                             color="blueBright"
                                             data-price="470"></span>
@@ -132,21 +132,21 @@ const Slider = () => {
                                 <div className="slider__description-price">
                                     <p>4498 ₴</p>
                                 </div>
-                                <div class="color-container">
-                                    <div class="colors">
+                                <div className="color-container">
+                                    <div className="colors">
                                         <span
-                                            class="color active"
+                                            className="color active"
                                             primary="#FAE7CD"
                                             color="beige"
                                             data-price="300"></span>
 
                                         <span
-                                            class="color"
+                                            className="color"
                                             primary="#848282"
                                             color="grey"
                                             data-price="570"></span>
                                         <span
-                                            class="color"
+                                            className="color"
                                             primary="#01337A"
                                             color="blueBright"
                                             data-price="470"></span>
@@ -173,21 +173,21 @@ const Slider = () => {
                                 <div className="slider__description-price">
                                     <p>4498 ₴</p>
                                 </div>
-                                <div class="color-container">
-                                    <div class="colors">
+                                <div className="color-container">
+                                    <div className="colors">
                                         <span
-                                            class="color active"
+                                            className="color active"
                                             primary="#FAE7CD"
                                             color="beige"
                                             data-price="300"></span>
 
                                         <span
-                                            class="color"
+                                            className="color"
                                             primary="#848282"
                                             color="grey"
                                             data-price="570"></span>
                                         <span
-                                            class="color"
+                                            className="color"
                                             primary="#01337A"
                                             color="blueBright"
                                             data-price="470"></span>
@@ -214,21 +214,21 @@ const Slider = () => {
                                 <div className="slider__description-price">
                                     <p>4498 ₴</p>
                                 </div>
-                                <div class="color-container">
-                                    <div class="colors">
+                                <div className="color-container">
+                                    <div className="colors">
                                         <span
-                                            class="color active"
+                                            className="color active"
                                             primary="#FAE7CD"
                                             color="beige"
                                             data-price="300"></span>
 
                                         <span
-                                            class="color"
+                                            className="color"
                                             primary="#848282"
                                             color="grey"
                                             data-price="570"></span>
                                         <span
-                                            class="color"
+                                            className="color"
                                             primary="#01337A"
                                             color="blueBright"
                                             data-price="470"></span>
@@ -255,21 +255,21 @@ const Slider = () => {
                                 <div className="slider__description-price">
                                     <p>4498 ₴</p>
                                 </div>
-                                <div class="color-container">
-                                    <div class="colors">
+                                <div className="color-container">
+                                    <div className="colors">
                                         <span
-                                            class="color active"
+                                            className="color active"
                                             primary="#FAE7CD"
                                             color="beige"
                                             data-price="300"></span>
 
                                         <span
-                                            class="color"
+                                            className="color"
                                             primary="#848282"
                                             color="grey"
                                             data-price="570"></span>
                                         <span
-                                            class="color"
+                                            className="color"
                                             primary="#01337A"
                                             color="blueBright"
                                             data-price="470"></span>
