@@ -14,16 +14,18 @@ import MegaMenu from "../mega-menu/MegaMenu";
 import ProductInfo from "../product-info/ProductInfo";
 import Cart from "../cart/Cart";
 import ContactUs from "../contact-us/ContactUs";
+import LookDay from "../lookDay/LookDay";
 
 const App = () => {
     return (
         <div className="App container">
             <Header />
-            <WelcomeBanner />
+            {/* <WelcomeBanner />
             <NewArrivals />
             <Categories />
             <Featured />
-            <AboutCreators />
+            <AboutCreators /> */}
+            <LookDay />
             {/* <ContactUs /> */}
             {/* <Cart /> */}
             {/* <ProductInfo /> */}
