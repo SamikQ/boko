@@ -20,6 +20,7 @@
 }
 
 .look-day__description {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -33,24 +34,19 @@
 }
 
 .look-day__title {
-    display: inline-block;
-    padding: 0px;
+    width: 330px;
+    height: 384px;
+    justify-content: flex-end;
+    align-items: center;
     gap: 10px;
-    font-family: 'Atyp Variable';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 33px;
-    line-height: 120%;
-    text-transform: uppercase;
-    z-index: 5000;
-    color: #1A1A1A;
+    display: inline-flex;
 }
 
-
-
-.look-day__title-decor {
-    white-space: nowrap;
-    color: #ffff;
+.frame {
+    width: 130px;
+    height: 180px;
+    font-size: 33px;
+    line-height: 40px;
 }
 
 .look-day__title-text {
@@ -65,10 +61,27 @@
     width: 80px;
     height: 100px;
 
-    font-family: 'Atyp Display';
+    font-family: "Atyp Display";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #1A1A1A;
+    color: #1a1a1a;
+}
+
+.title__black {
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* line-height: 96px; */
+    word-wrap: break-word;
+}
+
+.title__white {
+    color: white;
+    font-family: Atyp Variable;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* line-height: 96px; */
+    word-wrap: break-word;
 }

@@ -13,24 +13,24 @@ const LookDay = () => {
                                 className="look-day__img"
                             />
                         </div>
-                        <div className="inner">
-                            <div className="look-day__description">
-                                <h3 className="look-day__title">
-                                    BOKOʼ
-                                    <span className="look-day__title-decor">
-                                        L
+                        <div className="look-day__description">
+                            <div className="look-day__title">
+                                <div className="frame">
+                                    <span className="title__black">BOKOʼ</span>
+                                    <br />
+                                    <span className="title__white">L</span>
+                                    <span className="title__black">ook</span>
+                                    <br />
+                                    <span className="title__white">o</span>
+                                    <span className="title__black">f </span>
+                                    <span className="title__black">
+                                        the day
                                     </span>
-                                    ook
-                                    <span className="look-day__title-decor">
-                                        of
-                                    </span>
-                                    the day
-                                </h3>
-                                <p className="look-day__title-text">
-                                    Підбірка образів на щодень від Катерини
-                                    Осадчої
-                                </p>
+                                </div>
                             </div>
+                            <p className="look-day__title-text">
+                                Підбірка образів на щодень від Катерини Осадчої
+                            </p>
                         </div>
                     </div>
                 </div>
