@@ -15,24 +15,17 @@
 }
 
 .look-day__img {
-    position: absolute;
-    flex: none;
-    order: 0;
     width: 219px;
-    align-self: stretch;
-    flex-grow: 0;
     border-radius: 4px 100px 4px 4px;
 }
 
 .look-day__description {
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
     padding: 0px;
     gap: 10px;
-
     width: 110px;
     height: 300px;
     right: 0px;
@@ -40,7 +33,7 @@
 }
 
 .look-day__title {
-    display: flex;
+    display: inline-block;
     padding: 0px;
     gap: 10px;
     font-family: 'Atyp Variable';
@@ -53,7 +46,10 @@
     color: #1A1A1A;
 }
 
+
+
 .look-day__title-decor {
+    white-space: nowrap;
     color: #ffff;
 }
 
