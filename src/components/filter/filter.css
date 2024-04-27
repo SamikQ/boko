@@ -1,0 +1,129 @@
+.filter-page {
+    color: var(--font-header-color);
+}
+
+.filter__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.filter__header-title {
+    padding: 5px 0;
+    font-size: var(--font-mobile-element-h-size);
+    font-weight: 600;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+.filter__options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.filter__options-item {
+    font-size: var(--font-mobile-element-h-size);
+    line-height: 23px;
+}
+
+.filter__options-title {
+    position: relative;
+    font-size: var(--font-mobile-element-h-size);
+    display: flex;
+    border-bottom: 1px solid #d1d2d8;
+    font-weight: 500;
+    text-align: center;
+    padding: 5px 5px;
+    margin: 5px 0;
+}
+
+.filter__options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fliter__options-list-item {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.check {
+    padding-left: 10px;
+}
+
+.fliter__options-list-item input[type="checkbox"] {
+    padding-right: 5px;
+    width: 35px;
+    height: 35px;
+    accent-color: #c9cad0;
+    font-weight: 100;
+    border-radius: 5.83333px;
+    gap: 5px;
+}
+
+details {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+details summary {
+    list-style: none;
+}
+
+details[open] summary::after {
+    position: absolute;
+    content: "";
+    border: 1px solid rgba(209, 210, 216, 1);
+    width: 18px;
+    height: 0px;
+    top: 10px;
+    left: 1px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    transform: rotate(180deg);
+}
+
+.accordion {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    left: 90%;
+    right: -8.33%;
+    top: 20.84%;
+    bottom: 79.16%;
+}
+
+.accordion::before {
+    position: absolute;
+    content: "";
+    border: 1px solid rgba(209, 210, 216, 1);
+    width: 18px;
+    height: 0px;
+    top: 10px;
+    left: 1px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    transform: rotate(180deg);
+}
+
+.accordion::after {
+    position: absolute;
+    content: "";
+    border: 1px solid rgba(209, 210, 216, 1);
+    width: 18px;
+    height: 0px;
+    top: 10px;
+    left: 1px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    transform: rotate(90deg);
+}

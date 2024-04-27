@@ -20,23 +20,24 @@ const App = () => {
     return (
         <div className="App container">
             <Header />
-            <WelcomeBanner />
-            <NewArrivals />
-            <Categories />
-            <Featured />
-            <LookDay />
-            <AboutCreators />
-            <ShopLocations />
-            <Footer />
+            {/* <WelcomeBanner /> */}
+            {/* <NewArrivals /> */}
+            {/* <Categories /> */}
+            {/* <Featured /> */}
+            {/* <LookDay /> */}
+            {/* <AboutCreators /> */}
+            {/* <ShopLocations /> */}
+
             {/* <Cart /> */}
             {/* <ProductInfo /> */}
             {/* <MegaMenu /> */}
-            {/* <Filter /> */}
+            <Filter />
             {/* <AboutUs/> */}
             {/* <Swiper /> */}
             {/* <Error404Component /> */}
             {/* <ContactUs /> */}
             {/* <AboutUs />*/}
+            <Footer />
         </div>
     );
 };

@@ -42,7 +42,7 @@
 }
 
 .shop__locations-city {
-    font-size: var(--font-mobile-address-h-size);
+    font-size: var(--font-mobile-element-h-size);
 }
 
 .address__text,
