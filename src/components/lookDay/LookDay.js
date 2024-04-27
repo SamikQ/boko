@@ -1,5 +1,7 @@
 import banner from "../../resources/img/backgrounds/bg-day-look.webp";
 
+import SliderLook from "../slider/Slider-look";
+
 const LookDay = () => {
     return (
         <section className="look-day-page">
@@ -21,10 +23,16 @@ const LookDay = () => {
                                     <span className="title__white">L</span>
                                     <span className="title__black">ook</span>
                                     <br />
-                                    <span className="title__white">o</span>
-                                    <span className="title__black">f </span>
-                                    <span className="title__black">
-                                        the day
+                                    <span className="title__white decorated__text">
+                                        o
+                                    </span>
+                                    <span className="title__black decorated__text">
+                                        f{" "}
+                                    </span>
+                                    <span className="title__black decorated__text">
+                                        the{" "}
+                                        <span className="title__white">d</span>
+                                        <span>ay</span>
                                     </span>
                                 </div>
                             </div>
@@ -33,6 +41,7 @@ const LookDay = () => {
                             </p>
                         </div>
                     </div>
+                    <SliderLook />
                 </div>
             </div>
         </section>

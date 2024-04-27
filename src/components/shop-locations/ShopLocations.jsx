@@ -8,13 +8,13 @@ const ShopLocations = () => {
                 <div className="wrapper">
                     <div className="shop__locations-header">
                         <h3 className="shop__locations-title">
-                            наші магазини
+                            Наші магазини
                         </h3>
                     </div>
                     <div className="shop__locations-details">
                         <div className="shop__locations-addresses">
                             <ul className="shop__locations-list">
-                                <li className="shop__locations-li selected">
+                                <li className="shop__locations-li selected__address">
                                     <img
                                         src={logoB}
                                         alt="BOKO' lobo black"

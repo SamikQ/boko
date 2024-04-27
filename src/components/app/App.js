@@ -20,13 +20,14 @@ const App = () => {
     return (
         <div className="App container">
             <Header />
-            {/* <WelcomeBanner />
+            <WelcomeBanner />
             <NewArrivals />
             <Categories />
             <Featured />
-            <AboutCreators /> */}
             <LookDay />
-            {/* <ContactUs /> */}
+            <AboutCreators />
+            <ShopLocations />
+            <Footer />
             {/* <Cart /> */}
             {/* <ProductInfo /> */}
             {/* <MegaMenu /> */}
@@ -34,10 +35,8 @@ const App = () => {
             {/* <AboutUs/> */}
             {/* <Swiper /> */}
             {/* <Error404Component /> */}
-            {/* <ShopLocations /> */}
-            {/* <Footer /> */}
-            {/* <AboutUs />
-            <Error404Component /> */}
+            {/* <ContactUs /> */}
+            {/* <AboutUs />*/}
         </div>
     );
 };

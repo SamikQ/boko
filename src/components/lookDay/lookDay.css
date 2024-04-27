@@ -1,21 +1,9 @@
-/* look of the day -- banner */
-
-.look-day-page {
-    position: relative;
-}
-
 .look-day {
-    position: relative;
     display: flex;
-    flex-direction: row;
-    padding: 0px;
-    width: 100%;
-    height: 300px;
-    border-radius: 4px 100px 4px 4px;
 }
 
 .look-day__img {
-    width: 219px;
+    max-height: 300px;
     border-radius: 4px 100px 4px 4px;
 }
 
@@ -30,12 +18,12 @@
     width: 110px;
     height: 300px;
     right: 0px;
-    top: 0px;
+    top: -10px;
 }
 
 .look-day__title {
     width: 330px;
-    height: 384px;
+    height: 100%;
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
@@ -43,8 +31,8 @@
 }
 
 .frame {
-    width: 130px;
-    height: 180px;
+    width: 135px;
+    height: 190px;
     font-size: 33px;
     line-height: 40px;
 }
@@ -60,10 +48,7 @@
     margin: 0 auto;
     width: 80px;
     height: 100px;
-
-    font-family: "Atyp Display";
-    font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 14px;
     line-height: 20px;
     color: #1a1a1a;
@@ -79,7 +64,6 @@
 
 .title__white {
     color: white;
-    font-family: Atyp Variable;
     font-weight: 400;
     text-transform: uppercase;
     /* line-height: 96px; */

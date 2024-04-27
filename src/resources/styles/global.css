@@ -24,9 +24,12 @@ nav {
     --font-p-size: 16px;
     --font-h-size: 22px;
     --font-mobile-p-size: 16px;
+    --font-mobile-address-p-size: 9px;
+    --font-mobile-address-h-size: 14px;
     --font-mobile-h-size: 20px;
+    --font-mobile-day-size: 18px;
     --font-color: #0d0d0d;
-    --font-color-reverse: #ffffff;
+    --font-color-reverse: rgba(255, 255, 255, 1);
     --font-header-color: #1a1a1a;
     --font-sale-color: #dc9716;
     --font-creators-color: #1a1c3b;
@@ -101,6 +104,21 @@ nav {
     font-size: 40px;
     font-weight: 400;
     color: var(--font-creators-color);
+}
+
+.decorated__text {
+    font-family: var(--font-decoration);
+}
+.text {
+    font-family: var(--font-p);
+}
+
+.img__darked {
+    filter: brightness(0.8);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgba(26, 28, 59, 1);
 }
 
 img {

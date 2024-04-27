@@ -4,24 +4,75 @@
 }
 
 .shop__locations-title {
-    text-transform: uppercase;
     font-size: var(--font-h-size);
     font-weight: 400;
 }
 
-.address__text {
-    font-weight: 700;
+.shop__locations-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.selected {
+.shop__locations-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.shop__locations-li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--card-border-color);
+    gap: 20px;
+}
+
+.shop__locations-list-logo {
+    height: 45px;
+    max-height: 70px;
+}
+
+.shop__locations-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.shop__locations-city {
+    font-size: var(--font-mobile-address-h-size);
+}
+
+.address__text,
+.shop__locations-phone {
+    font-size: var(--font-mobile-address-p-size);
+    font-weight: 400;
+}
+
+.shop__locations-map {
+    max-width: 640px;
+}
+
+.selected__address {
     background-color: var(--background-selected-color);
 }
 
 @media (min-width: 1440px) {
+    .shop__locations-title {
+        text-transform: uppercase;
+    }
     .shop__locations-details {
-        display: flex;
-        justify-content: space-between;
+        flex-direction: row;
         gap: 40px;
+    }
+    .shop__locations-li{
+        gap: 40px;
+    }
+    .shop__locations-item {
+        padding: 20px;
+        gap: 10px;
     }
 
     .shop__locations-addresses {
@@ -29,32 +80,8 @@
         align-items: center;
     }
 
-    .shop__locations-list {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .shop__locations-li {
-        display: flex;
-        padding: 20px;
-        border-radius: 4px;
-        border: 1px solid var(--card-border-color);
-        gap: 40px;
-    }
-
-    .shop__locations-list-logo {
-        max-height: 70px;
-    }
-    
-    .shop__locations-item {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .shop__locations-map {
-        max-width: 640px;
+    .address__text {
+        font-weight: 700;
     }
 
     .shop__map {
