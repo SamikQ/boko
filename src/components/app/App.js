@@ -27,11 +27,10 @@ const App = () => {
             {/* <LookDay /> */}
             {/* <AboutCreators /> */}
             {/* <ShopLocations /> */}
-
-            {/* <Cart /> */}
+            <Cart />
             {/* <ProductInfo /> */}
             {/* <MegaMenu /> */}
-            <Filter />
+            {/* <Filter /> */}
             {/* <AboutUs/> */}
             {/* <Swiper /> */}
             {/* <Error404Component /> */}

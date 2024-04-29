@@ -1,6 +1,9 @@
+import bg from '../../resources/img/backgrounds/bg-404.png';
+
 const Error404Component = () => {
     return (
         <section className="error__component">
+            <div  className='error__component-bg'/>
             <div className="not-found">
                 <div className="not-found__menu">
                     <div className="not-found__title">
