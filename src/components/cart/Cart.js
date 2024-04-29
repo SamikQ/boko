@@ -39,10 +39,12 @@ const Cart = () => {
                                 </p>
                             </div>
                             <div className="details-quantity">
+                                <button class="details-quantity-button"></button>
                                 <input
                                     class="details-quantity-change"
                                     type="number"
                                     value="1"></input>
+                                <button class="details-quantity-button"></button>
                             </div>
                         </div>
                         <div className="cart__order-item__total">
@@ -81,10 +83,12 @@ const Cart = () => {
                                 </p>
                             </div>
                             <div className="details-quantity">
+                                <button class="details-quantity-button"></button>
                                 <input
                                     class="details-quantity-change"
                                     type="number"
                                     value="1"></input>
+                                <button class="details-quantity-button"></button>
                             </div>
                         </div>
                         <div className="cart__order-item__total">
@@ -123,10 +127,12 @@ const Cart = () => {
                                 </p>
                             </div>
                             <div className="details-quantity">
+                                <button class="details-quantity-button"></button>
                                 <input
                                     class="details-quantity-change"
                                     type="number"
                                     value="1"></input>
+                                <button class="details-quantity-button"></button>
                             </div>
                         </div>
                         <div className="cart__order-item__total">
@@ -162,13 +168,17 @@ const Cart = () => {
                             <p className="submit-discount__amount">-420₴</p>
                         </div>
                         <div className="cart__submit-total">
-                            <p className="submit-total__text">Знижка:</p>
-                            <p className="submit-total__amount">-420₴</p>
+                            <p className="submit-total__text">До сплати:</p>
+                            <p className="submit-total__amount">2200₴</p>
                         </div>
                     </div>
                     <div className="cart__submit-btns">
-                        <button className="btn">Продовжити покупки</button>
-                        <button className="btn">Оформити замовлення</button>
+                        <button className="btn submit-order__btn btn-black">
+                            Оформити замовлення
+                        </button>
+                        <button className="btn continue-order__btn">
+                            Продовжити покупки
+                        </button>
                     </div>
                 </div>
             </div>

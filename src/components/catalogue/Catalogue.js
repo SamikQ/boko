@@ -46,3 +46,5 @@ const Catalogue = () => {
         </section>
     );
 };
+
+export default Catalogue;

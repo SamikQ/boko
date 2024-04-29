@@ -32,15 +32,18 @@ nav {
     --font-mobile-cart-h-size: 13px;
     --font-color: #0d0d0d;
     --font-color-reverse: rgba(255, 255, 255, 1);
-    --font-header-color: #1a1a1a;
+    --font-header-color: rgba(26, 26, 26, 1);
     --font-sale-color: #dc9716;
     --font-creators-color: #1a1c3b;
     --font-welcome-color: rgba(255, 255, 255, 1);
     --font-discount-color: rgba(86, 86, 86, 1);
+    --font-information-color: rgba(172, 166, 166, 1);
     --card-border-color: #01337a;
     --card-title-color: rgba(1, 51, 122, 0.4);
     --card-title-text: rgba(255, 255, 255, 1);
     --basicTransition: 0.4s;
+    --border-top-color: rgba(26, 26, 26, 1);
+    --border-bottom-color: rgba(201, 202, 208, 1);
     --background-color: #ffffff;
     --background-color-lock: rgba(255, 255, 255, 0.8);
     --background-color-alt: #ccd6e4;
@@ -122,6 +125,69 @@ nav {
 
 .swiper-pagination-bullet-active {
     background-color: rgba(26, 28, 59, 1);
+}
+
+details {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+details summary {
+    list-style: none;
+}
+
+details[open] summary .accordion::after {
+    position: absolute;
+    content: "";
+    border: 1px solid rgba(209, 210, 216, 1);
+    width: 18px;
+    height: 0px;
+    top: 10px;
+    left: 1px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    transform: rotate(180deg);
+}
+
+.accordion {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    left: 90%;
+    right: -8.33%;
+    top: 20.84%;
+    bottom: 79.16%;
+}
+
+.accordion::before {
+    position: absolute;
+    content: "";
+    border: 1px solid rgba(209, 210, 216, 1);
+    width: 18px;
+    height: 0px;
+    top: 10px;
+    left: 1px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    transform: rotate(180deg);
+}
+
+.accordion::after {
+    position: absolute;
+    content: "";
+    border: 1px solid rgba(209, 210, 216, 1);
+    width: 18px;
+    height: 0px;
+    top: 10px;
+    left: 1px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    transform: rotate(90deg);
 }
 
 img {

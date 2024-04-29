@@ -15,6 +15,8 @@ import ProductInfo from "../product-info/ProductInfo";
 import Cart from "../cart/Cart";
 import ContactUs from "../contact-us/ContactUs";
 import LookDay from "../lookDay/LookDay";
+import Catalogue from "../catalogue/Catalogue";
+
 
 const App = () => {
     return (
@@ -27,15 +29,16 @@ const App = () => {
             {/* <LookDay /> */}
             {/* <AboutCreators /> */}
             {/* <ShopLocations /> */}
-            <Cart />
+            {/* <Cart /> */}
+            {/* <Catalogue /> */}
             {/* <ProductInfo /> */}
             {/* <MegaMenu /> */}
             {/* <Filter /> */}
-            {/* <AboutUs/> */}
+            <AboutUs/>
             {/* <Swiper /> */}
             {/* <Error404Component /> */}
             {/* <ContactUs /> */}
-            {/* <AboutUs />*/}
+            {/* <AboutUs /> */}
             <Footer />
         </div>
     );

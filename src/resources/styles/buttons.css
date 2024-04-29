@@ -12,7 +12,6 @@
     line-height: 20px;
 }
 
-
 .btn:hover {
     cursor: pointer;
     color: var(--button-color-active);
@@ -35,11 +34,18 @@
     width: 220px;
 }
 
-.btn__filter{
+.btn__filter {
     width: 290px;
     padding: 15px 20px;
-    
 }
+
+.submit-order__btn,
+.continue-order__btn {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+}
+
 
 @media (min-width: 768px) {
     .btn {

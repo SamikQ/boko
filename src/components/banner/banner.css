@@ -1,0 +1,42 @@
+.banner {
+    position: relative;
+    width: 320px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    scale: calc(1);
+    top: -20px;
+    filter: brightness(0.7);
+}
+
+.banner p,
+.banner h2 {
+    color: var(--font-color-reverse);
+}
+
+.banner__description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+}
+
+.banner h2 {
+    font-weight: 600;
+    line-height: 43px;
+}
+
+.banner__description-text{
+    width: 250px;
+    font-size: var(--font-mobile-cart-p-size);
+    line-height: 18px;
+}
+
+
+
+

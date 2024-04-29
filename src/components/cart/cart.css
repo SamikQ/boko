@@ -8,6 +8,19 @@
     padding: 10px;
 }
 
+.cart__order-item__preview {
+    height: 200px;
+    min-width: 70px;
+    overflow: hidden;
+}
+
+.cart__order-item__preview img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
 .discount__total {
     color: var(--font-discount-color);
     font-size: 11px;
@@ -25,7 +38,7 @@
 .cart__order-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     font-size: var(--font-mobile-cart-p-size);
 }
 
@@ -36,6 +49,88 @@
 .cart__order-item__details {
     display: flex;
     flex-direction: column;
+    height: 190px;
     align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.cart__order-item__total {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 190px;
+    min-width: 50px;
+}
+
+.cart__order-item-remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.details-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.details-quantity-change {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.details-quantity-button {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.details-quantity-button:hover {
+    background-color: #e0e0e0;
+}
+
+.details-quantity-button::before {
+    content: "+";
+}
+
+.details-quantity-button:last-child::before {
+    content: "-";
+}
+
+.cart__promo-title {
+    font-size: var(--font-mobile-element-h-size);
+}
+
+.cart__promo-text {
+    padding-bottom: 10px;
+    font-size: var(--font-mobile-cart-h-size);
+}
+
+.cart__submit-descr {
+    border-top: 1px solid var(--border-top-color);
+    padding: 10px 0;
+}
+
+.cart__submit-total,
+.cart__submit-discount {
+    display: flex;
     justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.cart__submit-discount {
+    font-size: var(--font-mobile-element-h-size);
+}
+
+.cart__submit-total {
+    font-size: 18px;
+    font-weight: 600;
 }
