@@ -6,15 +6,15 @@ import temp1 from "../../resources/img/temp/image.png";
 const Cart = () => {
     return (
         <section className="cart-page">
-            <picture alt="значок скасування">
-                <img src={cancel} alt="cancel icon" />
-            </picture>
             <div className="cart">
                 <div className="cart__header">
                     <h4 className="cart__header-title">
                         Ваша корзина
                         <span className="cart__header-counter"> (3)</span>
                     </h4>
+                    <picture alt="значок скасування">
+                        <img src={cancel} alt="cancel icon" />
+                    </picture>
                 </div>
                 <div className="cart__order">
                     <article className="cart__order-item">
@@ -22,6 +22,12 @@ const Cart = () => {
                             <img src={temp} alt="product item preview" />
                         </div>
                         <div className="cart__order-item__details details">
+                            <div className="details-title">
+                                <h5 className="details-title-text">
+                                    Костюм базовий двійка з жакетом та довгими
+                                    брюками
+                                </h5>
+                            </div>
                             <div className="details-size">
                                 <p className="details-size-text">
                                     Розмір: <span>L</span>
@@ -58,6 +64,12 @@ const Cart = () => {
                             <img src={temp} alt="product item preview" />
                         </div>
                         <div className="cart__order-item__details details">
+                            <div className="details-title">
+                                <h5 className="details-title-text">
+                                    Костюм базовий двійка з жакетом та довгими
+                                    брюками
+                                </h5>
+                            </div>
                             <div className="details-size">
                                 <p className="details-size-text">
                                     Розмір: <span>L</span>
@@ -94,6 +106,12 @@ const Cart = () => {
                             <img src={temp} alt="product item preview" />
                         </div>
                         <div className="cart__order-item__details details">
+                            <div className="details-title">
+                                <h5 className="details-title-text">
+                                    Костюм базовий двійка з жакетом та довгими
+                                    брюками
+                                </h5>
+                            </div>
                             <div className="details-size">
                                 <p className="details-size-text">
                                     Розмір: <span>L</span>
