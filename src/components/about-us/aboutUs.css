@@ -1,28 +1,28 @@
-.about-us__information {
-    display: flex;
-    flex-direction: column;
-}
-
-/* .about-us__information-left,
+.about-us__information-left,
 .about-us__information-right {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-} */
+    flex-direction: column;
+    padding: 40px 15px;
+    gap: 20px;
+}
 
 .description__text {
     font-size: var(--font-mobile-about-p-size);
     color: var(--font-mobile-p-color);
     line-height: 20px;
+    font-weight: 600;
 }
 
-/* .about-us__information-img {
+
+.description__text-decorated {
+    font-family: var(--font-decoration);
+    font-size: var(--font-mobile-decorated-p-size);
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.about-us__infromation-img {
     height: 200px;
-    width: 280px;
+    overflow: hidden;
 }
 
-.information__picture {
-    height: 100%;
-    width: 100%;
-} */
