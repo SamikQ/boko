@@ -30,11 +30,13 @@ nav {
     --font-mobile-day-size: 18px;
     --font-mobile-cart-p-size: 11px;
     --font-mobile-cart-h-size: 13px;
+    --font-mobile-about-p-size: 14px;
     --font-color: #0d0d0d;
+    --font-mobile-p-color: rgba(26, 28, 59, 1);
     --font-color-reverse: rgba(255, 255, 255, 1);
     --font-header-color: rgba(26, 26, 26, 1);
     --font-sale-color: #dc9716;
-    --font-creators-color: #1a1c3b;
+    --font-creators-color: rgba(26, 28, 59, 1);
     --font-welcome-color: rgba(255, 255, 255, 1);
     --font-discount-color: rgba(86, 86, 86, 1);
     --font-information-color: rgba(172, 166, 166, 1);
@@ -47,7 +49,7 @@ nav {
     --background-color: #ffffff;
     --background-color-lock: rgba(255, 255, 255, 0.8);
     --background-color-alt: #ccd6e4;
-    --background-color-reverse: #1a1c3b;
+    --background-color-reverse: rgba(26, 28, 59, 1);
     --background-selected-color: rgba(220, 225, 232, 1);
     --background-welcome-color: rgba(0, 0, 0, 0.2);
     --background-error-color: rgba(229, 225, 222, 1);

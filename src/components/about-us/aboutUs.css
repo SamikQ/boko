@@ -1,23 +1,28 @@
-
-
 .about-us__information {
     display: flex;
     flex-direction: column;
 }
 
-.about-us__information-left,
+/* .about-us__information-left,
 .about-us__information-right {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+} */
+
+.description__text {
+    font-size: var(--font-mobile-about-p-size);
+    color: var(--font-mobile-p-color);
+    line-height: 20px;
 }
 
-.about-us__information-img {
-    height: 600px;
+/* .about-us__information-img {
+    height: 200px;
+    width: 280px;
 }
 
 .information__picture {
-    height: 400px;
-    width: 300px;
-}
+    height: 100%;
+    width: 100%;
+} */
