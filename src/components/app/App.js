@@ -35,10 +35,10 @@ const App = () => {
             {/* <MegaMenu /> */}
             {/* <Filter /> */}
             {/* <AboutUs /> */}
-            <Faq />
+            {/* <Faq /> */}
             {/* <Swiper /> */}
             {/* <Error404Component /> */}
-            {/* <ContactUs /> */}
+            <ContactUs />
             {/* <AboutUs /> */}
             <Footer />
         </div>

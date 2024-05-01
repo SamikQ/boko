@@ -1,0 +1,91 @@
+.contact-us__about {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-us__about-title {
+    text-align: center;
+    font-size: var(--font-mobile-sub-h-size);
+    line-height: 25px;
+}
+
+.contact-us__about-list {
+    padding: 0 5px 30px;
+}
+
+.contact-us__about-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-us__about-text {
+    padding-bottom: 10px;
+    font-size: var(--font-mobile-about-p-size);
+    line-height: 20px;
+}
+
+.sub-title {
+    font-weight: 600;
+}
+
+.contact-us__feedback {
+    background-color: var(--background-selected-color);
+    border-radius: 4px;
+}
+
+.feedback__title-text {
+    text-align: center;
+    font-size: var(--font-mobile-h-size);
+    line-height: 26px;
+    padding-top: 40px;
+}
+
+.feedback__details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px 20px;
+}
+
+.contact-us__feedback {
+    border: none;
+}
+
+/* .feedback__details-sub {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} */
+
+.feedback__details-sub label {
+    font-size: var(--font-mobile-cart-p-size);
+}
+
+.feedback__details-sub input {
+    width: 100%;
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px solid var(--font-discount-color);
+    padding: 10px;
+    font-size: var(--font-mobile-p-size);
+}
+
+.captcha   {
+    width: 223px;
+    padding: 15px 0;
+    align-self: center;
+}
+
+.feedback__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.feedback__submit button {
+    list-style: none;
+    width: 250px;
+    padding: 15px 20px;
+}

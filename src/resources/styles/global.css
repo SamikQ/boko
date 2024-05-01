@@ -9,6 +9,7 @@
     box-sizing: border-box;
     user-select: none;
     font-family: "Atyp Variable";
+    color: var(--font-color);
 }
 
 /* div,
@@ -27,12 +28,13 @@ nav {
     --font-mobile-address-p-size: 9px;
     --font-mobile-element-h-size: 14px;
     --font-mobile-h-size: 20px;
+    --font-mobile-sub-h-size: 18px;
     --font-mobile-day-size: 18px;
     --font-mobile-cart-p-size: 11px;
     --font-mobile-cart-h-size: 13px;
     --font-mobile-about-p-size: 14px;
     --font-mobile-decorated-p-size: 40px;
-    --font-color: #0d0d0d;
+    --font-color: rgba(26, 26, 26, 1);
     --font-mobile-p-color: rgba(26, 28, 59, 1);
     --font-color-reverse: rgba(255, 255, 255, 1);
     --font-header-color: rgba(26, 26, 26, 1);

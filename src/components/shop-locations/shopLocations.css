@@ -52,7 +52,14 @@
 }
 
 .shop__locations-map {
+    display: flex;
+    min-width: 300px;
     max-width: 640px;
+}
+
+.shop__map {
+    width: 100%;
+    object-fit: contain;
 }
 
 .selected__address {
@@ -67,7 +74,7 @@
         flex-direction: row;
         gap: 40px;
     }
-    .shop__locations-li{
+    .shop__locations-li {
         gap: 40px;
     }
     .shop__locations-item {
@@ -82,10 +89,5 @@
 
     .address__text {
         font-weight: 700;
-    }
-
-    .shop__map {
-        max-width: 100%;
-        object-fit: contain;
     }
 }

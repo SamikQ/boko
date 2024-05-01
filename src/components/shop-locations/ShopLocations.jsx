@@ -7,9 +7,7 @@ const ShopLocations = () => {
             <div className="container">
                 <div className="wrapper">
                     <div className="shop__locations-header">
-                        <h3 className="shop__locations-title">
-                            Наші магазини
-                        </h3>
+                        <h3 className="shop__locations-title">Наша адреса</h3>
                     </div>
                     <div className="shop__locations-details">
                         <div className="shop__locations-addresses">
@@ -26,54 +24,12 @@ const ShopLocations = () => {
                                         </div>
                                         <div className="shop__locations-address">
                                             <p className="address__text">
-                                                Дніпровська набережна,12 ТРЦ
-                                                River Mall, поверх 2
+                                                Кільцева дорога, 1
+                                                ТРЦ «respublika Park», 
                                             </p>
                                         </div>
                                         <div className="shop__locations-phone">
                                             <p>+38 050 218 14 12</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li className="shop__locations-li">
-                                    <img
-                                        src={logoB}
-                                        alt="BOKO' lobo black"
-                                        className="shop__locations-list-logo"
-                                    />
-                                    <div className="shop__locations-item">
-                                        <div className="shop__locations-city">
-                                            <p>Київ</p>
-                                        </div>
-                                        <div className="shop__locations-address">
-                                            <p className="address__text">
-                                                Дніпровська набережна,12 ТРЦ
-                                                River Mall, поверх 2
-                                            </p>
-                                        </div>
-                                        <div className="shop__locations-phone">
-                                            <p>+38 050 218 14 12</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li className="shop__locations-li">
-                                    <img
-                                        src={logoB}
-                                        alt="BOKO' lobo black"
-                                        className="shop__locations-list-logo"
-                                    />
-                                    <div className="shop__locations-item">
-                                        <div className="shop__locations-city">
-                                            <p>Одеса</p>
-                                        </div>
-                                        <div className="shop__locations-address">
-                                            <p className="address__text">
-                                                Південна дорога, 101а, ТРЦ
-                                                Riviera
-                                            </p>
-                                        </div>
-                                        <div className="shop__locations-phone">
-                                            <p>+38 093 836 30 49</p>
                                         </div>
                                     </div>
                                 </li>

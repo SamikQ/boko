@@ -5,8 +5,8 @@ const Banner = ({ page }) => {
     return (
         <div className="banner">
             <img src={bg} alt={bgAlt} />
+            <p className="banner__page-nav">Home / Про нас</p>
             <div className="banner__description">
-                <p className="banner__page-nav">Home / Про нас</p>
                 <h2 className="banner__title">{title}</h2>
                 <p className="banner__description-text">{description}</p>
             </div>

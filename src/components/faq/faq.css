@@ -1,3 +1,22 @@
 .accordion__title {
     position: relative;
+    font-size: var(--font-mobile-element-h-size);
+    display: flex;
+    border-bottom: 1px solid var(--border-bottom-color);
+    font-weight: 500;
+    padding: 5px 5px;
+    margin: 5px 0;
+}
+
+.accordion__title-text {
+    max-width: 200px;
+    margin: 5px 0;
+    line-height: 20px;
+    font-size: var(--font-mobile-element-h-size);
+}
+
+.accordion__body {
+    padding: 5px;
+    font-size: var(--font-mobile-cart-p-size);
+    line-height: 18px;
 }
