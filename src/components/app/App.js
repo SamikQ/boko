@@ -16,7 +16,7 @@ import Cart from "../cart/Cart";
 import ContactUs from "../contact-us/ContactUs";
 import LookDay from "../lookDay/LookDay";
 import Catalogue from "../catalogue/Catalogue";
-
+import Faq from "../faq/Faq";
 
 const App = () => {
     return (
@@ -34,7 +34,8 @@ const App = () => {
             {/* <ProductInfo /> */}
             {/* <MegaMenu /> */}
             {/* <Filter /> */}
-            <AboutUs/>
+            {/* <AboutUs /> */}
+            <Faq />
             {/* <Swiper /> */}
             {/* <Error404Component /> */}
             {/* <ContactUs /> */}

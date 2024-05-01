@@ -1,14 +1,26 @@
 import Banner from "../banner/Banner";
 
+import bg from "../../resources/img/backgrounds/banners/bg-about-us.webp";
 import aboutImgTop from "../../resources/img/about-us/about-us-creator-top.webp";
 import aboutImg from "../../resources/img/about-us/about-us-creator.webp";
 import aboutImgBottom from "../../resources/img/about-us/about-us-creator-bottom.webp";
+
+const page = {
+    title: "BOKO’ KYIV",
+    description: `Це український бренд заснований в 2010 році Анною Бец та сестрою Анастасією Дзюбою.
+    Натхненний ідеєю створення формату якісного локального
+    шопінгу, бренд став першим таким що для створив українським
+    масмаркетом.
+'`,
+    bg: bg,
+    bgAlt: "boko founder",
+};
 
 const AboutUs = () => {
     return (
         <section className="about-us">
             <div className="container">
-                <Banner />
+                <Banner page={page} />
                 <div className="wrapper">
                     <div className="about-us__information-left">
                         <p className="description__text">

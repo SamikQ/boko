@@ -194,7 +194,6 @@ details[open] summary .accordion::after {
 }
 
 img {
-    max-width: 100%;
     display: block;
 }
 
