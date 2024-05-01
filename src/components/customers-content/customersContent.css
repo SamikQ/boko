@@ -1,0 +1,34 @@
+.customers-content-page {
+    padding-bottom: 40px;
+}
+
+.customers-content__title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.link__instagram {
+    display: flex;
+    gap: 10px;
+    font-size: var(--font-mobile-sub-h-size);
+    text-transform: uppercase;
+    line-height: 25px;
+}
+
+.customers-content__title-text {
+    font-size: var(--font-mobile-about-p-size);
+    line-height: 20px;
+    width: 290px;
+    font-weight: 500;
+}
+
+.customers-content__slider {
+    height: 350px;
+    width: 290px;
+    padding: 20px 0 40px;
+}
+
+.customers-content__slider img {
+    width: 100%;
+}

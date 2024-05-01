@@ -17,6 +17,8 @@ import ContactUs from "../contact-us/ContactUs";
 import LookDay from "../lookDay/LookDay";
 import Catalogue from "../catalogue/Catalogue";
 import Faq from "../faq/Faq";
+import CustomersContent from "../customers-content/CustomersContent";
+import WeekLooks from "../week-looks/WeekLooks";
 
 const App = () => {
     return (
@@ -28,6 +30,7 @@ const App = () => {
             {/* <Featured /> */}
             {/* <LookDay /> */}
             {/* <AboutCreators /> */}
+            {/* <CustomersContent /> */}
             {/* <ShopLocations /> */}
             {/* <Cart /> */}
             {/* <Catalogue /> */}
@@ -38,8 +41,9 @@ const App = () => {
             {/* <Faq /> */}
             {/* <Swiper /> */}
             {/* <Error404Component /> */}
-            <ContactUs />
+            {/* <ContactUs /> */}
             {/* <AboutUs /> */}
+            <WeekLooks />
             <Footer />
         </div>
     );

@@ -46,6 +46,11 @@
     padding: 15px 20px;
 }
 
+.looks-item-btn {
+    width: 300px;
+    padding: 10px;
+}
+
 
 @media (min-width: 768px) {
     .btn {

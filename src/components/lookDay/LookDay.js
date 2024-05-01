@@ -1,4 +1,4 @@
-import banner from "../../resources/img/backgrounds/bg-day-look.webp";
+import banner from "../../resources/img/backgrounds/banners/bg-day-look.webp";
 
 import SliderLook from "../slider/Slider-look";
 

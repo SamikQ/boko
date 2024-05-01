@@ -8,6 +8,7 @@
 @import url(./components/lookDay/lookDay.css);
 @import url(./components/slider/slider-look.css);
 @import url(./components/about-creators/aboutCreators.css);
+@import url(./components/customers-content/customersContent.css);
 @import url(./components/footer/footer.css);
 @import url(./components/product-info/productInfo.css);
 @import url(./components/about-us/aboutUs.css);
@@ -18,3 +19,4 @@
 @import url(./components/cart/cart.css);
 @import url(./components/faq/faq.css);
 @import url(./components/contact-us/contactUs.css);
+@import url(./components/week-looks/weekLooks.css);
