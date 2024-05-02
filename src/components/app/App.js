@@ -24,25 +24,24 @@ const App = () => {
     return (
         <div className="App container">
             <Header />
-            {/* <WelcomeBanner /> */}
-            {/* <NewArrivals /> */}
-            {/* <Categories /> */}
-            {/* <Featured /> */}
-            {/* <LookDay /> */}
-            {/* <AboutCreators /> */}
-            {/* <CustomersContent /> */}
-            {/* <ShopLocations /> */}
-            {/* <Cart /> */}
-            {/* <Catalogue /> */}
-            {/* <ProductInfo /> */}
+            <WelcomeBanner />
+            <NewArrivals />
+            <Categories />
+            <Featured />
+             <LookDay />
+            <AboutCreators />
+            <CustomersContent />
+            <ShopLocations />
+            <Cart />
+            <Catalogue />
+            <ProductInfo />
             {/* <MegaMenu /> */}
-            {/* <Filter /> */}
-            {/* <AboutUs /> */}
-            {/* <Faq /> */}
-            {/* <Swiper /> */}
-            {/* <Error404Component /> */}
-            {/* <ContactUs /> */}
-            {/* <AboutUs /> */}
+            <Filter />
+            <Faq />
+            <Swiper />
+            <Error404Component />
+            <ContactUs />
+            <AboutUs />
             <WeekLooks />
             <Footer />
         </div>

@@ -21,10 +21,10 @@ const ProductInfo = () => {
             <section className="product__page" title="інформація по продукту">
                 <div className="wrapper">
                     <div className="navigation-list">
-                        <div className="navigation-list-decor">
+                        {/* <div className="navigation-list-decor">
                             <img src={decor} alt="decorated golden round" />
-                        </div>
-                        <span>Home / Колекції / Eternal Elegance</span>
+                        </div> */}
+                        {/* <span>Home / Колекції / Eternal Elegance</span> */}
                     </div>
                     <div className="product__information">
                         <div className="product__slider">
@@ -90,21 +90,21 @@ const ProductInfo = () => {
                                     Колір: <span>Синій</span>
                                 </p>
                             </div>
-                            <div class="product__color-container">
-                                <div class="product__colors">
+                            <div className="product__color-container">
+                                <div className="product__colors">
                                     <span
-                                        class="product__color selected__color"
+                                        className="product__color selected__color"
                                         primary="#FAE7CD"
                                         color="beige"
                                         data-price="300"></span>
 
                                     <span
-                                        class="product__color"
+                                        className="product__color"
                                         primary="#848282"
                                         color="grey"
                                         data-price="570"></span>
                                     <span
-                                        class="product__color"
+                                        className="product__color"
                                         primary="#01337A"
                                         color="blueBright"
                                         data-price="470"></span>
@@ -168,13 +168,19 @@ const ProductInfo = () => {
                             <Slider />
                         </div>
                         <div className="section__header-btn">
-                            <button className="btn continue-order__btn" title="read about BOKO'">
+                            <button
+                                className="btn continue-order__btn"
+                                title="read about BOKO'">
                                 Дивитись всі
                             </button>
                         </div>
                     </div>
-                    <div className="size-table">
-                        <img src={sizeTable} alt="size table" width={806} />
+                    <div className="size-table" style={{ width: "300px" }}>
+                        <img
+                            src={sizeTable}
+                            alt="size table"
+                            style={{ width: "300px" }}
+                        />
                     </div>
                 </div>
             </section>
@@ -253,21 +259,21 @@ const ProductInfo = () => {
                                     Колір: <span>Синій</span>
                                 </p>
                             </div>
-                            <div class="product__color-container">
-                                <div class="product__colors">
+                            <div className="product__color-container">
+                                <div className="product__colors">
                                     <span
-                                        class="product__color selected__color"
+                                        className="product__color selected__color"
                                         primary="#FAE7CD"
                                         color="beige"
                                         data-price="300"></span>
 
                                     <span
-                                        class="product__color"
+                                        className="product__color"
                                         primary="#848282"
                                         color="grey"
                                         data-price="570"></span>
                                     <span
-                                        class="product__color"
+                                        className="product__color"
                                         primary="#01337A"
                                         color="blueBright"
                                         data-price="470"></span>
@@ -338,9 +344,13 @@ const ProductInfo = () => {
                             <Slider />
                         </div>
                     </div>
-                    <div className="size-table">
-                        <img src={sizeTable} alt="size table" width={806} />
-                    </div>
+                    {/* <div className="size-table" style={{ width: "320px" }}>
+                        <img
+                            src={sizeTable}
+                            alt="size table"
+                            style={{ width: "320px" }}
+                        />
+                    </div> */}
                 </div>
             </section>
         );

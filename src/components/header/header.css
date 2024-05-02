@@ -57,7 +57,7 @@
     display: flex;
 }
 
-section.lock {
+body.lock {
     overflow: hidden;
 }
 

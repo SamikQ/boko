@@ -51,6 +51,27 @@
     padding: 10px;
 }
 
+.look-cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.look-cart-btn img {
+    height: 100%;
+}
+
+.btn__filter {
+    display: inline-flex;
+    gap: 15px;
+    font-weight: 600;
+}
+
+.btn__filter-title {
+    background-color: inherit;
+    border: none;
+}
 
 @media (min-width: 768px) {
     .btn {

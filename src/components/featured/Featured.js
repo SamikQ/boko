@@ -10,18 +10,35 @@ const Featured = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    const mobileHidden =
-        screenWidth < 768
-            ? "section__header-btn hidden"
-            : "section__header-btn";
-
-    return (
+    if (screenWidth < 768) {
+        return (
+            <section className="featured">
+                <div className="container">
+                    <div className="wrapper">
+                        <div className="section__header">
+                            <h3 className="section__header-title">
+                                Хіти продажів
+                            </h3>
+                        </div>
+                        <div className="newArrivals__swiper">
+                            <Slider />
+                        </div>
+                        <div className="section__header-btn">
+                            <button className="btn" title="read about BOKO'">
+                                Дивитися всі
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        );
+    } else {
         <section className="featured">
             <div className="container">
                 <div className="wrapper">
                     <div className="section__header">
                         <h3 className="section__header-title">Хіти продажів</h3>
-                        <div className={mobileHidden}>
+                        <div className="section__header-btn">
                             <button className="btn" title="read about BOKO'">
                                 Дивитися всі
                             </button>
@@ -32,8 +49,8 @@ const Featured = () => {
                     </div>
                 </div>
             </div>
-        </section>
-    );
+        </section>;
+    }
 };
 
 export default Featured;

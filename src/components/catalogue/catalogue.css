@@ -1,0 +1,10 @@
+
+.filters-list-item {
+    display: inline-flex;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.filters__list {
+    padding: 0 15px;
+}

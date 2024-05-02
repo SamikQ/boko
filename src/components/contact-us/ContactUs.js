@@ -106,7 +106,7 @@ const ContactUs = () => {
                                         <div className="feedback__details-sub">
                                             <label
                                                 htmlFor="name"
-                                                class="feedback-details-subhead">
+                                                className="feedback-details-subhead">
                                                 Ім'я*
                                             </label>
                                             <input
@@ -122,7 +122,7 @@ const ContactUs = () => {
                                             className="feedback__details-sub">
                                             <label
                                                 htmlFor="phone"
-                                                class="feedback-details-subhead">
+                                                className="feedback-details-subhead">
                                                 Номер телефону*
                                             </label>
                                             <input
@@ -137,7 +137,7 @@ const ContactUs = () => {
                                             className="feedback__details-sub">
                                             <label
                                                 htmlFor="email"
-                                                class="feedback-details-subhead">
+                                                className="feedback-details-subhead">
                                                 E-mail
                                             </label>
                                             <input

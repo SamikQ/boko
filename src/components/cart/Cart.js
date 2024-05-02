@@ -1,4 +1,5 @@
-import cancel from "../../resources/img/control-icons/cancel-icon.svg";
+import cancel from "../../resources/img/client-icons/reset-btn.svg";
+import close from "../../resources/img/control-icons/cancel-icon.svg"
 
 import temp from "../../resources/img/temp/cart-item.png";
 import temp1 from "../../resources/img/temp/image.png";
@@ -13,7 +14,7 @@ const Cart = () => {
                         <span className="cart__header-counter"> (3)</span>
                     </h4>
                     <picture alt="значок скасування">
-                        <img src={cancel} alt="cancel icon" />
+                        <img src={close} alt="cancel icon" />
                     </picture>
                 </div>
                 <div className="cart__order">
@@ -39,12 +40,12 @@ const Cart = () => {
                                 </p>
                             </div>
                             <div className="details-quantity">
-                                <button class="details-quantity-button"></button>
+                                <button className="details-quantity-button"></button>
                                 <input
-                                    class="details-quantity-change"
+                                    className="details-quantity-change"
                                     type="number"
                                     value="1"></input>
-                                <button class="details-quantity-button"></button>
+                                <button className="details-quantity-button"></button>
                             </div>
                         </div>
                         <div className="cart__order-item__total">
@@ -54,10 +55,10 @@ const Cart = () => {
                                 <img src={cancel} alt="cancel icon" />
                             </picture>
                             <div className="cart__order-item__sum">
-                                <p class="sum__total">1 420₴</p>
+                                <p className="sum__total">1 420₴</p>
                             </div>
                             <div className="cart__order-item__discount">
-                                <p class="discount__total">1 620₴</p>
+                                <p className="discount__total">1 620₴</p>
                             </div>
                         </div>
                     </article>
@@ -83,12 +84,12 @@ const Cart = () => {
                                 </p>
                             </div>
                             <div className="details-quantity">
-                                <button class="details-quantity-button"></button>
+                                <button className="details-quantity-button"></button>
                                 <input
-                                    class="details-quantity-change"
+                                    className="details-quantity-change"
                                     type="number"
                                     value="1"></input>
-                                <button class="details-quantity-button"></button>
+                                <button className="details-quantity-button"></button>
                             </div>
                         </div>
                         <div className="cart__order-item__total">
@@ -98,10 +99,10 @@ const Cart = () => {
                                 <img src={cancel} alt="cancel icon" />
                             </picture>
                             <div className="cart__order-item__sum">
-                                <p class="sum__total">1 420₴</p>
+                                <p className="sum__total">1 420₴</p>
                             </div>
                             <div className="cart__order-item__discount">
-                                <p class="discount__total">1 620₴</p>
+                                <p className="discount__total">1 620₴</p>
                             </div>
                         </div>
                     </article>
@@ -127,12 +128,12 @@ const Cart = () => {
                                 </p>
                             </div>
                             <div className="details-quantity">
-                                <button class="details-quantity-button"></button>
+                                <button className="details-quantity-button"></button>
                                 <input
-                                    class="details-quantity-change"
+                                    className="details-quantity-change"
                                     type="number"
                                     value="1"></input>
-                                <button class="details-quantity-button"></button>
+                                <button className="details-quantity-button"></button>
                             </div>
                         </div>
                         <div className="cart__order-item__total">
@@ -142,10 +143,10 @@ const Cart = () => {
                                 <img src={cancel} alt="cancel icon" />
                             </picture>
                             <div className="cart__order-item__sum">
-                                <p class="sum__total">1 420₴</p>
+                                <p className="sum__total">1 420₴</p>
                             </div>
                             <div className="cart__order-item__discount">
-                                <p class="discount__total">1 620₴</p>
+                                <p className="discount__total">1 620₴</p>
                             </div>
                         </div>
                     </article>
@@ -157,9 +158,9 @@ const Cart = () => {
                     <p className="cart__promo-text">
                         Вам лишилося 200 грн. Бажаєте продовжити?
                     </p>
-                    <div>
+                    {/* <div>
                         <img src={temp1} alt="" />
-                    </div>
+                    </div> */}
                 </div>
                 <div className="cart__submit">
                     <div className="cart__submit-descr">

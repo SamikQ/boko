@@ -48,7 +48,13 @@
 .week-looks__slider-item__description {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 10px;
+}
+
+.week-looks__slider-item__text {
+    text-align: justify;
+    align-self: center;
 }
 
 .week-looks__slider-item__title {
