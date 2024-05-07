@@ -9,7 +9,7 @@
     color: rgba(26, 26, 26, 1);
 }
 
-.swiper-slide {
+.swiper__slide {
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0px 0px 7px 2px #dce1e8;
@@ -17,15 +17,11 @@
 }
 
 .image-slider__image {
+    position: relative;
     text-align: center;
     min-height: 280px;
-    /* height: 380px; */
-    /* width: 297px; */
-    /* padding: 0px 50% 0px 0px; */
-    /* overflow: visible;
-    position: relative; */
+    padding: 0px 0px 58% 0px;
 }
-/* Frame 226 */
 
 .image-slider__image img {
     width: 99%;
@@ -56,6 +52,7 @@
     font-weight: 500;
     text-align: left;
 }
+
 .slider__description-text {
     margin: 5px;
     font-weight: 500;
@@ -72,28 +69,6 @@
     margin: 30px;
 }
 
-.image-slider__image {
-    text-align: center;
-    height: 380px;
-    width: 297px;
-    padding: 0px 50% 0px 0px;
-    overflow: visible;
-    position: relative;
-}
-
-.image-slider__image::after {
-    position: absolute;
-    left: 6px;
-    top: -6px;
-    width: 100%;
-    height: 100%;
-    content: " ";
-    border: 1.5px solid rgba(1, 51, 122, 1);
-    border-radius: 4px;
-}
-
-
-
 .slider__details {
     margin-top: 10px;
     gap: 30px;
@@ -105,22 +80,9 @@
 }
 
 
-
-.product__color {
-    margin: 1px;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-}
-
 .slider__description {
     display: flex;
     align-items: center;
-}
-
-.slider__description-price p {
-    font-size: 16px;
-    color: rgba(26, 26, 26, 1);
 } */
 
 .color-container {
@@ -162,4 +124,50 @@
     border-color: #fff;
     box-shadow: 0 0 10px 0.5px rgba(0, 0, 5, 0.3);
     transform: scale(1.2);
+}
+
+
+@media (min-width: 1024px) {
+
+    .swiper-slide {
+        margin: 8px 8px 20px 0px;
+    }
+
+    .image-slider__image {
+        min-height: 380px;
+        width: 100%;
+        overflow: visible;
+    }
+
+    .image-slider__image img {
+        height: 380px;
+        width: 100%;
+    }
+
+    .newArrivals__swiper {
+        margin-top: 20px;
+    }
+
+    .image-slider__image::after {
+        position: absolute;
+        left: 3px;
+        top: -6px;
+        width: 100%;
+        height: 100%;
+        content: " ";
+        /* padding: 5px; */
+        border: 1.5px solid rgba(1, 51, 122, 1);
+        border-radius: 4px;
+        z-index: 20;
+    }
+
+    .slider__title h5 {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 600;
+    }
+
+    .slider__description-price p {
+        font-size: 16px;
+    }
 }

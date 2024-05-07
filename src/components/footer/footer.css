@@ -61,7 +61,7 @@ footer h5 {
     justify-content: center;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
     .footer__wrapper {
         display: flex;
         padding: 70px 80px;

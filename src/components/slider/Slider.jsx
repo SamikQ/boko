@@ -27,7 +27,7 @@ const Slider = () => {
             breakpoints={{
                 320: { slidesPerView: 2, spaceBetween: 10 },
                 768: { slidesPerView: 3, spaceBetween: 4 },
-                1024: { slidesPerView: 3 },
+                1024: { slidesPerView: 3, spaceBetween: 20},
                 1440: { slidesPerView: 4 },
             }}
             a11y={{ enabled: true }}
@@ -37,7 +37,7 @@ const Slider = () => {
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}>
             <div className="image-slider__wrapper swiper-wrapper">
-                <SwiperSlide className="image-slider-slide swiper-slide">
+                <SwiperSlide className="image-slider-slide swiper__slide">
                     <div className="swiper-slide__border"></div>
                     <div className="image-slider__image">
                         <img src={arrival1} alt="card item" key={arrival1} />
@@ -72,7 +72,7 @@ const Slider = () => {
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className="image-slider-slide swiper-slide">
+                <SwiperSlide className="image-slider-slide swiper__slide">
                     <div className="swiper-slide__border">
                         <div className="image-slider__image">
                             <img
@@ -113,7 +113,7 @@ const Slider = () => {
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className="image-slider-slide swiper-slide">
+                <SwiperSlide className="image-slider-slide swiper__slide">
                     <div className="swiper-slide__border">
                         <div className="image-slider__image">
                             <img
@@ -154,7 +154,7 @@ const Slider = () => {
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className="image-slider-slide swiper-slide">
+                <SwiperSlide className="image-slider-slide swiper__slide">
                     <div className="swiper-slide__border">
                         <div className="image-slider__image">
                             <img
@@ -195,7 +195,7 @@ const Slider = () => {
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className="image-slider-slide swiper-slide">
+                <SwiperSlide className="image-slider-slide swiper__slide">
                     <div className="swiper-slide__border">
                         <div className="image-slider__image">
                             <img
@@ -236,7 +236,7 @@ const Slider = () => {
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide className="image-slider-slide swiper-slide">
+                <SwiperSlide className="image-slider-slide swiper__slide">
                     <div className="swiper-slide__border">
                         <div className="image-slider__image">
                             <img

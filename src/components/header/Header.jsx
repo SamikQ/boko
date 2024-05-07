@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 
 import logoHeaderB from "../../resources/img/header-logo-black.svg";
 import search from "../../resources/img/client-icons/search.svg";
@@ -18,9 +18,17 @@ const links = [
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const handlerMenu = () => {
         setIsOpen((isOpen) => !isOpen);
+    };
+
+    useCallback = () => {
+        const handleResize = () => {
+            setScreenWidth(window.innerWidth);
+        };
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
     };
 
     const content = (props) => {
@@ -41,7 +49,34 @@ const Header = () => {
         });
     };
 
+    const navMenu = () => {
+        return (
+            <nav className="header__nav">
+                <div className="header__nav-logo">
+                    <div
+                        className={
+                            isOpen
+                                ? "navigation-burger active"
+                                : "navigation-burger"
+                        }
+                        onClick={() => handlerMenu()}>
+                        <span></span>
+                    </div>
+                </div>
+                <div
+                    className={
+                        isOpen
+                            ? "header__nav-wrapper active"
+                            : "header__nav-wrapper"
+                    }>
+                    <div className="header__content-menu">{listLinks}</div>
+                </div>
+            </nav>
+        )
+    }
+
     const listLinks = content(links);
+    const burgerMenu = navMenu();
 
     return (
         <header
@@ -54,27 +89,7 @@ const Header = () => {
                         className="header__logo-img"
                     />
                 </a>
-                <nav className="header__nav">
-                    <div className="header__nav-logo">
-                        <div
-                            className={
-                                isOpen
-                                    ? "navigation-burger active"
-                                    : "navigation-burger"
-                            }
-                            onClick={() => handlerMenu()}>
-                            <span></span>
-                        </div>
-                    </div>
-                    <div
-                        className={
-                            isOpen
-                                ? "header__nav-wrapper active"
-                                : "header__nav-wrapper"
-                        }>
-                        <div className="header__content-menu">{listLinks}</div>
-                    </div>
-                </nav>
+                {burgerMenu}
                 <div className="header__content-acc acc">
                     <a href="/#" aria-label="search">
                         <img src={search} alt="search button" />
@@ -102,13 +117,9 @@ const Header = () => {
                 </div>
             </div>
             <style jsx>{`
-        .modal {
-          /* Стилі модального вікна */
-        }
         body {
-          overflow: ${
-              isOpen ? "hidden" : "auto"
-          }; /* Управління overflow body */}
+          overflow: ${isOpen ? "hidden" : "auto"
+                }; /* Управління overflow body */}
         }
       `}</style>
         </header>
