@@ -61,11 +61,13 @@ footer h5 {
     justify-content: center;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
     .footer__wrapper {
         display: flex;
+        flex-direction: row;
         padding: 70px 80px;
         justify-content: space-between;
+        font-size: var(--font-p-size);
     }
 
     .footer__logo {
@@ -93,6 +95,16 @@ footer h5 {
 
     .footer__contacts-details {
         padding-bottom: 40px;
+    }
+
+    .footer__contacts {
+        width: auto;
+    }
+
+    .footer__social a {
+        display: flex;
+        gap: 5px;
+        align-items: center;
     }
 
     .footer__contacts-link {

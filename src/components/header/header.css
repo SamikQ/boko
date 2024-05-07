@@ -196,13 +196,15 @@ body.lock {
 } */
 
 
-
+@media (min-width: 1024px) {
+    
+}
 
 /* .header__wrapper {
     display: flex;
 } */
 
-/* @media (min-width: 1440px) {
+@media (min-width: 1440px) {
     .header__wrapper {
         padding: 25px 80px;
         align-self: stretch;
@@ -242,4 +244,4 @@ body.lock {
         align-self: start;
         font-size: 10px;
     }
-} */
+}

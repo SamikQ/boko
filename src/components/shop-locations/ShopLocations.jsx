@@ -25,7 +25,7 @@ const ShopLocations = () => {
                                         <div className="shop__locations-address">
                                             <p className="address__text">
                                                 Кільцева дорога, 1
-                                                ТРЦ «respublika Park», 
+                                                ТРЦ «Respublika Park», 
                                             </p>
                                         </div>
                                         <div className="shop__locations-phone">
