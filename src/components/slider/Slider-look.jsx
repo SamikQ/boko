@@ -27,8 +27,9 @@ const SliderLook = () => {
             pagination={{ clickable: true }}
             breakpoints={{
                 320: { slidesPerView: 1 },
-                768: { slidesPerView: 2, spaceBetween: 4 },
-                1024: { slidesPerView: 3 },
+                768: { slidesPerView: 1.5, spaceBetween: 20 },
+                1024: { slidesPerView: 1.5, spaceBetween: 20 },
+                1440: { slidesPerView: 1.5, spaceBetween: 20 }
             }}
             a11y={{ enabled: true }}
             // loop={true}
@@ -37,7 +38,7 @@ const SliderLook = () => {
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}>
             <div className="image-slider__wrapper swiper-wrapper">
-                <SwiperSlide className="image-slider-slide swiper-slide-look">
+                <SwiperSlide className="image-slider-slide swiper-slide__look">
                     <article className="image-slider__image">
                         <h5 className="look-day__day-title">monday</h5>
                         <img

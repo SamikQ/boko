@@ -80,7 +80,7 @@
 
 /* Frame 237 */
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
     .categories {
         gap: 50px;
     }
@@ -98,14 +98,14 @@
 
     .catogiries__list-middle-row {
         display: grid;
-        grid-template-columns: 75% 1fr;
+        grid-template-columns: 70% 1fr;
         height: 470px;
         gap: 20px;
     }
 
     .catogiries__list-bottom-row {
         display: grid;
-        grid-template-columns: 1fr 75%;
+        grid-template-columns: 1fr 70%;
         height: 470px;
         gap: 20px;
     }

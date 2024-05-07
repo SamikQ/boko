@@ -173,6 +173,29 @@ body.lock {
     color: black;
 }
 
+@media (min-width: 1024px) {
+    .header__nav {
+        display: none;
+    }
+
+    .header__wrapper {
+        display: flex;
+    }
+
+    .header__content-menu {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        font-size: var(--font-p-size);
+        text-transform: uppercase;
+    }
+
+    .hidden {
+        display: block;
+    }
+}
+
 
 
 /* .header__wrapper {
@@ -204,7 +227,7 @@ body.lock {
     display: flex;
 } */
 
-@media (min-width: 1440px) {
+/* @media (min-width: 1024px) {
     .header__wrapper {
         padding: 25px 80px;
         align-self: stretch;
