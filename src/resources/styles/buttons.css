@@ -1,5 +1,6 @@
 .btn {
     min-width: 150px;
+    height: 65px;
     border: 1px solid;
     border-color: var(--font-creators-color);
     color: var(--font-creators-color);
@@ -31,7 +32,7 @@
 
 .home__button,
 .all-products__button {
-    width: 220px;
+    width: 300px;
 }
 
 .btn__filter {

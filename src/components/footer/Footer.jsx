@@ -19,7 +19,7 @@ const Footer = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    if (screenWidth < 768) {
+    if (screenWidth < 769) {
         return (
             <footer>
                 <div className="container">
@@ -108,62 +108,26 @@ const Footer = () => {
                                     </li>
                                 </ul>
                             </nav>
-                            <div className="footer__contacts">
-                                <ul className="footer__contacts-address">
-                                    <h5 className="footer__contacts-title">
-                                        магазини
-                                    </h5>
-                                    <li className="footer__contacts-item">
-                                        <a
-                                            className="footer__contacts-link"
-                                            href="/#">
-                                            <img
-                                                src={mapPoint}
-                                                alt="map point"
-                                            />
-                                            <span>
-                                                <p>київ</p>
-                                                <p>ТРЦ «respublika Park»</p>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li className="footer__contacts-item">
-                                        <a
-                                            className="footer__contacts-link"
-                                            href="/#">
-                                            <img
-                                                src={mapPoint}
-                                                alt="map point"
-                                            />
-                                            <span className="footer__contracts-description">
-                                                <p className="footer__contracts-text">
-                                                    київ
-                                                </p>
-                                                <p className="footer__contracts-text">
-                                                    трц «dream yellow»
-                                                </p>
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li className="footer__contacts-item">
-                                        <a
-                                            className="footer__contacts-link"
-                                            href="/#">
-                                            <img
-                                                src={mapPoint}
-                                                alt="map point"
-                                            />
-                                            <span>
-                                                <p>житомир</p>
-                                                <p>
-                                                    вул. велика васильківська,
-                                                    12
-                                                </p>
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+
+                            <ul className="footer__contacts-address">
+                                <h5 className="footer__contacts-title">
+                                    магазин
+                                </h5>
+                                <li className="footer__contacts-item">
+                                    <a
+                                        className="footer__contacts-link"
+                                        href="/#">
+                                        <img src={mapPoint} alt="map point" />
+                                        <span>
+                                            <p>київ</p>
+                                            <p>
+                                                Кільцева дорога, 1 <br />
+                                                ТРЦ «Respublika Park»,
+                                            </p>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div className="footer__payment-methods">
@@ -301,7 +265,7 @@ const Footer = () => {
                             </ul>
                             <ul className="footer__contacts-address">
                                 <h5 className="footer__contacts-title">
-                                    магазини
+                                    магазин
                                 </h5>
                                 <li className="footer__contacts-item">
                                     <a
@@ -310,33 +274,10 @@ const Footer = () => {
                                         <img src={mapPoint} alt="map point" />
                                         <span>
                                             <p>київ</p>
-                                            <p>ТРЦ «respublika Park»</p>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li className="footer__contacts-item">
-                                    <a
-                                        className="footer__contacts-link"
-                                        href="/#">
-                                        <img src={mapPoint} alt="map point" />
-                                        <span className="footer__contracts-description">
-                                            <p className="footer__contracts-text">
-                                                київ
+                                            <p>
+                                                Кільцева дорога, 1 <br />
+                                                ТРЦ «Respublika Park»,
                                             </p>
-                                            <p className="footer__contracts-text">
-                                                трц «dream yellow»
-                                            </p>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li className="footer__contacts-item">
-                                    <a
-                                        className="footer__contacts-link"
-                                        href="/#">
-                                        <img src={mapPoint} alt="map point" />
-                                        <span>
-                                            <p>житомир</p>
-                                            <p>вул. велика васильківська, 12</p>
                                         </span>
                                     </a>
                                 </li>

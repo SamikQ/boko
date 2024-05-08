@@ -4,24 +4,8 @@
     flex-direction: column;
     align-items: center;
     padding: 0px 15px 70px;
-    gap: 40px;
     isolation: isolate;
-    width: 320px;
     height: 500px;
-    background: #E5E1DE;
-}
-
-.error__component-bg {
-    position: absolute;
-    width: 320px;
-    height: 500px;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-    background-image: url(../../resources/img/backgrounds/bg-404.png);
-    background-size: 500px;
-    background-attachment: unset;
-    background-repeat: no-repeat;
 }
 
 .not-found__title-text {
@@ -34,62 +18,32 @@
 }
 
 .not-found {
-    margin: 0;
-    background-color: rgba(229, 225, 222, 0.7);
-}
-
-.not-found__menu {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
     height: 500px;
+    gap: 40px;
+    max-width: 558px;
 }
 
+.not-found__menu-btns {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+}
 
-
-
-.not-found {}
-
-@media (min-width: 1200px) {
-    .error__component {
-        height: 500px;
-        padding-bottom: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-image: url(../../resources/img/backgrounds/bg-404.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-color: rgba(229, 225, 222, 1);
-        background-attachment: unset;
+@media (min-width: 1024px) {
+    .not-found__title-text {
+        font-size: 500px;
+        padding-top: 50px;
+        padding-bottom: 100px;
     }
 
     .not-found__menu {
-        display: flex;
-        flex-direction: column;
-        max-width: 600px;
-        gap: 50px;
-        opacity: none;
-    }
 
-    .not-found__title-text {
-        text-align: center;
-        font-size: 500px;
-        font-weight: 400;
-        font-family: var(--font-decoration);
-        color: var(--font-color);
-        line-height: 400px;
-    }
-
-    .not-found__menu-text {
-        font-size: var(--font-p-size);
-        color: var(--font-color);
-        text-align: center;
-    }
-
-    .not-found__menu-btns {
-        display: flex;
-        justify-content: space-around;
     }
 }

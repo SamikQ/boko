@@ -17,6 +17,7 @@ footer h5 {
 .footer__container {
     display: flex;
     justify-content: space-around;
+    padding-bottom: 15px;
 }
 
 .footer__contacts-item {
@@ -26,7 +27,7 @@ footer h5 {
 
 .footer__catalouge,
 .footer__nav-information {
-    padding: 0 10px;
+    position: relative;
 }
 
 .footer__nav-list-item {
@@ -34,7 +35,7 @@ footer h5 {
 }
 
 .footer__contacts {
-    width: 50%;
+    /* width: 50%; */
 }
 
 .footer__contacts-link {
@@ -42,6 +43,10 @@ footer h5 {
     align-items: center;
     gap: 5px;
     padding: 8px 0;
+}
+
+.footer__contacts-address {
+    position: relative;
 }
 
 .footer__payment-methods {
@@ -59,6 +64,17 @@ footer h5 {
     align-items: center;
     text-align: center;
     justify-content: center;
+}
+
+@media (min-width: 425px) {
+    .footer__contacts-address,
+    .footer__contacts-details,
+    .footer__catalouge,
+    .footer__nav-information {
+        min-width: 205px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (min-width: 1024px) {

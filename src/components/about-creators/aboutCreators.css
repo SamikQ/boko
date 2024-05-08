@@ -36,14 +36,20 @@
 
 @media (min-width: 1024px) {
     .creators__inner {
+        position: relative;
         display: flex;
         flex-direction: row;
+        justify-content: center;
         gap: 30px;
-        /* grid-template-columns: 50% 50%; */
+    }
+
+    .creators__photo {
+        width: 400px;
+        height: 100%;
     }
 
     .creators__img {
-        height: 400px;
+        max-height: 100%;
     }
 
     .creators__description {
@@ -51,6 +57,7 @@
         flex-direction: column;
         justify-content: center;
         gap: 30px;
+        width: 60%;
     }
 
     .creators__description-title {
@@ -60,7 +67,6 @@
         margin: 0 45px;
         padding-bottom: 40px;
         gap: 10px;
-        width: 75%;
     }
 
     .title__description {
