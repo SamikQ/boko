@@ -42,12 +42,14 @@
     line-height: 43px;
 }
 
-.banner__description-text{
+.banner__description-text {
     width: 250px;
     font-size: var(--font-mobile-cart-p-size);
     line-height: 18px;
 }
 
-
-
-
+@media (min-width: 768px) {
+    .banner {
+        height: 400px;
+    }
+}

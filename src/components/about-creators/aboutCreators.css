@@ -34,11 +34,16 @@
     justify-content: center;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
     .creators__inner {
         display: flex;
+        flex-direction: row;
         gap: 30px;
         /* grid-template-columns: 50% 50%; */
+    }
+
+    .creators__img {
+        height: 400px;
     }
 
     .creators__description {
@@ -53,8 +58,9 @@
         align-items: center;
         justify-content: space-between;
         margin: 0 45px;
+        padding-bottom: 40px;
         gap: 10px;
-        /* width: 100%; */
+        width: 75%;
     }
 
     .title__description {
