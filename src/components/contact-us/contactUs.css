@@ -71,7 +71,7 @@
     font-size: var(--font-mobile-p-size);
 }
 
-.captcha   {
+.captcha {
     width: 223px;
     padding: 15px 0;
     align-self: center;
@@ -88,4 +88,36 @@
     list-style: none;
     width: 250px;
     padding: 15px 20px;
+}
+
+@media (min-width: 1024px) {
+    .contact-us__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contact-us__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact-us__about-title {
+        font-size: var(--font-h-size);
+    }
+
+    .contact-us__about-text {
+        font-size: var(--font-p-size);
+    }
+
+    .feedback__title-text {
+        font-size: var(--font-h-size);
+        font-weight: 600;
+        padding: 20px 0;
+    }
+
+    .feedback-details-subhead {
+        font-size: var(--font-p-size);
+    }
 }

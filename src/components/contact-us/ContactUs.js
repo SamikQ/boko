@@ -8,14 +8,6 @@ const ContactUs = () => {
                 <div className="container">
                     <div className="wrapper">
                         <div className="contact-us">
-                            <div className="section__header">
-                                <h3 className="section__header-title">
-                                    поділіться з нами
-                                </h3>
-                                <p className="section__header-text">
-                                    you are our inspiration
-                                </p>
-                            </div>
                             <div className="contact-us__body">
                                 <div className="contact-us__info">
                                     <div className="contact-us__about">
@@ -157,7 +149,7 @@ const ContactUs = () => {
                                         <button
                                             type="submit"
                                             className="feedback__submit-btn btn btn-black">
-                                            Надіслати відгук
+                                            Передзвоніть мені
                                         </button>
                                     </div>
                                 </form>
