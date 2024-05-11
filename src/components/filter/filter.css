@@ -1,5 +1,7 @@
 .filter-page {
     color: var(--font-header-color);
+    max-width: 450px;
+    box-shadow: inset 0px 1px 3px #dce1e8;
 }
 
 .filter__header {

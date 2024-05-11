@@ -1,5 +1,8 @@
 .cart {
+    box-shadow: inset 0px 1px 3px #dce1e8;
+    position: relative;
     padding: 10px;
+    max-width: 600px;
 }
 
 .cart__header {
@@ -133,4 +136,23 @@
 .cart__submit-total {
     font-size: 18px;
     font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .cart__order-item__total,
+    .cart__order-item__details,
+    .details-title-text {
+        font-size: var(--font-p-size);
+    }
+    .cart__order-item__total {
+        width: 70px;
+    }
+    
+    .cart__submit-discount {
+        font-size: var(--font-p-size);
+    }
+
+    .cart__submit-total {
+        font-size: var(--font-h-size);
+    }
 }

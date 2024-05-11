@@ -47,6 +47,10 @@
     padding: 15px 20px;
 }
 
+.btn__filter {
+    width: 100%;
+}
+
 .looks-item-btn {
     width: 300px;
     padding: 10px;
@@ -62,12 +66,6 @@
 
 .look-cart-btn img {
     height: 100%;
-}
-
-.btn__filter {
-    display: inline-flex;
-    gap: 15px;
-    font-weight: 600;
 }
 
 .btn__filter-title {
