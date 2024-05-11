@@ -1,6 +1,5 @@
 .accordion__title {
     position: relative;
-    font-size: var(--font-mobile-element-h-size);
     display: flex;
     border-bottom: 1px solid var(--border-bottom-color);
     font-weight: 500;
@@ -19,4 +18,15 @@
     padding: 5px;
     font-size: var(--font-mobile-cart-p-size);
     line-height: 18px;
+}
+
+@media (min-width: 768px) {
+    .accordion__title-text {
+        font-size: var(--font-p-size);
+        max-width: 100%;
+    }
+    .accordion__body {
+        max-width: 80%;
+        font-size: var(--font-p-size);
+    }
 }

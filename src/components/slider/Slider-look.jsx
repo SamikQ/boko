@@ -23,13 +23,13 @@ const SliderLook = () => {
         <Swiper
             className="image-slider swiper-container"
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-            // navigation
+            navigation
             pagination={{ clickable: true }}
             breakpoints={{
                 320: { slidesPerView: 1 },
                 768: { slidesPerView: 1.5, spaceBetween: 20 },
-                1024: { slidesPerView: 1.5, spaceBetween: 20 },
-                1440: { slidesPerView: 1.5, spaceBetween: 20 }
+                1024: { slidesPerView: 1.7, spaceBetween: 20 },
+                1440: { slidesPerView: 1.7, spaceBetween: 20 }
             }}
             a11y={{ enabled: true }}
             // loop={true}

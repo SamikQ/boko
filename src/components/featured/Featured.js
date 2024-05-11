@@ -33,23 +33,29 @@ const Featured = () => {
             </section>
         );
     } else {
-        <section className="featured">
-            <div className="container">
-                <div className="wrapper">
-                    <div className="section__header">
-                        <h3 className="section__header-title">Хіти продажів</h3>
-                        <div className="section__header-btn">
-                            <button className="btn" title="read about BOKO'">
-                                Дивитися всі
-                            </button>
+        return (
+            <section className="featured">
+                <div className="container">
+                    <div className="wrapper">
+                        <div className="section__header">
+                            <h3 className="section__header-title">
+                                Хіти продажів
+                            </h3>
+                            <div className="section__header-btn">
+                                <button
+                                    className="btn"
+                                    title="read about BOKO'">
+                                    Дивитися всі
+                                </button>
+                            </div>
+                        </div>
+                        <div className="newArrivals__swiper">
+                            <Slider />
                         </div>
                     </div>
-                    <div className="newArrivals__swiper">
-                        <Slider />
-                    </div>
                 </div>
-            </div>
-        </section>;
+            </section>
+        );
     }
 };
 

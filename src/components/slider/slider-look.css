@@ -45,3 +45,23 @@
     top: 5px;
     left: 10px;
 }
+
+@media (min-width: 1440px) {
+    .image-slider__image {
+        min-height: 490px;
+        min-width: 400px;
+    }
+
+    .image-slider__image img {
+    width: 100%;
+    height: 100%;
+    }
+
+    .look-day__day-title {
+        font-size: var(--font-h-size);
+    }
+
+    .img__darked {
+        height: 490px;
+    }
+}

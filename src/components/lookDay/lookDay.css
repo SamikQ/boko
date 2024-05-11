@@ -5,7 +5,6 @@
 
 .look-day__banner {
     height: 300px;
-
 }
 
 .look-day__img {
@@ -87,22 +86,72 @@
 }
 
 @media (min-width: 1024px) {
+    .look-day {
+        position: relative;
+    }
     .look-day__banner {
         position: relative;
-        width: 400px;
-        height: 500px;
+        width: 450px;
+        height: 430px;
     }
 
     .look-day__img {
         position: absolute;
         left: 0;
         top: 0;
-        border-radius: 4px 100px 4px 4px;
+        border-radius: 4px 200px 4px 4px;
         object-fit: cover;
-        width: 100%;
+        width: 280px;
     }
-    
+
+    .look-day__description {
+        position: absolute;
+        align-items: flex-start;
+        width: 330px;
+        height: 100%;
+        left: 230px;
+        top: -20px;
+    }
+
     .frame {
-        font-size: 80px;
+        position: relative;
+        width: 100%;
+        font-size: 60px;
+        line-height: 80px;
+    }
+
+    .look-day__title {
+        display: block;
+    }
+
+    .look-day__title-text {
+        font-size: var(--font-p-size);
+        width: 150px;
+        margin: 0;
     }
 }
+
+@media (min-width: 1440px) {
+    .look-day__banner {
+        width: 620px;
+        height: 500px;
+    }
+
+    .look-day__img {
+        width: 400px;
+    }
+
+    .look-day__description {
+        left: 340px;
+    }
+
+    .frame {
+        font-size: 80px;
+        line-height: 96px;
+    }
+
+    .look-day__title-text {
+        width: 217px;
+    }
+}
+

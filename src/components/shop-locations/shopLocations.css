@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     gap: 20px;
 }
 
@@ -33,6 +34,11 @@
 .shop__locations-list-logo {
     height: 45px;
     max-height: 70px;
+}
+
+.shop__locations-list {
+    align-items: normal;
+    width: 100%;
 }
 
 .shop__locations-item {
@@ -66,7 +72,23 @@
     background-color: var(--background-selected-color);
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
+    .shop__locations-list-logo {
+        height: 60px;
+        max-height: 70px;
+    }
+    .shop__locations-city {
+        font-size: var(--font-h-size);
+    }
+
+    .address__text,
+    .shop__locations-phone {
+        font-size: var(--font-p-size);
+        font-weight: 400;
+    }
+}
+
+@media (min-width: 1024px) {
     .shop__locations-title {
         text-transform: uppercase;
     }
@@ -74,20 +96,32 @@
         flex-direction: row;
         gap: 40px;
     }
+    .shop__locations-list {
+        width: 400px;
+    }
     .shop__locations-li {
         gap: 40px;
     }
     .shop__locations-item {
-        padding: 20px;
         gap: 10px;
-    }
-
-    .shop__locations-addresses {
-        display: flex;
-        align-items: center;
     }
 
     .address__text {
         font-weight: 700;
+    }
+
+    .shop__map {
+        width: 500px;
+        object-fit: contain;
+    }
+}
+
+@media (min-width: 1440px) {
+    .shop__locations-li {
+        width: 610px;
+    }
+    .shop__map {
+        width: 650px;
+        object-fit: contain;
     }
 }

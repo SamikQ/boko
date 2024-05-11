@@ -103,6 +103,10 @@
         justify-content: center;
     }
 
+    .contact-us__feedback {
+        padding: 15px;
+    }
+
     .contact-us__about-title {
         font-size: var(--font-h-size);
     }
@@ -117,7 +121,7 @@
         padding: 20px 0;
     }
 
-    .feedback-details-subhead {
+    .feedback__details-sub label {
         font-size: var(--font-p-size);
     }
 }

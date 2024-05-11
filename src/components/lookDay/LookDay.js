@@ -28,13 +28,13 @@ const LookDay = () => {
                                             ook
                                         </span>
                                         <br />
-                                        <span className="title__white decorated__text">
+                                        <span className="title__white">
                                             o
                                         </span>
-                                        <span className="title__black decorated__text">
+                                        <span className="title__black">
                                             f{" "}
                                         </span>
-                                        <span className="title__black decorated__text">
+                                        <span className="title__black">
                                             the{" "}
                                             <span className="title__white">
                                                 d
@@ -44,7 +44,7 @@ const LookDay = () => {
                                     </div>
                                 </div>
                                 <p className="look-day__title-text">
-                                    Підбірка образів на щодень від Катерини
+                                    Підбірка образів на кожен день від Катерини
                                     Осадчої
                                 </p>
                             </div>
