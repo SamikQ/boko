@@ -1,3 +1,4 @@
+import { useState } from "react";
 import arrival1 from "../../resources/img/new-arrivals/picture1.png";
 import arrival2 from "../../resources/img/new-arrivals/picture2.png";
 import arrival3 from "../../resources/img/new-arrivals/picture3.png";
@@ -5,218 +6,170 @@ import arrival4 from "../../resources/img/new-arrivals/picture4.png";
 
 import temp from "../../resources/img/temp/pagination-temp.png";
 
-const ProductList = () => {
-    return (
-        <>
-            <ul className="product__list">
-                <li className="product__list-item">
-                    <div className="list-item__img">
-                        <img src={arrival1} alt="card item" key={arrival1} />
-                    </div>
-                    <div className="list-item__details">
-                        <div className="list-item__title">
-                            <h5>Базова майка BoKo’ з закритим коміром</h5>
-                        </div>
-                        <div className="list-item__price">
-                            <p className="sale__price">3498 ₴</p>
-                            <p className="sale__price-active">2200 ₴</p>
-                        </div>
-                        <div className="color-container">
-                            <div className="colors">
-                                <span
-                                    className="color active"
-                                    primary="#FAE7CD"
-                                    color="beige"
-                                    data-price="300"></span>
+const productsData = [
+    {
+        img: arrival1,
+        title: "Базова майка BoKo’ з закритим коміром",
+        price: 3498,
+        sale: 2200,
+    },
+    {
+        img: arrival2,
+        title: "Базова майка BoKo’ з закритим коміром",
+        price: 3498,
+        sale: 2200,
+    },
+    {
+        img: arrival3,
+        title: "Базова майка BoKo’ з закритим коміром",
+        price: 3498,
+        sale: 2200,
+    },
+    {
+        img: arrival4,
+        title: "Базова майка BoKo’ з закритим коміром",
+        price: 3498,
+        sale: 2200,
+    },
+    {
+        img: arrival1,
+        title: "Базова майка BoKo’ з закритим коміром",
+        price: 3498,
+        sale: 2200,
+    },
+    {
+        img: arrival2,
+        title: "Базова майка BoKo’ з закритим коміром",
+        price: 3498,
+        sale: null,
+    },
+    {
+        img: arrival3,
+        title: "Базова майка BoKo’ з закритим коміром",
+        price: 3498,
+        sale: 2200,
+    },
+    {
+        img: arrival4,
+        title: "Базова майка BoKo’ з закритим коміром",
+        price: 3498,
+        sale: null,
+    },
+    {
+        img: arrival1,
+        title: "Базова майка BoKo’ з закритим коміром",
+        price: 3498,
+        sale: 2200,
+    },
+    {
+        img: arrival2,
+        title: "Базова майка BoKo’ з закритим коміром",
+        price: 3498,
+        sale: null,
+    },
+    {
+        img: arrival3,
+        title: "Базова майка BoKo’ з закритим коміром",
+        price: 3498,
+        sale: 2200,
+    },
+    {
+        img: arrival4,
+        title: "Базова майка BoKo’ з закритим коміром",
+        price: 3498,
+        sale: null,
+    },
+];
 
-                                <span
-                                    className="color"
-                                    primary="#848282"
-                                    color="grey"
-                                    data-price="570"></span>
-                                <span
-                                    className="color"
-                                    primary="#01337A"
-                                    color="blueBright"
-                                    data-price="470"></span>
+const ProductList = (props) => {
+    const [productList, setProductList] = useState(productsData);
+
+    const onRenderList = (arr) => {
+        const elements = arr.map((item) => {
+            const { img, title, price, sale } = item;
+            return (
+                <li className="product__list-item">
+                    <article className="product">
+                        <div className="product__img">
+                            <img src={img} alt="product" key={img} />
+                        </div>
+                        <div className="product__details">
+                            <h5 className="product__title">{title}</h5>
+                            <div className="product__price">
+                                <p className="sale__price">{price} ₴</p>
+                                <p className="sale__price-active">{sale} ₴</p>
+                            </div>
+                            <div className="color-container">
+                                <div className="colors">
+                                    <span
+                                        className="color active"
+                                        primary="#FAE7CD"
+                                        color="beige"
+                                        data-price="300"></span>
+
+                                    <span
+                                        className="color"
+                                        primary="#848282"
+                                        color="grey"
+                                        data-price="570"></span>
+                                    <span
+                                        className="color"
+                                        primary="#01337A"
+                                        color="blueBright"
+                                        data-price="470"></span>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </li>
-                <li className="product__list-item">
-                    <div className="list-item__img">
-                        <img src={arrival2} alt="card item" key={arrival2} />
-                    </div>
-                    <div className="list-item__details">
-                        <div className="list-item__title">
-                            <h5>Базова майка BoKo’ з закритим коміром</h5>
-                        </div>
-                        <div className="list-item__price">
-                            <p className="sale__price">3498 ₴</p>
-                            <p className="sale__price-active">2200 ₴</p>
-                        </div>
-                        <div className="color-container">
-                            <div className="colors">
-                                <span
-                                    className="color active"
-                                    primary="#FAE7CD"
-                                    color="beige"
-                                    data-price="300"></span>
+            );
+        });
+        return <ul className="product__list">{elements}</ul>;
+    };
 
-                                <span
-                                    className="color"
-                                    primary="#848282"
-                                    color="grey"
-                                    data-price="570"></span>
-                                <span
-                                    className="color"
-                                    primary="#01337A"
-                                    color="blueBright"
-                                    data-price="470"></span>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li className="product__list-item">
-                    <div className="list-item__img">
-                        <img src={arrival3} alt="card item" key={arrival3} />
-                    </div>
-                    <div className="list-item__details">
-                        <div className="list-item__title">
-                            <h5>Базова майка BoKo’ з закритим коміром</h5>
-                        </div>
-                        <div className="list-item__price">
-                            <p className="sale__price">3498 ₴</p>
-                            <p className="sale__price-active">2200 ₴</p>
-                        </div>
-                        <div className="color-container">
-                            <div className="colors">
-                                <span
-                                    className="color active"
-                                    primary="#FAE7CD"
-                                    color="beige"
-                                    data-price="300"></span>
+    const products = onRenderList(productList);
 
-                                <span
-                                    className="color"
-                                    primary="#848282"
-                                    color="grey"
-                                    data-price="570"></span>
-                                <span
-                                    className="color"
-                                    primary="#01337A"
-                                    color="blueBright"
-                                    data-price="470"></span>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li className="product__list-item">
-                    <div className="list-item__img">
-                        <img src={arrival4} alt="card item" key={arrival4} />
-                    </div>
-                    <div className="list-item__details">
-                        <div className="list-item__title">
-                            <h5>Базова майка BoKo’ з закритим коміром</h5>
-                        </div>
-                        <div className="list-item__price">
-                            <p className="sale__price">3498 ₴</p>
-                            <p className="sale__price-active">2200 ₴</p>
-                        </div>
-                        <div className="color-container">
-                            <div className="colors">
-                                <span
-                                    className="color active"
-                                    primary="#FAE7CD"
-                                    color="beige"
-                                    data-price="300"></span>
-
-                                <span
-                                    className="color"
-                                    primary="#848282"
-                                    color="grey"
-                                    data-price="570"></span>
-                                <span
-                                    className="color"
-                                    primary="#01337A"
-                                    color="blueBright"
-                                    data-price="470"></span>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li className="product__list-item">
-                    <div className="list-item__img">
-                        <img src={arrival1} alt="card item" key={arrival1} />
-                    </div>
-                    <div className="list-item__details">
-                        <div className="list-item__title">
-                            <h5>Базова майка BoKo’ з закритим коміром</h5>
-                        </div>
-                        <div className="list-item__price">
-                            <p className="sale__price">3498 ₴</p>
-                            <p className="sale__price-active">2200 ₴</p>
-                        </div>
-                        <div className="color-container">
-                            <div className="colors">
-                                <span
-                                    className="color active"
-                                    primary="#FAE7CD"
-                                    color="beige"
-                                    data-price="300"></span>
-
-                                <span
-                                    className="color"
-                                    primary="#848282"
-                                    color="grey"
-                                    data-price="570"></span>
-                                <span
-                                    className="color"
-                                    primary="#01337A"
-                                    color="blueBright"
-                                    data-price="470"></span>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li className="product__list-item">
-                    <div className="list-item__img">
-                        <img src={arrival2} alt="card item" key={arrival2} />
-                    </div>
-                    <div className="list-item__details">
-                        <div className="list-item__title">
-                            <h5>Базова майка BoKo’ з закритим коміром</h5>
-                        </div>
-                        <div className="list-item__price">
-                            <p className="sale__price">3498 ₴</p>
-                            <p className="sale__price-active">2200 ₴</p>
-                        </div>
-                        <div className="color-container">
-                            <div className="colors">
-                                <span
-                                    className="color active"
-                                    primary="#FAE7CD"
-                                    color="beige"
-                                    data-price="300"></span>
-
-                                <span
-                                    className="color"
-                                    primary="#848282"
-                                    color="grey"
-                                    data-price="570"></span>
-                                <span
-                                    className="color"
-                                    primary="#01337A"
-                                    color="blueBright"
-                                    data-price="470"></span>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <img src={temp} alt="" />
-            </ul>
-        </>
-    );
+    return <>{products}</>;
 };
 
 export default ProductList;
+
+const Product = (props) => {
+    const { img, title, price, sale } = props;
+    return (
+        <li className="product__list-item">
+            <article className="product">
+                <div className="product__img">
+                    <img src={img} alt="product" key={img} />
+                </div>
+                <div className="product__details">
+                    <h5 className="product__title">{title}</h5>
+                    <div className="product__price">
+                        <p className="sale__price">{price} ₴</p>
+                        <p className="sale__price-active">{sale} ₴</p>
+                    </div>
+                    <div className="color-container">
+                        <div className="colors">
+                            <span
+                                className="color active"
+                                primary="#FAE7CD"
+                                color="beige"
+                                data-price="300"></span>
+
+                            <span
+                                className="color"
+                                primary="#848282"
+                                color="grey"
+                                data-price="570"></span>
+                            <span
+                                className="color"
+                                primary="#01337A"
+                                color="blueBright"
+                                data-price="470"></span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </li>
+    );
+};
