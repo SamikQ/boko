@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import arrow from "../../resources/img/control-icons/follow-arr.svg";
 
 const Categories = () => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -33,6 +34,11 @@ const Categories = () => {
                                 <h4 className="categories__list-item__title">
                                     eternal elegance
                                 </h4>
+                                <img
+                                    src={arrow}
+                                    className="categories__list-item__arrow"
+                                    alt="arrow"
+                                />
                             </a>
                         </div>
                         <div className="catogiries__list-middle-row">
@@ -43,6 +49,11 @@ const Categories = () => {
                                 <h4 className="categories__list-item__title">
                                     базовий одяг
                                 </h4>
+                                <img
+                                    src={arrow}
+                                    className="categories__list-item__arrow"
+                                    alt="arrow"
+                                />
                             </a>
                             <a
                                 href="/#"
@@ -51,6 +62,11 @@ const Categories = () => {
                                 <h4 className="categories__list-item__title">
                                     взуття
                                 </h4>
+                                <img
+                                    src={arrow}
+                                    className="categories__list-item__arrow"
+                                    alt="arrow"
+                                />
                             </a>
                         </div>
                         <div className="catogiries__list-bottom-row">
@@ -61,6 +77,11 @@ const Categories = () => {
                                 <h4 className="categories__list-item__title">
                                     сумки
                                 </h4>
+                                <img
+                                    src={arrow}
+                                    className="categories__list-item__arrow"
+                                    alt="arrow"
+                                />
                             </a>
                             <a
                                 href="/#"
@@ -69,6 +90,11 @@ const Categories = () => {
                                 <h4 className="categories__list-item__title">
                                     спортивний одяг
                                 </h4>
+                                <img
+                                    src={arrow}
+                                    className="categories__list-item__arrow"
+                                    alt="arrow"
+                                />
                             </a>
                         </div>
                     </div>

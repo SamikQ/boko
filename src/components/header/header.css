@@ -191,6 +191,7 @@ body.lock {
     .header__content-acc {
         width: auto;
         gap: 10px;
+        align-items: center;
     }
 
     .header__wrapper {

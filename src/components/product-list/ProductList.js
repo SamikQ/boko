@@ -4,8 +4,6 @@ import arrival2 from "../../resources/img/new-arrivals/picture2.png";
 import arrival3 from "../../resources/img/new-arrivals/picture3.png";
 import arrival4 from "../../resources/img/new-arrivals/picture4.png";
 
-import temp from "../../resources/img/temp/pagination-temp.png";
-
 const productsData = [
     {
         img: arrival1,
@@ -91,7 +89,7 @@ const ProductList = (props) => {
                 <li className="product__list-item">
                     <article className="product">
                         <div className="product__img">
-                            <img src={img} alt="product" key={img} />
+                            <img src={img} alt="product" key={item} />
                         </div>
                         <div className="product__details">
                             <h5 className="product__title">{title}</h5>
