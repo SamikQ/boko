@@ -7,12 +7,14 @@ import LookDay from "../lookDay/LookDay";
 import AboutCreators from "../about-creators/AboutCreators";
 import CustomersContent from "../customers-content/CustomersContent";
 import ShopLocations from "../shop-locations/ShopLocations";
+import Ticker from "../ticker/Ticker";
 
 const MainPage = () => {
     return (
         <>
-            {/* <MegaMenu /> */}
+            <MegaMenu />
             <WelcomeBanner />
+            <Ticker />
             <NewArrivals />
             <Categories />
             <Featured />

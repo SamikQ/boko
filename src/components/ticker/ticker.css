@@ -1,0 +1,11 @@
+.ticker {
+    width: 100%;
+    height: 40px;
+    background-color: var(--font-creators-color);
+}
+
+.ticker__list {
+    display: flex;
+    gap: 50px;
+    text-transform: uppercase;
+}
