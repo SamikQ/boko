@@ -1,6 +1,4 @@
-import bg from "../../resources/img/backgrounds/bg-404.png";
-
-const Error404Component = () => {
+const NotFound = () => {
     return (
         <section className="error__component">
             <div className="not-found">
@@ -24,4 +22,4 @@ const Error404Component = () => {
     );
 };
 
-export default Error404Component;
+export default NotFound;

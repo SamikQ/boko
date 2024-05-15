@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import logoFooterB from "../../resources/img/footer-logo-black.svg";
 import phone from "../../resources/img/client-icons/phone.svg";
@@ -92,10 +93,12 @@ const Footer = () => {
                                 </h5>
                                 <ul className="footer__nav-list">
                                     <li className="footer__nav-list-item">
-                                        <a href="/#">про нас</a>
+                                        <Link to="/about-us">про нас</Link>
                                     </li>
                                     <li className="footer__nav-list-item">
-                                        <a href="/#">поширені запитання</a>
+                                        <Link to="/faq">
+                                            поширені запитання
+                                        </Link>
                                     </li>
                                     <li className="footer__nav-list-item">
                                         <a href="/#">оплата і доставка</a>
@@ -217,10 +220,10 @@ const Footer = () => {
                             <h5 className="footer__nav-title">інформація</h5>
                             <ul className="footer__nav-list">
                                 <li className="footer__nav-list-item">
-                                    <a href="/#">про нас</a>
+                                    <Link to="/about-us">про нас</Link>
                                 </li>
                                 <li className="footer__nav-list-item">
-                                    <a href="/#">поширені запитання</a>
+                                    <Link to="/faq">поширені запитання</Link>
                                 </li>
                                 <li className="footer__nav-list-item">
                                     <a href="/#">оплата і доставка</a>

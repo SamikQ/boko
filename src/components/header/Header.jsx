@@ -1,4 +1,5 @@
 import { useCallback, useState } from "react";
+import { Link } from "react-router-dom";
 
 import logoHeaderB from "../../resources/img/header-logo-black.svg";
 import search from "../../resources/img/client-icons/search.svg";
@@ -8,12 +9,12 @@ import user from "../../resources/img/client-icons/user.svg";
 import cart from "../../resources/img/client-icons/cart.svg";
 
 const links = [
-    "каталог",
-    "Françaises Vacances",
-    "про нас",
-    "контакти",
-    "sale",
-    "Look of the Day",
+    { title: "каталог", link: "/catalogue" },
+    { title: "Françaises Vacances", link: "/catalogue" },
+    { title: "про нас", link: "/about-us" },
+    { title: "контакти", link: "/contacts" },
+    { title: "sale", link: "/temp" },
+    { title: "Look of the Day", link: "/day-look" },
 ];
 
 const Header = () => {
@@ -32,18 +33,18 @@ const Header = () => {
     };
 
     const content = (props) => {
-        return props.map((item, index) => {
+        return props.map(({ title, link, index }) => {
             return (
                 <li className="header__nav-item" key={index}>
-                    <a
-                        href=" "
+                    <Link
+                        to={link}
                         className={
-                            item === "sale"
+                            title === "sale"
                                 ? "header__nav-link sale"
                                 : "header__nav-link"
                         }>
-                        {item}
-                    </a>
+                        {title}
+                    </Link>
                 </li>
             );
         });
@@ -85,13 +86,13 @@ const Header = () => {
                     isOpen ? "header__container lock" : "header__container"
                 }>
                 <div className="header__wrapper">
-                    <a href="localhost:3000" className="header__logo">
+                    <Link to="/" className="header__logo">
                         <img
                             src={logoHeaderB}
                             alt="Логотип одягу BOKO"
                             className="header__logo-img"
                         />
-                    </a>
+                    </Link>
                     {burgerMenu}
                     <div className="header__content-acc acc">
                         <a href="/#" aria-label="search">
@@ -135,13 +136,13 @@ const Header = () => {
         return (
             <header className="header__container">
                 <div className="header__wrapper">
-                    <a href="localhost:3000" className="header__logo">
+                    <Link to="/" className="header__logo">
                         <img
                             src={logoHeaderB}
                             alt="Логотип одягу BOKO"
                             className="header__logo-img"
                         />
-                    </a>
+                    </Link>
                     <nav className="header__content-menu">{listLinks}</nav>
                     <div className="header__content-acc acc">
                         <a href="/#" aria-label="search">

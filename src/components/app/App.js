@@ -1,50 +1,46 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
-import AboutCreators from "../about-creators/AboutCreators";
-import ShopLocations from "../shop-locations/ShopLocations";
-import Error404Component from "../error404/404NotFound";
-import WelcomeBanner from "../welcome-banner/WelcomeBanner";
-import NewArrivals from "../new-arrivals/NewArrivals";
-import Categories from "../categories/Categories";
-import Swiper from "../slider/Slider";
-import AboutUs from "../about-us/AboutUs";
-import Featured from "../featured/Featured";
-import Filter from "../filter/Filter";
-import MegaMenu from "../mega-menu/MegaMenu";
-import ProductInfo from "../product-info/ProductInfo";
-import Cart from "../cart/Cart";
-import ContactUs from "../contact-us/ContactUs";
-import LookDay from "../lookDay/LookDay";
-import Catalogue from "../catalogue/Catalogue";
-import Faq from "../faq/Faq";
-import CustomersContent from "../customers-content/CustomersContent";
-import WeekLooks from "../week-looks/WeekLooks";
+import {
+    MainPage,
+    CataloguePage,
+    AboutUsPage,
+    ContactUsPage,
+    LookOfTheDayPage,
+    FaqPage,
+    NotFoundPage,
+    TempPage,
+} from "../pages";
 
 const App = () => {
     return (
-        <div className="App container">
-            <Header />
-            <MegaMenu />
-            <WelcomeBanner />
-            <NewArrivals />
-            <Categories />
-            <Featured />
-            <LookDay />
-            <AboutCreators />
-            <CustomersContent />
-            <ShopLocations />
-            <Cart />
-            <Catalogue />
-            <ProductInfo />
-            <Filter />
-            <Faq />
-            <Swiper />
-            <Error404Component />
-            <ContactUs />
-            <AboutUs />
-            <WeekLooks />
-            <Footer />
-        </div>
+        <Router>
+            <div className="App container">
+                <Header />
+                <main>
+                    <Routes>
+                        <Route path="/" element={<MainPage />}></Route>
+                        <Route
+                            path="/catalogue"
+                            element={<CataloguePage />}></Route>
+                        <Route
+                            path="/about-us"
+                            element={<AboutUsPage />}></Route>
+                        <Route
+                            path="/contacts"
+                            element={<ContactUsPage />}></Route>
+                        <Route
+                            path="/day-look"
+                            element={<LookOfTheDayPage />}></Route>
+                        <Route path="/faq" element={<FaqPage />}></Route>
+                        <Route path="*" element={<NotFoundPage />}></Route>
+                        <Route path="/temp" element={<TempPage />}></Route>
+                    </Routes>
+                </main>
+                <Footer />
+            </div>
+        </Router>
     );
 };
 
