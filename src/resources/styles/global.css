@@ -51,7 +51,7 @@ nav {
     --border-top-color: rgba(26, 26, 26, 1);
     --border-bottom-color: rgba(201, 202, 208, 1);
     --background-color: #ffffff;
-    --background-color-lock: rgba(255, 255, 255, 0.8);
+    --background-color-lock: rgba(255, 255, 255, 0.95);
     --background-color-alt: #ccd6e4;
     --background-color-reverse: rgba(26, 28, 59, 1);
     --background-selected-color: rgba(220, 225, 232, 1);

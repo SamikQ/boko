@@ -72,58 +72,109 @@ const Header = () => {
                     <div className="header__content-menu">{listLinks}</div>
                 </div>
             </nav>
-        )
-    }
+        );
+    };
 
     const listLinks = content(links);
     const burgerMenu = navMenu();
 
-    return (
-        <header
-            className={isOpen ? "header__container lock" : "header__container"}>
-            <div className="header__wrapper">
-                <a href="localhost:3000" className="header__logo">
-                    <img
-                        src={logoHeaderB}
-                        alt="Логотип одягу BOKO"
-                        className="header__logo-img"
-                    />
-                </a>
-                {burgerMenu}
-                <div className="header__content-acc acc">
-                    <a href="/#" aria-label="search">
-                        <img src={search} alt="search button" />
-                    </a>
-                    <a href="/#" className="acc__item hidden">
-                        <img src={phone} alt="phone button" />
-                    </a>
-                    <a href="/#" className="acc__item hidden" aria-label="like">
-                        <img src={heart} alt="like button" />
-                    </a>
-                    <a href="/#">
-                        <img src={user} alt="account button" />
-                    </a>
-                    <a
-                        href="/#"
-                        className="header__content-cart"
-                        aria-label="shopping cart">
+    if (screenWidth < 1024) {
+        return (
+            <header
+                className={
+                    isOpen ? "header__container lock" : "header__container"
+                }>
+                <div className="header__wrapper">
+                    <a href="localhost:3000" className="header__logo">
                         <img
-                            src={cart}
-                            alt="shopping cart button"
-                            className="content-cart-img"
+                            src={logoHeaderB}
+                            alt="Логотип одягу BOKO"
+                            className="header__logo-img"
                         />
-                        <span className="cart__count">(0)</span>
                     </a>
+                    {burgerMenu}
+                    <div className="header__content-acc acc">
+                        <a href="/#" aria-label="search">
+                            <img src={search} alt="search button" />
+                        </a>
+                        <a href="/#" className="acc__item hidden">
+                            <img src={phone} alt="phone button" />
+                        </a>
+                        <a
+                            href="/#"
+                            className="acc__item hidden"
+                            aria-label="like">
+                            <img src={heart} alt="like button" />
+                        </a>
+                        <a href="/#">
+                            <img src={user} alt="account button" />
+                        </a>
+                        <a
+                            href="/#"
+                            className="header__content-cart"
+                            aria-label="shopping cart">
+                            <img
+                                src={cart}
+                                alt="shopping cart button"
+                                className="content-cart-img"
+                            />
+                            <span className="cart__count">(0)</span>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <style jsx>{`
+                <style jsx>{`
         body {
-          overflow: ${isOpen ? "hidden" : "auto"
-                }; /* Управління overflow body */}
+          overflow: ${
+              isOpen ? "hidden" : "auto"
+          }; /* Управління overflow body */}
         }
       `}</style>
-        </header>
-    );
+            </header>
+        );
+    } else {
+        return (
+            <header className="header__container">
+                <div className="header__wrapper">
+                    <a href="localhost:3000" className="header__logo">
+                        <img
+                            src={logoHeaderB}
+                            alt="Логотип одягу BOKO"
+                            className="header__logo-img"
+                        />
+                    </a>
+                    <nav className="header__content-menu">{listLinks}</nav>
+                    <div className="header__content-acc acc">
+                        <a href="/#" aria-label="search">
+                            <img src={search} alt="search button" />
+                        </a>
+                        <a href="/#" className="acc__item hidden">
+                            <img src={phone} alt="phone button" />
+                        </a>
+                        <a
+                            href="/#"
+                            className="acc__item hidden"
+                            aria-label="like">
+                            <img src={heart} alt="like button" />
+                        </a>
+                        <a href="/#">
+                            <img src={user} alt="account button" />
+                        </a>
+                        <a
+                            href="/#"
+                            className="header__content-cart"
+                            aria-label="shopping cart">
+                            <img
+                                src={cart}
+                                alt="shopping cart button"
+                                className="content-cart-img"
+                            />
+                            <span className="cart__count">(0)</span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        );
+    }
 };
 
 export default Header;

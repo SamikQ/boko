@@ -24,18 +24,18 @@ const App = () => {
     return (
         <div className="App container">
             <Header />
+            <MegaMenu />
             <WelcomeBanner />
             <NewArrivals />
             <Categories />
             <Featured />
-             <LookDay />
+            <LookDay />
             <AboutCreators />
             <CustomersContent />
             <ShopLocations />
             <Cart />
             <Catalogue />
             <ProductInfo />
-            {/* <MegaMenu /> */}
             <Filter />
             <Faq />
             <Swiper />

@@ -2,6 +2,7 @@
 @import url(./resources/styles/global.css);
 @import url(./resources/styles/buttons.css);
 @import url(./components/header/header.css);
+@import url(./components/mega-menu/megaMenu.css);
 @import url(./components/welcome-banner/welcomeBanner.css);
 @import url(./components/new-arrivals/newArrivals.css);
 @import url(./components/categories/categories.css);

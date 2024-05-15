@@ -1,0 +1,44 @@
+.mega-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 80px;
+    gap: 10px;
+}
+
+.mega-menu__sidebar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+}
+
+.sidebar-list-item {
+    padding: 10px;
+}
+
+.mega-menu__nav img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.mega-menu__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mega-menu__nav-title {
+    text-transform: uppercase;
+}
+
+.mega-menu__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
