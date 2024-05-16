@@ -75,7 +75,7 @@
 
 @media (min-width: 768px) {
     .btn {
-        padding: 20px 36px;
+        padding: 10px 36px;
         font-size: var(--font-p-size);
         line-height: 23px;
     }

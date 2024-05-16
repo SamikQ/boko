@@ -20,9 +20,6 @@ const AboutCreators = () => {
                                 <h4 className="title__description">
                                     ірина полонець
                                 </h4>
-                                <span className="title__description">
-                                    be unique. right now.
-                                </span>
                             </div>
                             <div className="creators__description-post">
                                 <p className="creators__description-text">

@@ -14,14 +14,6 @@
     font-weight: 600;
 }
 
-
-.description__text-decorated {
-    font-family: var(--font-decoration);
-    font-size: var(--font-mobile-decorated-p-size);
-    line-height: 22px;
-    font-weight: 400;
-}
-
 .about-us__infromation-img {
     height: 200px;
     overflow: hidden;

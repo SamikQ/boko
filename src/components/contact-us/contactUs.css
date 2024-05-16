@@ -25,6 +25,11 @@
     line-height: 20px;
 }
 
+.feedback__details-sub__comment {
+    resize: vertical;
+    width: 100%;
+}
+
 .sub-title {
     font-weight: 600;
 }
@@ -62,7 +67,7 @@
     font-size: var(--font-mobile-cart-p-size);
 }
 
-.feedback__details-sub input {
+.feedback__details-sub input, textarea {
     width: 100%;
     background-color: inherit;
     border: none;

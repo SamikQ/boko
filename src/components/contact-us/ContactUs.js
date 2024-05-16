@@ -139,6 +139,21 @@ const ContactUs = () => {
                                                 autoComplete="email"
                                             />
                                         </div>
+                                        <div
+                                            autoComplete="on"
+                                            className="feedback__details-sub">
+                                            <label
+                                                htmlFor="email"
+                                                className="feedback-details-subhead">
+                                                Ваш коментар
+                                            </label>
+                                            <textarea
+                                                className="feedback__details-sub__comment"
+                                                type="text"
+                                                placeholder="Введіть ваш коментар"
+                                                id="comment"
+                                            />
+                                        </div>
                                         <img
                                             src={captcha}
                                             alt="temp captcha"
@@ -149,7 +164,7 @@ const ContactUs = () => {
                                         <button
                                             type="submit"
                                             className="feedback__submit-btn btn btn-black">
-                                            Передзвоніть мені
+                                            Надіслати
                                         </button>
                                     </div>
                                 </form>

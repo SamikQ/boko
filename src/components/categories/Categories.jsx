@@ -10,11 +10,6 @@ const Categories = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    const mobileHidden =
-        screenWidth < 768
-            ? "section__header-text hidden"
-            : "section__header-text";
-
     return (
         <section className="categories">
             <div className="container">
@@ -23,7 +18,6 @@ const Categories = () => {
                         <h3 className="section__header-title">
                             Обрати за категорією
                         </h3>
-                        <p className={mobileHidden}>BoKo Your Style</p>
                     </div>
                     <div className="categories__list">
                         <div className="catogiries__list-top-row">
