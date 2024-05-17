@@ -1,14 +1,16 @@
 .mega-menu {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px 80px;
+    padding: 30px 80px 140px;
     gap: 10px;
 }
 
 .btn__mega-menu {
     position: absolute;
     bottom: 10%;
+    width: 90%;
 }
 
 .mega-menu__sidebar-list {

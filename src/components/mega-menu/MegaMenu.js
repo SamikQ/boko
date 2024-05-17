@@ -8,7 +8,6 @@ const MegaMenu = () => {
         <section title="mega-menu navigation">
             <div className="container">
                 <div className="mega-menu">
-                    <button className="btn btn__mega-menu">Переглянути всі</button>
                     <aside className="mega-menu__sidebar">
                         <ul className="mega-menu__sidebar-list">
                             <li className="sidebar-list-item">
@@ -145,6 +144,9 @@ const MegaMenu = () => {
                             </figure>
                         </picture>
                     </aside>
+                    <button className="btn btn__mega-menu">
+                        Переглянути всі
+                    </button>
                 </div>
             </div>
         </section>

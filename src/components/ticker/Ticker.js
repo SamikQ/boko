@@ -6,6 +6,16 @@ const Ticker = () => {
                     <li className="ticker__list-item">Basic</li>
                     <li className="ticker__list-item">Sport</li>
                     <li className="ticker__list-item">Limited</li>
+                    <li className="ticker__list-item">Basic</li>
+                    <li className="ticker__list-item">Sport</li>
+                    <li className="ticker__list-item">Limited</li>
+                    <li className="ticker__list-item">Basic</li>
+                    <li className="ticker__list-item">Sport</li>
+                    <li className="ticker__list-item">Limited</li>
+                    <li className="ticker__list-item">Basic</li>
+                    <li className="ticker__list-item">Sport</li>
+                    <li className="ticker__list-item">Limited</li>
+                    <li className="ticker__list-item">Basic</li>
                 </ul>
             </div>
         </div>
