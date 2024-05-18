@@ -2,7 +2,6 @@ import cancel from "../../resources/img/client-icons/reset-btn.svg";
 import close from "../../resources/img/control-icons/cancel-icon.svg"
 
 import temp from "../../resources/img/temp/cart-item.png";
-import temp1 from "../../resources/img/temp/image.png";
 
 const Cart = () => {
     return (
