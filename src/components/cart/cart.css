@@ -1,3 +1,12 @@
+.cart-page {
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    top: 90px;
+    overflow-y: auto;
+    right: 0;
+}
+
 .cart {
     box-shadow: inset 0px 1px 3px #dce1e8;
     position: relative;
@@ -147,7 +156,7 @@
     .cart__order-item__total {
         width: 70px;
     }
-    
+
     .cart__submit-discount {
         font-size: var(--font-p-size);
     }

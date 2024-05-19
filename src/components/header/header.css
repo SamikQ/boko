@@ -45,6 +45,8 @@
 }
 
 .header__content-cart {
+    border: none;
+    background-color: inherit;
     top: 0;
 }
 

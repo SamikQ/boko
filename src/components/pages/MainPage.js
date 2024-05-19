@@ -1,4 +1,3 @@
-import MegaMenu from "../mega-menu/MegaMenu";
 import WelcomeBanner from "../welcome-banner/WelcomeBanner";
 import NewArrivals from "../new-arrivals/NewArrivals";
 import Categories from "../categories/Categories";
@@ -12,7 +11,6 @@ import Ticker from "../ticker/Ticker";
 const MainPage = () => {
     return (
         <>
-            <MegaMenu />
             <WelcomeBanner />
             <Ticker />
             <NewArrivals />

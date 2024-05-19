@@ -1,5 +1,7 @@
-import { useCallback, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+
+import Cart from "../cart/Cart";
 
 import logoHeaderB from "../../resources/img/header-logo-black.svg";
 import search from "../../resources/img/client-icons/search.svg";
@@ -7,6 +9,7 @@ import phone from "../../resources/img/client-icons/phone.svg";
 import heart from "../../resources/img/client-icons/heart.svg";
 import user from "../../resources/img/client-icons/user.svg";
 import cart from "../../resources/img/client-icons/cart.svg";
+import MegaMenu from "../mega-menu/MegaMenu";
 
 const links = [
     { title: "каталог", link: "/catalogue" },
@@ -19,18 +22,29 @@ const links = [
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isCartOpen, setIsCartOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
     const handlerMenu = () => {
-        setIsOpen((isOpen) => !isOpen);
+        setIsOpen(!isOpen);
     };
 
-    useCallback = () => {
+    const handlerCartMenu = () => {
+        setIsCartOpen(!isCartOpen);
+    };
+
+    const handlerMegaMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    useEffect(() => {
         const handleResize = () => {
             setScreenWidth(window.innerWidth);
         };
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
-    };
+    }, []);
 
     const content = (props) => {
         return props.map(({ title, link, index }) => {
@@ -76,14 +90,33 @@ const Header = () => {
         );
     };
 
+    const cartMenu = () => {
+        return (
+            <button
+                className="header__content-cart"
+                aria-label="shopping cart"
+                onClick={() => handlerCartMenu()}>
+                <img
+                    src={cart}
+                    alt="shopping cart button"
+                    className="content-cart-img"
+                />
+                <span className="cart__count">0</span>
+            </button>
+        );
+    };
+
     const listLinks = content(links);
     const burgerMenu = navMenu();
+    const cartItem = cartMenu();
 
     if (screenWidth < 1024) {
         return (
             <header
                 className={
-                    isOpen ? "header__container lock" : "header__container"
+                    isOpen && isCartOpen
+                        ? "header__container lock"
+                        : "header__container"
                 }>
                 <div className="header__wrapper">
                     <Link to="/" className="header__logo">
@@ -94,6 +127,7 @@ const Header = () => {
                         />
                     </Link>
                     {burgerMenu}
+                    {isCartOpen ? <Cart /> : null}
                     <div className="header__content-acc acc">
                         <a href="/#" aria-label="search">
                             <img src={search} alt="search button" />
@@ -110,23 +144,13 @@ const Header = () => {
                         <a href="/#">
                             <img src={user} alt="account button" />
                         </a>
-                        <a
-                            href="/#"
-                            className="header__content-cart"
-                            aria-label="shopping cart">
-                            <img
-                                src={cart}
-                                alt="shopping cart button"
-                                className="content-cart-img"
-                            />
-                            <span className="cart__count">(0)</span>
-                        </a>
+                        {cartItem}
                     </div>
                 </div>
                 <style jsx>{`
         body {
           overflow: ${
-              isOpen ? "hidden" : "auto"
+              isOpen || isCartOpen ? "hidden" : "auto"
           }; /* Управління overflow body */}
         }
       `}</style>
@@ -143,7 +167,16 @@ const Header = () => {
                             className="header__logo-img"
                         />
                     </Link>
-                    <nav className="header__content-menu">{listLinks}</nav>
+                    <nav className="header__content-menu">
+                        <li className="header__nav-item">
+                            <button
+                                onClick={() => handlerMegaMenu()}
+                                className="header__nav-link">
+                                Каталог
+                            </button>
+                        </li>
+                        {listLinks}
+                    </nav>
                     <div className="header__content-acc acc">
                         <a href="/#" aria-label="search">
                             <img src={search} alt="search button" />
@@ -160,19 +193,16 @@ const Header = () => {
                         <a href="/#">
                             <img src={user} alt="account button" />
                         </a>
-                        <a
-                            href="/#"
-                            className="header__content-cart"
-                            aria-label="shopping cart">
-                            <img
-                                src={cart}
-                                alt="shopping cart button"
-                                className="content-cart-img"
-                            />
-                            <span className="cart__count">(0)</span>
-                        </a>
+                        {cartItem}
                     </div>
+                    {isCartOpen ? <Cart /> : null}
+                    {isMenuOpen ? <MegaMenu /> : null}
                 </div>
+                <style jsx>{`
+        body {
+          overflow: ${isOpen || isCartOpen ? "hidden" : "auto"}; }
+        }
+      `}</style>
             </header>
         );
     }

@@ -2,10 +2,11 @@ import jackets from "../../resources/img/mega-menu/title-imgs/mega-menu-title-ja
 import dresses from "../../resources/img/mega-menu/title-imgs/mega-menu-title-dress.webp";
 import bags from "../../resources/img/mega-menu/title-imgs/mega-menu-title-bags.webp";
 import shoes from "../../resources/img/mega-menu/title-imgs/mega-menu-title-shoes.webp";
+import { Link } from "react-router-dom";
 
 const MegaMenu = () => {
     return (
-        <section title="mega-menu navigation">
+        <section className="mega-menu__navigation" title="mega-menu navigation">
             <div className="container">
                 <div className="mega-menu">
                     <aside className="mega-menu__sidebar">
@@ -144,9 +145,11 @@ const MegaMenu = () => {
                             </figure>
                         </picture>
                     </aside>
-                    <button className="btn btn__mega-menu">
-                        Переглянути всі
-                    </button>
+                    <Link className="btn__mega-menu" to="/catalogue">
+                        <button className="btn btn__mega-menu">
+                            Переглянути всі
+                        </button>
+                    </Link>
                 </div>
             </div>
         </section>

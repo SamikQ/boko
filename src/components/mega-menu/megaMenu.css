@@ -1,6 +1,17 @@
+.mega-menu__navigation {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 100;
+    background-color: var(--background-color-lock);
+    width: 100%;
+    max-width: 1440px;
+}
+
 .mega-menu {
     position: relative;
     display: flex;
+    top: 0;
     flex-direction: row;
     justify-content: space-between;
     padding: 30px 80px 140px;

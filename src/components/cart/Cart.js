@@ -1,5 +1,5 @@
 import cancel from "../../resources/img/client-icons/reset-btn.svg";
-import close from "../../resources/img/control-icons/cancel-icon.svg"
+import close from "../../resources/img/control-icons/cancel-icon.svg";
 
 import temp from "../../resources/img/temp/cart-item.png";
 
@@ -157,9 +157,6 @@ const Cart = () => {
                     <p className="cart__promo-text">
                         Вам лишилося 200 грн. Бажаєте продовжити?
                     </p>
-                    {/* <div>
-                        <img src={temp1} alt="" />
-                    </div> */}
                 </div>
                 <div className="cart__submit">
                     <div className="cart__submit-descr">
