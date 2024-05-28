@@ -1,7 +1,7 @@
 import cancel from "../../resources/img/client-icons/reset-btn.svg";
 import temp from "../../resources/img/temp/cart-item.png";
 
-const CartItem = (props) => {
+const CartItem = () => {
     return (
         <article className="cart__order-item">
             <div className="cart__order-item__preview">

@@ -8,8 +8,8 @@ import search from "../../resources/img/client-icons/search.svg";
 import phone from "../../resources/img/client-icons/phone.svg";
 import heart from "../../resources/img/client-icons/heart.svg";
 import user from "../../resources/img/client-icons/user.svg";
-import cart from "../../resources/img/client-icons/cart.svg";
 import MegaMenu from "../mega-menu/MegaMenu";
+import CartButton from "../cart/CartButton";
 
 const links = [
     { title: "каталог", link: "/catalogue" },
@@ -22,16 +22,11 @@ const links = [
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [isCartOpen, setIsCartOpen] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
     const handlerMenu = () => {
         setIsOpen(!isOpen);
-    };
-
-    const handlerCartMenu = () => {
-        setIsCartOpen(!isCartOpen);
     };
 
     const handlerMegaMenu = () => {
@@ -90,34 +85,12 @@ const Header = () => {
         );
     };
 
-    const cartMenu = () => {
-        return (
-            <button
-                className="header__content-cart"
-                aria-label="shopping cart"
-                onClick={() => handlerCartMenu()}>
-                <img
-                    src={cart}
-                    alt="shopping cart button"
-                    className="content-cart-img"
-                />
-                <span className="cart__count">0</span>
-            </button>
-        );
-    };
-
     const listLinks = content(links);
     const burgerMenu = navMenu();
-    const cartItem = cartMenu();
 
     if (screenWidth < 1024) {
         return (
-            <header
-                className={
-                    isOpen && isCartOpen
-                        ? "header__container lock"
-                        : "header__container"
-                }>
+            <header>
                 <div className="header__wrapper">
                     <Link to="/" className="header__logo">
                         <img
@@ -127,7 +100,7 @@ const Header = () => {
                         />
                     </Link>
                     {burgerMenu}
-                    {isCartOpen ? <Cart /> : null}
+                    <Cart />
                     <div className="header__content-acc acc">
                         <a href="/#" aria-label="search">
                             <img src={search} alt="search button" />
@@ -144,13 +117,13 @@ const Header = () => {
                         <a href="/#">
                             <img src={user} alt="account button" />
                         </a>
-                        {cartItem}
+                        <CartButton />
                     </div>
                 </div>
                 <style jsx>{`
         body {
           overflow: ${
-              isOpen || isCartOpen ? "hidden" : "auto"
+              isOpen ? "hidden" : "auto"
           }; /* Управління overflow body */}
         }
       `}</style>
@@ -193,14 +166,14 @@ const Header = () => {
                         <a href="/#">
                             <img src={user} alt="account button" />
                         </a>
-                        {cartItem}
+                        <CartButton />
                     </div>
-                    {isCartOpen ? <Cart /> : null}
+                    <Cart />
                     {isMenuOpen ? <MegaMenu /> : null}
                 </div>
                 <style jsx>{`
         body {
-          overflow: ${isOpen || isCartOpen ? "hidden" : "auto"}; }
+          overflow: ${isOpen ? "hidden" : "auto"}; }
         }
       `}</style>
             </header>
