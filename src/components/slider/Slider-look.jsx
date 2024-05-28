@@ -33,7 +33,7 @@ const SliderLook = () => {
             }}
             a11y={{ enabled: true }}
             // loop={true}
-            // autoplay={{ delay: 1000 }}
+            autoplay={{ delay: 2000 }}
             // scrollbar={{ draggable: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}>
