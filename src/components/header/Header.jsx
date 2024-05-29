@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import Cart from "../cart/Cart";
-
 import logoHeaderB from "../../resources/img/header-logo-black.svg";
 import search from "../../resources/img/client-icons/search.svg";
 import phone from "../../resources/img/client-icons/phone.svg";
@@ -12,12 +10,12 @@ import MegaMenu from "../mega-menu/MegaMenu";
 import CartButton from "../cart/CartButton";
 
 const links = [
-    { title: "каталог", link: "/catalogue" },
-    { title: "Françaises Vacances", link: "/catalogue" },
-    { title: "про нас", link: "/about-us" },
-    { title: "контакти", link: "/contacts" },
-    { title: "sale", link: "/temp" },
-    { title: "Look of the Day", link: "/day-look" },
+    { id: 1, title: "каталог", link: "/catalogue", },
+    { id: 2, title: "Françaises Vacances", link: "/catalogue" },
+    { id: 3, title: "про нас", link: "/about-us" },
+    { id: 4, title: "контакти", link: "/contacts" },
+    { id: 5, title: "sale", link: "/temp" },
+    { id: 6, title: "Look of the Day", link: "/day-look" },
 ];
 
 const Header = () => {
@@ -42,9 +40,9 @@ const Header = () => {
     }, []);
 
     const content = (props) => {
-        return props.map(({ title, link, index }) => {
+        return props.map(({ title, link, id }) => {
             return (
-                <li className="header__nav-item" key={index}>
+                <li className="header__nav-item" key={id}>
                     <Link
                         to={link}
                         className={
@@ -100,7 +98,6 @@ const Header = () => {
                         />
                     </Link>
                     {burgerMenu}
-                    <Cart />
                     <div className="header__content-acc acc">
                         <a href="/#" aria-label="search">
                             <img src={search} alt="search button" />
@@ -122,9 +119,8 @@ const Header = () => {
                 </div>
                 <style jsx>{`
         body {
-          overflow: ${
-              isOpen ? "hidden" : "auto"
-          }; /* Управління overflow body */}
+          overflow: ${isOpen ? "hidden" : "auto"
+                    }; /* Управління overflow body */}
         }
       `}</style>
             </header>
@@ -168,7 +164,6 @@ const Header = () => {
                         </a>
                         <CartButton />
                     </div>
-                    <Cart />
                     {isMenuOpen ? <MegaMenu /> : null}
                 </div>
                 <style jsx>{`

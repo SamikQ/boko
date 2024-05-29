@@ -25,6 +25,7 @@ const Cart = () => {
                     </div>
                     <div className="cart__order">
                         <CartItem />
+                        <CartItem />
                     </div>
                     <div className="cart__promo">
                         <h5 className="cart__promo-title">

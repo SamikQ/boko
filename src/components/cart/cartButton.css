@@ -1,0 +1,10 @@
+.header__content-cart {
+    display: flex;
+    border: none;
+    background-color: inherit;
+    top: 0;
+}
+
+.cart__count {
+    font-size: 10px;
+}

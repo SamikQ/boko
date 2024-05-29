@@ -44,20 +44,6 @@
     width: 100%;
 }
 
-.header__content-cart {
-    border: none;
-    background-color: inherit;
-    top: 0;
-}
-
-.cart__count {
-    font-size: 10px;
-}
-
-.header__content-cart {
-    display: flex;
-}
-
 body.lock {
     overflow: hidden;
 }
@@ -170,7 +156,7 @@ body.lock {
     padding-top: 100px;
 }
 
-.header__nav-wrapper.active > div.header__content-menu > a:hover {
+.header__nav-wrapper.active>div.header__content-menu>a:hover {
     color: black;
 }
 
@@ -178,6 +164,7 @@ body.lock {
     .header__wrapper {
         padding: 20px;
     }
+
     .header__nav {
         display: none;
     }

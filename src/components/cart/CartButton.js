@@ -1,9 +1,9 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import cart from "../../resources/img/client-icons/cart.svg";
 import { toggle } from "./cartButton_slice";
 
 const CartButton = () => {
-    const counter = 3;
+    const counter = useSelector((state) => state.cartSlice.totalQuantity);
     const dispatch = useDispatch();
 
     return (

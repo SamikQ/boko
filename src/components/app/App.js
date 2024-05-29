@@ -12,12 +12,14 @@ import {
     NotFoundPage,
     TempPage,
 } from "../pages";
+import Cart from "../cart/Cart";
 
 const App = () => {
     return (
         <Router>
             <div className="App container">
                 <Header />
+                <Cart />
                 <main>
                     <Routes>
                         <Route path="/" element={<MainPage />}></Route>
