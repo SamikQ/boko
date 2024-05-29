@@ -12,12 +12,6 @@
     color: var(--font-color);
 }
 
-/* div,
-li,
-nav {
-    border: 1px solid red;
-} */
-
 :root {
     --font-p: "Atyp Variable", sans-serif;
     --font-h: "Atyp Variable", sans-serif;

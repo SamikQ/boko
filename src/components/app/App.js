@@ -13,6 +13,7 @@ import {
     TempPage,
 } from "../pages";
 import Cart from "../cart/Cart";
+import MegaMenu from "../mega-menu/MegaMenu";
 
 const App = () => {
     return (
@@ -20,6 +21,7 @@ const App = () => {
             <div className="App container">
                 <Header />
                 <Cart />
+                <MegaMenu />
                 <main>
                     <Routes>
                         <Route path="/" element={<MainPage />}></Route>

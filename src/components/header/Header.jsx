@@ -6,11 +6,11 @@ import search from "../../resources/img/client-icons/search.svg";
 import phone from "../../resources/img/client-icons/phone.svg";
 import heart from "../../resources/img/client-icons/heart.svg";
 import user from "../../resources/img/client-icons/user.svg";
-import MegaMenu from "../mega-menu/MegaMenu";
 import CartButton from "../cart/CartButton";
+import { useDispatch } from "react-redux";
+import { toogle } from "../mega-menu/megaMenu_slice";
 
 const links = [
-    { id: 1, title: "каталог", link: "/catalogue", },
     { id: 2, title: "Françaises Vacances", link: "/catalogue" },
     { id: 3, title: "про нас", link: "/about-us" },
     { id: 4, title: "контакти", link: "/contacts" },
@@ -19,16 +19,12 @@ const links = [
 ];
 
 const Header = () => {
+    const dispatch = useDispatch();
     const [isOpen, setIsOpen] = useState(false);
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
     const handlerMenu = () => {
         setIsOpen(!isOpen);
-    };
-
-    const handlerMegaMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
     };
 
     useEffect(() => {
@@ -119,8 +115,9 @@ const Header = () => {
                 </div>
                 <style jsx>{`
         body {
-          overflow: ${isOpen ? "hidden" : "auto"
-                    }; /* Управління overflow body */}
+          overflow: ${
+              isOpen ? "hidden" : "auto"
+          }; /* Управління overflow body */}
         }
       `}</style>
             </header>
@@ -138,11 +135,14 @@ const Header = () => {
                     </Link>
                     <nav className="header__content-menu">
                         <li className="header__nav-item">
-                            <button
-                                onClick={() => handlerMegaMenu()}
+                            <a
+                                href="/#"
+                                onClick={() => {
+                                    dispatch(toogle());
+                                }}
                                 className="header__nav-link">
                                 Каталог
-                            </button>
+                            </a>
                         </li>
                         {listLinks}
                     </nav>
@@ -164,7 +164,6 @@ const Header = () => {
                         </a>
                         <CartButton />
                     </div>
-                    {isMenuOpen ? <MegaMenu /> : null}
                 </div>
                 <style jsx>{`
         body {

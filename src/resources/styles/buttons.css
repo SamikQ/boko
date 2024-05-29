@@ -73,6 +73,29 @@
     border: none;
 }
 
+.details-quantity-button {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.details-quantity-button:hover {
+    background-color: #e0e0e0;
+}
+
+.details-quantity-button::before {
+    content: "-";
+}
+
+.details-quantity-button:last-child::before {
+    content: "+";
+}
+
 @media (min-width: 768px) {
     .btn {
         padding: 10px 36px;

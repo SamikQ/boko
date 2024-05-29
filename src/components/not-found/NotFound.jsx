@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const NotFound = () => {
     return (
         <section className="error__component">
@@ -10,9 +12,9 @@ const NotFound = () => {
                     нашому сайті. Давай спробуємо знову.
                 </p>
                 <div className="not-found__menu-btns">
-                    <button className="home__button btn btn-black">
+                    <Link className="home__button btn btn-black" to={"/"}>
                         Домашня сторінка
-                    </button>
+                    </Link>
                     <button className="all-products__button btn">
                         Усі продукти
                     </button>

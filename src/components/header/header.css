@@ -127,7 +127,6 @@ body.lock {
     background-color: var(--background-color-lock);
     text-transform: uppercase;
     z-index: 2;
-    transition: top 0.3s ease-in;
     padding: 15px 24px 50px 24px;
     transition: top 0.3s ease-in 0.1s;
     overflow: hidden;

@@ -3,12 +3,21 @@ import dresses from "../../resources/img/mega-menu/title-imgs/mega-menu-title-dr
 import bags from "../../resources/img/mega-menu/title-imgs/mega-menu-title-bags.webp";
 import shoes from "../../resources/img/mega-menu/title-imgs/mega-menu-title-shoes.webp";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const MegaMenu = () => {
+    const isOpen = useSelector((state) => state.megaMenuSlice.megaMenuVisible);
+
     return (
-        <section className="mega-menu__navigation" title="mega-menu navigation">
+        <section
+            className={
+                isOpen
+                    ? "mega-menu__navigation active"
+                    : "mega-menu__navigation"
+            }
+            title="mega-menu navigation">
             <div className="container">
-                <div className="mega-menu">
+                <div className={isOpen ? "mega-menu active" : "mega-menu"}>
                     <aside className="mega-menu__sidebar">
                         <ul className="mega-menu__sidebar-list">
                             <li className="sidebar-list-item">
@@ -152,6 +161,13 @@ const MegaMenu = () => {
                     </Link>
                 </div>
             </div>
+            {isOpen ? (
+                <style jsx>{`
+                    body {
+                        overflow: hidden;
+                    }
+                `}</style>
+            ) : null}
         </section>
     );
 };

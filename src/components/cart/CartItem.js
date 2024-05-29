@@ -21,7 +21,7 @@ const CartItem = () => {
                     Колір: <span>Блакитний</span>
                 </p>
                 <div className="details-quantity">
-                    <button className="details-quantity-button">-</button>
+                    <button className="details-quantity-button"></button>
                     <input
                         className="details-quantity-change"
                         type="number"
@@ -30,7 +30,7 @@ const CartItem = () => {
                         onClick={() => {
                             dispatch(addItemToCart());
                         }}
-                        className="details-quantity-button">+</button>
+                        className="details-quantity-button"></button>
                 </div>
             </div>
             <div className="cart__order-item__total">
