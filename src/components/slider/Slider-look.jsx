@@ -1,4 +1,3 @@
-import { useState, useEffect, useCallback } from "react";
 import {
     Navigation,
     Pagination,
@@ -29,14 +28,13 @@ const SliderLook = () => {
                 320: { slidesPerView: 1 },
                 768: { slidesPerView: 1.5, spaceBetween: 20 },
                 1024: { slidesPerView: 1.7, spaceBetween: 20 },
-                1440: { slidesPerView: 1.7, spaceBetween: 20 }
+                1440: { slidesPerView: 1.7, spaceBetween: 20 },
             }}
             a11y={{ enabled: true }}
             // loop={true}
             autoplay={{ delay: 2000 }}
             // scrollbar={{ draggable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}>
+        >
             <div className="image-slider__wrapper swiper-wrapper">
                 <SwiperSlide className="image-slider-slide swiper-slide__look">
                     <article className="image-slider__image">

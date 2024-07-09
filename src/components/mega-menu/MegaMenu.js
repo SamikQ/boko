@@ -44,6 +44,15 @@ const MegaMenu = () => {
                             <li className="sidebar-list-item">
                                 <a href="/#">xmas collection</a>
                             </li>
+                            <li>
+                                <Link
+                                    className="btn__mega-menu"
+                                    to="/catalogue">
+                                    <button className="btn btn__mega-menu">
+                                        Переглянути всі
+                                    </button>
+                                </Link>
+                            </li>
                         </ul>
                     </aside>
                     <nav className="mega-menu__nav">
@@ -154,11 +163,6 @@ const MegaMenu = () => {
                             </figure>
                         </picture>
                     </aside>
-                    <Link className="btn__mega-menu" to="/catalogue">
-                        <button className="btn btn__mega-menu">
-                            Переглянути всі
-                        </button>
-                    </Link>
                 </div>
             </div>
             {isOpen ? (

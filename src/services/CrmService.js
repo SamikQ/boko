@@ -1,10 +1,17 @@
 import axios from "axios";
 
-const baseURL = "localhost:5000";
+const baseURL = "http://localhost:5000";
 
 const getProduct = async (id) => {
-    const res = await axios.get(`${this._apiBase}/products/${id}`);
-    return _transformProduct(res.data.results[0]);
+    const res = await axios.get(`${baseURL}/products/${id}`);
+    console.log(res.data);
+    return _transformProduct(res.data);
+};
+
+const getNewProducts = async () => {
+    const res = await axios.get(`${baseURL}/products`);
+    console.log(res.data);
+    return res.data.map(_transformProduct);
 };
 
 const _transformProduct = (item) => {

@@ -37,9 +37,8 @@
 }
 
 .btn__mega-menu {
-    position: absolute;
     bottom: 10%;
-    width: 90%;
+    width: 100%;
 }
 
 .mega-menu__sidebar-list {

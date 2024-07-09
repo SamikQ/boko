@@ -14,6 +14,7 @@ import {
 } from "../pages";
 import Cart from "../cart/Cart";
 import MegaMenu from "../mega-menu/MegaMenu";
+import ProductPage from "../pages/ProductPage";
 
 const App = () => {
     return (
@@ -28,6 +29,9 @@ const App = () => {
                         <Route
                             path="/catalogue"
                             element={<CataloguePage />}></Route>
+                        <Route
+                            path="/products/:id"
+                            element={<ProductPage />}></Route>
                         <Route
                             path="/about-us"
                             element={<AboutUsPage />}></Route>

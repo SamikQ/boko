@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Product from "../product/Product";
 import arrival1 from "../../resources/img/new-arrivals/picture1.png";
 import arrival2 from "../../resources/img/new-arrivals/picture2.png";
 import arrival3 from "../../resources/img/new-arrivals/picture3.png";
@@ -10,72 +11,84 @@ const productsData = [
         title: "Базова майка BoKo’ з закритим коміром",
         price: 3498,
         sale: 2200,
+        currency_code: "UAH",
     },
     {
         img: arrival2,
         title: "Базова майка BoKo’ з закритим коміром",
         price: 3498,
         sale: 2200,
+        currency_code: "UAH",
     },
     {
         img: arrival3,
         title: "Базова майка BoKo’ з закритим коміром",
         price: 3498,
         sale: 2200,
+        currency_code: "UAH",
     },
     {
         img: arrival4,
         title: "Базова майка BoKo’ з закритим коміром",
         price: 3498,
         sale: 2200,
+        currency_code: "UAH",
     },
     {
         img: arrival1,
         title: "Базова майка BoKo’ з закритим коміром",
         price: 3498,
         sale: 2200,
+        currency_code: "UAH",
     },
     {
         img: arrival2,
         title: "Базова майка BoKo’ з закритим коміром",
         price: 3498,
         sale: null,
+        currency_code: "UAH",
     },
     {
         img: arrival3,
         title: "Базова майка BoKo’ з закритим коміром",
         price: 3498,
         sale: 2200,
+        currency_code: "UAH",
     },
     {
         img: arrival4,
         title: "Базова майка BoKo’ з закритим коміром",
         price: 3498,
         sale: null,
+        currency_code: "UAH",
     },
     {
         img: arrival1,
         title: "Базова майка BoKo’ з закритим коміром",
         price: 3498,
         sale: 2200,
+        currency_code: "UAH",
     },
     {
         img: arrival2,
         title: "Базова майка BoKo’ з закритим коміром",
         price: 3498,
         sale: null,
+        currency_code: "UAH",
     },
     {
         img: arrival3,
         title: "Базова майка BoKo’ з закритим коміром",
         price: 3498,
         sale: 2200,
+        currency_code: "UAH",
     },
     {
         img: arrival4,
         title: "Базова майка BoKo’ з закритим коміром",
         price: 3498,
         sale: null,
+        currency_code: "UAH",
     },
 ];
 
@@ -84,42 +97,15 @@ const ProductList = (props) => {
 
     const onRenderList = (arr) => {
         const elements = arr.map((item) => {
-            const { img, title, price, sale } = item;
+            const { img, title, price, sale, currency_code } = item;
             return (
-                <li className="product__list-item">
-                    <article className="product">
-                        <div className="product__img">
-                            <img src={img} alt="product" key={item} />
-                        </div>
-                        <div className="product__details">
-                            <h5 className="product__title">{title}</h5>
-                            <div className="product__price">
-                                <p className="sale__price">{price} ₴</p>
-                                <p className="sale__price-active">{sale} ₴</p>
-                            </div>
-                            <div className="color-container">
-                                <div className="colors">
-                                    <span
-                                        className="color active"
-                                        primary="#FAE7CD"
-                                        color="beige"
-                                        data-price="300"></span>
-
-                                    <span
-                                        className="color"
-                                        primary="#848282"
-                                        color="grey"
-                                        data-price="570"></span>
-                                    <span
-                                        className="color"
-                                        primary="#01337A"
-                                        color="blueBright"
-                                        data-price="470"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </li>
+                <Product
+                    img={img}
+                    title={title}
+                    price={price}
+                    sale={sale}
+                    currency={currency_code}
+                />
             );
         });
         return <ul className="product__list">{elements}</ul>;
@@ -131,43 +117,3 @@ const ProductList = (props) => {
 };
 
 export default ProductList;
-
-const Product = (props) => {
-    const { img, title, price, sale } = props;
-    return (
-        <li className="product__list-item">
-            <article className="product">
-                <div className="product__img">
-                    <img src={img} alt="product" key={img} />
-                </div>
-                <div className="product__details">
-                    <h5 className="product__title">{title}</h5>
-                    <div className="product__price">
-                        <p className="sale__price">{price} ₴</p>
-                        <p className="sale__price-active">{sale} ₴</p>
-                    </div>
-                    <div className="color-container">
-                        <div className="colors">
-                            <span
-                                className="color active"
-                                primary="#FAE7CD"
-                                color="beige"
-                                data-price="300"></span>
-
-                            <span
-                                className="color"
-                                primary="#848282"
-                                color="grey"
-                                data-price="570"></span>
-                            <span
-                                className="color"
-                                primary="#01337A"
-                                color="blueBright"
-                                data-price="470"></span>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </li>
-    );
-};
