@@ -1,4 +1,5 @@
 import logoB from "../../resources/img/footer-logo-black.svg";
+import Spinner from "../spinner/Spinner";
 
 const ShopLocations = () => {
     return (
@@ -32,7 +33,7 @@ const ShopLocations = () => {
                                 </div>
                             </li>
                         </ul>
-
+                        <Spinner />
                         <div className="shop__locations-map">
                             <iframe
                                 title="shop location point"

@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Slider from "../slider/Slider";
 import React, { useState, useEffect } from "react";
 import { getNewArrivals } from "./newArrivals_slice";
+import Spinner from "../spinner/Spinner";
 
 const NewArrivals = () => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -18,7 +19,7 @@ const NewArrivals = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    const items = isLoading ? <div>loading...</div> : <Slider items={list} />;
+    const items = isLoading ? <Spinner /> : <Slider items={list} />;
 
     if (screenWidth < 768) {
         return (

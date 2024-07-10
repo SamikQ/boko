@@ -24,8 +24,7 @@ const Slider = ({ items }) => {
     }
 
     const handleSlideClick = (itemId) => {
-        // Обробник події для кліку на слайд
-        navigate(`/products/${itemId}`); // Переходимо на сторінку товару з використанням його ID
+        navigate(`/products/${itemId}`);
     };
 
     return (
@@ -33,7 +32,6 @@ const Slider = ({ items }) => {
             className="image-slider swiper-container"
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             navigation
-            // pagination={{ clickable: true }}
             breakpoints={{
                 320: { slidesPerView: 2, spaceBetween: 10 },
                 768: { slidesPerView: 3, spaceBetween: 4 },
@@ -60,7 +58,6 @@ const Slider = ({ items }) => {
                                 <img
                                     src={thumbnail_url}
                                     alt="card item"
-                                    key={id}
                                 />
                             </div>
                             <div className="slider__details">
