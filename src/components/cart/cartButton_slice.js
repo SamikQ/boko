@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = { cartIsVisible: false };
 
 const cartButtonSlice = createSlice({
-    name: "cartButtonSlice",
+    name: "cartButton",
     initialState,
     reducers: {
         toggle: (state) => {
