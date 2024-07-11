@@ -3,6 +3,7 @@ import ProductInfo from "../product-info/ProductInfo";
 
 const ProductPage = () => {
     const { id } = useParams();
+
     return (
         <>
             <ProductInfo productId={id} />

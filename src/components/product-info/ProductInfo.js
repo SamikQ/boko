@@ -10,13 +10,15 @@ import temp from "../../resources/img/temp/cart-item.png";
 import getProduct from "../../services/CrmService";
 import ProductColor from "../product/ProductColor";
 
-const ProductInfo = () => {
+const ProductInfo = (props) => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const [product, setProduct] = useState(null);
     const [loading, setLoading] = useState(true);
 
+    const id = props;
+
     const onLoaded = async () => {
-        const item = await getProduct(150);
+        const item = await getProduct(id.productId);
         setProduct(item);
         setLoading(false);
     };

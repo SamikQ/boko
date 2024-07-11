@@ -1,11 +1,11 @@
 import heart from "../../resources/img/client-icons/heart.svg";
-import info from "../../resources/img/client-icons/information.svg";
 
 import preview1 from "../../resources/img/temp/look-temp.jpg";
 import preview2 from "../../resources/img/temp/look-temp2.jpg";
 import preview3 from "../../resources/img/temp/look-temp3.jpg";
 import preview4 from "../../resources/img/temp/look-temp4.jpg";
 import ProductColor from "../product/ProductColor";
+import ProductSize from "./ProductSize";
 
 const Product = (props) => {
     const { product } = props;
@@ -13,7 +13,9 @@ const Product = (props) => {
     if (!product) {
         return null;
     }
-    const { name, description, thumbnail, currency, price } = product;
+    const { name, description, thumbnail, currency, price, dimensions } =
+        product;
+    const { quantity, size, color } = dimensions[0];
 
     return (
         <div className="product__information">
@@ -39,46 +41,7 @@ const Product = (props) => {
                 <p className="product__information-delivery">
                     Можливість міжнародної доставки
                 </p>
-                <div className="product__information-size">
-                    <div className="product__information-size-title">
-                        <p>
-                            Розмір: <span>M</span>
-                        </p>
-                        <a href="/#" className="size-title">
-                            <img src={info} alt="information icon" />
-                            <p>Розмірна сітка</p>
-                        </a>
-                    </div>
-                    <div className="product__information-size__selector">
-                        <ul className="size__selector-list">
-                            <li className="size__selector">
-                                <p className="size__selector-text">XS</p>
-                            </li>
-                        </ul>
-                        <ul className="size__selector-list">
-                            <li className="size__selector">
-                                <p className="size__selector-text">S</p>
-                            </li>
-                        </ul>
-                        <ul className="size__selector-list">
-                            <li className="size__selector selected">
-                                <span className="size__selector-text selected__size">
-                                    M
-                                </span>
-                            </li>
-                        </ul>
-                        <ul className="size__selector-list">
-                            <li className="size__selector">
-                                <p className="size__selector-text">L</p>
-                            </li>
-                        </ul>
-                        <ul className="size__selector-list">
-                            <li className="size__selector">
-                                <p className="size__selector-text">XL</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <ProductSize props={dimensions} />
                 <div className="product__information-color__selector">
                     <div className="product__information-size-title">
                         <p>
