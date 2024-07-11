@@ -15,7 +15,6 @@ const Product = (props) => {
     }
     const { name, description, thumbnail, currency, price, dimensions } =
         product;
-    const { quantity, size, color } = dimensions[0];
 
     return (
         <div className="product__information">
@@ -48,7 +47,7 @@ const Product = (props) => {
                             Колір: <span>Синій</span>
                         </p>
                     </div>
-                    <ProductColor />
+                    <ProductColor props={dimensions} />
                 </div>
                 <div className="product__purchase">
                     <button className="btn btn-black submit-order__btn">
